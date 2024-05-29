@@ -1,0 +1,724 @@
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 40), (40, 41), (41, 42), (42, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 48), (48, 49), (49, 50)]
+DEBUG:root:Init selection algorithm
+INFO:root:Dropping indexes
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:Running algorithm {'budget_MB': 6000, 'max_index_width': 2, 'partition_num': 50, 'allowed_transformations': ['splitting', 'merging', 'prefixing', 'removal']}
+INFO:root:By data skipping index, the number of queries from 188500 to 31550
+INFO:root:Calculating best indexes Relaxation
+DEBUG:root:Q1
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q2
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q3
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q4
+DEBUG:root:Indexable columns: 1
+DEBUG:root:Potential indexes: 1
+DEBUG:root:Q5
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q6
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Size of current configuration: 20381.53125. Budget: 6000.
+INFO:root:3961.6619210243225 s, cost :34967634.70200002, index_size: 8456.8125
+INFO:root:488.2616968154907 s, cost :35382111.03400001, index_size: 9844.8125
+INFO:root:371.0424454212189 s, cost :35151884.909, index_size: 4922.90625
+INFO:root:564.6321420669556 s, cost :35125343.62299999, index_size: 8456.8125
+DEBUG:root:Size of current configuration: 8456.8125. Budget: 6000.
+INFO:root:666.6874930858612 s, cost :50131633.40899999, index_size: 0
+DEBUG:root:Total cost cache hits:	0
+DEBUG:root:Total cost requests:		432
+DEBUG:root:Cost cache hit ratio:	0.0%
+INFO:root:Partition algorithm : Slalom, partitioning time :10981.620788812637s, partitioned cost : 52222659.612, index algorithm : Relaxation, index_size :0, cost : 49976102.878000006, time : 8862.565919160843
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 40), (40, 41), (41, 42), (42, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 48), (48, 49), (49, 50)]
+DEBUG:root:Init selection algorithm
+INFO:root:Dropping indexes
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:Running algorithm {'budget_MB': 6000, 'partition_num': 50, 'max_index_width': 2, 'min_cost_improvement': 1.003}
+INFO:root:By data skipping index, the number of queries from 188500 to 31550
+INFO:root:Calculating best indexes Slalom
+INFO:root:Finish Slalom statistics
+INFO:root:11301.05187702179 s, cost :48673461.26600001, index_size: 0.125
+INFO:root:0.00010728836059570312 s, cost :57528355.76000002, index_size: 3463.625
+INFO:root:0.00012063980102539062 s, cost :57788199.451, index_size: 3464.46875
+INFO:root:0.00018835067749023438 s, cost :36808706.61899999, index_size: 3463.15625
+INFO:root:0.00011754035949707031 s, cost :37482180.06, index_size: 3464.03125
+INFO:root:0.0001251697540283203 s, cost :57687316.655999966, index_size: 3464.40625
+INFO:root:0.00012612342834472656 s, cost :57119671.80200001, index_size: 3465.03125
+INFO:root:0.0001385211944580078 s, cost :57218173.585000016, index_size: 3465.71875
+INFO:root:0.0001385211944580078 s, cost :57779823.997, index_size: 3466.0
+INFO:root:0.000125885009765625 s, cost :57227071.73700002, index_size: 3466.34375
+INFO:root:0.00012683868408203125 s, cost :57612522.968000025, index_size: 3466.78125
+INFO:root:0.00010824203491210938 s, cost :57108278.459999986, index_size: 3467.375
+INFO:root:0.0001327991485595703 s, cost :57256197.06600001, index_size: 3467.71875
+INFO:root:0.000133514404296875 s, cost :57341988.63, index_size: 3467.84375
+INFO:root:0.0001418590545654297 s, cost :57219967.672999986, index_size: 3468.0
+INFO:root:0.00014281272888183594 s, cost :57134825.17699999, index_size: 3468.3125
+INFO:root:0.00012445449829101562 s, cost :57220878.69199998, index_size: 3468.40625
+INFO:root:0.0001220703125 s, cost :57102917.367999986, index_size: 3468.71875
+INFO:root:0.000118255615234375 s, cost :57270949.29800003, index_size: 3468.71875
+INFO:root:0.0001533031463623047 s, cost :57164261.449000016, index_size: 3468.96875
+INFO:root:0.0001537799835205078 s, cost :58176086.62299999, index_size: 3469.09375
+INFO:root:0.0001385211944580078 s, cost :57389363.09700002, index_size: 3469.09375
+INFO:root:0.00013017654418945312 s, cost :57444809.48900001, index_size: 3469.09375
+INFO:root:0.00016450881958007812 s, cost :57364364.22600001, index_size: 3469.09375
+INFO:root:0.00015783309936523438 s, cost :57155520.120000005, index_size: 3469.09375
+INFO:root:0.00014352798461914062 s, cost :57626879.227000006, index_size: 3469.21875
+INFO:root:0.0001506805419921875 s, cost :57312004.485000014, index_size: 3469.21875
+INFO:root:0.00012683868408203125 s, cost :57201054.65400001, index_size: 3469.21875
+INFO:root:0.00016021728515625 s, cost :57255226.239, index_size: 3469.21875
+INFO:root:0.00015354156494140625 s, cost :57432182.70399998, index_size: 3469.21875
+INFO:root:0.00016546249389648438 s, cost :57623445.324999996, index_size: 3469.21875
+INFO:root:0.0001811981201171875 s, cost :57200360.82800002, index_size: 3469.21875
+INFO:root:0.00013017654418945312 s, cost :57102411.02699999, index_size: 3469.21875
+INFO:root:0.0001571178436279297 s, cost :57367494.865, index_size: 3469.21875
+INFO:root:0.00015735626220703125 s, cost :57047954.47400001, index_size: 3469.21875
+INFO:root:0.00019288063049316406 s, cost :57177852.32099997, index_size: 3469.21875
+INFO:root:0.0001327991485595703 s, cost :57284391.530999996, index_size: 3469.21875
+INFO:root:0.0001780986785888672 s, cost :57846307.503999986, index_size: 3469.21875
+INFO:root:0.00013208389282226562 s, cost :57147241.25599998, index_size: 3469.21875
+INFO:root:0.00014638900756835938 s, cost :57174837.11899999, index_size: 3469.21875
+INFO:root:0.0001621246337890625 s, cost :57712296.50999999, index_size: 3469.3125
+INFO:root:0.00012731552124023438 s, cost :56969472.371999994, index_size: 3469.3125
+INFO:root:0.00018024444580078125 s, cost :56987789.03499998, index_size: 3469.3125
+INFO:root:0.00015497207641601562 s, cost :57357114.335999995, index_size: 3469.3125
+INFO:root:0.00015997886657714844 s, cost :57160000.53300003, index_size: 3469.3125
+INFO:root:0.0001552104949951172 s, cost :57084724.914, index_size: 3469.3125
+INFO:root:0.0001442432403564453 s, cost :57006761.430999994, index_size: 3469.3125
+INFO:root:0.00020122528076171875 s, cost :57479411.11400001, index_size: 3469.3125
+INFO:root:0.00014781951904296875 s, cost :57988984.881999984, index_size: 3469.3125
+INFO:root:0.00015473365783691406 s, cost :57883121.48800001, index_size: 3469.3125
+INFO:root:0.0001633167266845703 s, cost :57069453.951, index_size: 3469.3125
+INFO:root:0.00016546249389648438 s, cost :57158239.91, index_size: 3469.3125
+INFO:root:0.00019431114196777344 s, cost :58031962.27199999, index_size: 3469.3125
+INFO:root:0.00014328956604003906 s, cost :57756909.33099999, index_size: 3469.3125
+INFO:root:0.00014829635620117188 s, cost :57107403.653000005, index_size: 3469.3125
+INFO:root:0.0001766681671142578 s, cost :57094614.76400001, index_size: 3469.3125
+INFO:root:0.00016760826110839844 s, cost :57159918.79299998, index_size: 3469.3125
+INFO:root:0.0001468658447265625 s, cost :57116374.04599999, index_size: 3469.3125
+INFO:root:0.00015282630920410156 s, cost :57459575.723000005, index_size: 3469.3125
+INFO:root:0.0001468658447265625 s, cost :57830665.42599999, index_size: 3469.3125
+INFO:root:0.00013589859008789062 s, cost :57155587.98300001, index_size: 3469.3125
+INFO:root:0.0001392364501953125 s, cost :57300121.282000005, index_size: 3469.3125
+INFO:root:0.00013494491577148438 s, cost :57432640.06200001, index_size: 3469.3125
+INFO:root:0.0001595020294189453 s, cost :57575696.662, index_size: 3469.3125
+INFO:root:0.00014209747314453125 s, cost :57185896.962999985, index_size: 3469.3125
+INFO:root:0.0001571178436279297 s, cost :57215854.33500001, index_size: 3469.3125
+INFO:root:0.000156402587890625 s, cost :57296516.974, index_size: 3469.3125
+INFO:root:0.00015163421630859375 s, cost :57770813.162, index_size: 3469.3125
+INFO:root:0.0001704692840576172 s, cost :57103220.209, index_size: 3469.3125
+INFO:root:0.00016188621520996094 s, cost :57125754.169000015, index_size: 3469.3125
+INFO:root:0.00012564659118652344 s, cost :57256570.901999995, index_size: 3469.3125
+INFO:root:0.00012159347534179688 s, cost :57147658.287000015, index_size: 3469.3125
+INFO:root:0.00014281272888183594 s, cost :57736179.59599999, index_size: 3469.3125
+INFO:root:0.00018739700317382812 s, cost :57436418.01000001, index_size: 3469.3125
+INFO:root:0.0001404285430908203 s, cost :57829427.497999996, index_size: 3469.3125
+INFO:root:0.0001652240753173828 s, cost :57139561.01100001, index_size: 3469.3125
+INFO:root:0.00016880035400390625 s, cost :57198749.647, index_size: 3469.3125
+INFO:root:0.00014519691467285156 s, cost :57941357.63800001, index_size: 3469.3125
+INFO:root:0.00016307830810546875 s, cost :57017860.55499999, index_size: 3469.3125
+INFO:root:0.0001780986785888672 s, cost :56712938.61599999, index_size: 3469.3125
+INFO:root:0.00014972686767578125 s, cost :57047103.55300002, index_size: 3469.3125
+INFO:root:0.0001690387725830078 s, cost :57307275.504999995, index_size: 3469.3125
+INFO:root:0.0001461505889892578 s, cost :57301864.753, index_size: 3469.3125
+INFO:root:0.00015282630920410156 s, cost :57706499.76300002, index_size: 3469.3125
+INFO:root:0.00016450881958007812 s, cost :56986461.466000006, index_size: 3469.3125
+INFO:root:0.0001842975616455078 s, cost :57320006.77200001, index_size: 3469.3125
+INFO:root:0.00017261505126953125 s, cost :57157549.48600001, index_size: 3469.3125
+INFO:root:0.00016427040100097656 s, cost :57092723.197000004, index_size: 3469.3125
+INFO:root:0.0001456737518310547 s, cost :57626527.29999999, index_size: 3469.3125
+INFO:root:0.00018024444580078125 s, cost :57118016.486999996, index_size: 3469.3125
+INFO:root:0.000152587890625 s, cost :57006626.326, index_size: 3469.3125
+INFO:root:0.00016355514526367188 s, cost :57370664.06499997, index_size: 3469.3125
+INFO:root:0.00017905235290527344 s, cost :57304855.52099999, index_size: 3469.3125
+INFO:root:0.00016880035400390625 s, cost :57716009.17899999, index_size: 3469.3125
+INFO:root:0.0001735687255859375 s, cost :57462731.11500002, index_size: 3469.3125
+INFO:root:0.0001583099365234375 s, cost :57241410.315999985, index_size: 3469.3125
+INFO:root:0.00017404556274414062 s, cost :57142604.90699999, index_size: 3469.3125
+INFO:root:0.0001518726348876953 s, cost :57823029.499, index_size: 3469.3125
+INFO:root:0.00015020370483398438 s, cost :57759185.54800001, index_size: 3469.3125
+INFO:root:0.00015735626220703125 s, cost :57453524.261, index_size: 3469.3125
+INFO:root:0.00017571449279785156 s, cost :57494429.26200001, index_size: 3469.3125
+INFO:root:0.00014662742614746094 s, cost :57691248.803, index_size: 3469.3125
+INFO:root:0.00012159347534179688 s, cost :57174033.333000004, index_size: 3469.3125
+INFO:root:0.0001423358917236328 s, cost :57192403.919, index_size: 3469.3125
+INFO:root:0.000156402587890625 s, cost :56865551.60100002, index_size: 3469.3125
+INFO:root:0.0001690387725830078 s, cost :57247784.65500001, index_size: 3469.3125
+INFO:root:0.00017118453979492188 s, cost :57089503.228, index_size: 3469.3125
+INFO:root:0.00012803077697753906 s, cost :57259853.26999997, index_size: 3469.3125
+INFO:root:0.00014662742614746094 s, cost :57200465.632, index_size: 3469.3125
+INFO:root:0.00015926361083984375 s, cost :57739646.56700001, index_size: 3469.3125
+INFO:root:0.000164031982421875 s, cost :57258034.981, index_size: 3469.3125
+INFO:root:0.0001494884490966797 s, cost :57156874.59799996, index_size: 3469.3125
+INFO:root:0.0001659393310546875 s, cost :57246048.923000015, index_size: 3469.3125
+INFO:root:0.0001881122589111328 s, cost :57541752.08800001, index_size: 3469.3125
+INFO:root:0.00014448165893554688 s, cost :57270660.78, index_size: 3469.3125
+INFO:root:0.00016045570373535156 s, cost :57224150.886999995, index_size: 3469.3125
+INFO:root:0.00016069412231445312 s, cost :57358736.01399998, index_size: 3469.3125
+INFO:root:0.00015163421630859375 s, cost :57630921.95799998, index_size: 3469.3125
+INFO:root:0.00015974044799804688 s, cost :57163416.69699999, index_size: 3469.3125
+INFO:root:0.00017189979553222656 s, cost :57077294.75699999, index_size: 3469.3125
+INFO:root:0.00016546249389648438 s, cost :57288879.60900002, index_size: 3469.3125
+INFO:root:0.00015544891357421875 s, cost :57897804.543999985, index_size: 3469.3125
+INFO:root:0.0001735687255859375 s, cost :57433224.796000004, index_size: 3469.3125
+INFO:root:0.00012683868408203125 s, cost :57739925.43200001, index_size: 3469.3125
+INFO:root:0.0001380443572998047 s, cost :57327154.92299999, index_size: 3469.3125
+INFO:root:0.0001735687255859375 s, cost :57091983.098000005, index_size: 3469.3125
+INFO:root:0.0001499652862548828 s, cost :57180319.28199999, index_size: 3469.3125
+INFO:root:0.0001690387725830078 s, cost :57185186.778000005, index_size: 3469.3125
+INFO:root:0.0001556873321533203 s, cost :57305734.75700001, index_size: 3469.3125
+INFO:root:0.00017762184143066406 s, cost :57179046.55099999, index_size: 3469.3125
+INFO:root:0.0001583099365234375 s, cost :57182463.91100002, index_size: 3469.3125
+INFO:root:0.0001544952392578125 s, cost :57447507.688, index_size: 3469.3125
+INFO:root:0.00014591217041015625 s, cost :57301722.664999984, index_size: 3469.3125
+INFO:root:0.0001728534698486328 s, cost :57375391.705999985, index_size: 3469.3125
+INFO:root:0.00016760826110839844 s, cost :57243936.567, index_size: 3469.3125
+INFO:root:0.000125885009765625 s, cost :57594777.64599999, index_size: 3469.3125
+INFO:root:0.00010991096496582031 s, cost :58081683.14000001, index_size: 3469.3125
+INFO:root:0.00018334388732910156 s, cost :58051468.13700002, index_size: 3469.3125
+INFO:root:0.00014519691467285156 s, cost :57876803.38000001, index_size: 3469.3125
+INFO:root:0.00013875961303710938 s, cost :57957684.62199999, index_size: 3469.3125
+INFO:root:0.00015020370483398438 s, cost :57318605.87, index_size: 3469.3125
+INFO:root:0.00011181831359863281 s, cost :57383220.42000002, index_size: 3469.3125
+INFO:root:0.00015807151794433594 s, cost :57160984.12099999, index_size: 3469.3125
+INFO:root:0.00015306472778320312 s, cost :57514557.19199999, index_size: 3469.3125
+INFO:root:0.0001442432403564453 s, cost :57376635.63800002, index_size: 3469.3125
+INFO:root:0.0001633167266845703 s, cost :57705434.46799999, index_size: 3469.3125
+INFO:root:0.00014662742614746094 s, cost :57254138.64900001, index_size: 3469.3125
+INFO:root:0.00016379356384277344 s, cost :57337065.24899999, index_size: 3469.3125
+INFO:root:0.00015115737915039062 s, cost :57431273.219000004, index_size: 3469.3125
+INFO:root:0.00014638900756835938 s, cost :57814592.24500001, index_size: 3469.3125
+INFO:root:0.00015687942504882812 s, cost :57611419.28299999, index_size: 3469.3125
+INFO:root:0.00016641616821289062 s, cost :57472268.36200001, index_size: 3469.3125
+INFO:root:0.0001475811004638672 s, cost :57525200.93900002, index_size: 3469.3125
+INFO:root:0.00017213821411132812 s, cost :57226977.863, index_size: 3469.3125
+INFO:root:0.00018453598022460938 s, cost :57251697.23900003, index_size: 3469.3125
+INFO:root:0.00015592575073242188 s, cost :57162867.68099999, index_size: 3469.3125
+INFO:root:0.0001399517059326172 s, cost :57058259.043000005, index_size: 3469.3125
+INFO:root:0.00015473365783691406 s, cost :57289242.27200001, index_size: 3469.3125
+INFO:root:0.00013113021850585938 s, cost :57859995.105, index_size: 3469.3125
+INFO:root:0.00016427040100097656 s, cost :57294312.826, index_size: 3469.3125
+INFO:root:0.00017905235290527344 s, cost :57112201.530999966, index_size: 3469.3125
+INFO:root:0.00016307830810546875 s, cost :57346067.78599999, index_size: 3469.3125
+INFO:root:0.000148773193359375 s, cost :57281269.738, index_size: 3469.3125
+INFO:root:0.00011754035949707031 s, cost :57415773.33100001, index_size: 3469.3125
+INFO:root:0.00016546249389648438 s, cost :57906842.26400001, index_size: 3469.3125
+INFO:root:0.0001537799835205078 s, cost :57871938.13099999, index_size: 3469.3125
+INFO:root:0.0001614093780517578 s, cost :57894089.872999996, index_size: 3469.3125
+INFO:root:0.00014090538024902344 s, cost :57956679.89600001, index_size: 3469.3125
+INFO:root:0.00016498565673828125 s, cost :57791045.23999998, index_size: 3469.3125
+INFO:root:0.00013518333435058594 s, cost :57366866.32699999, index_size: 3469.3125
+INFO:root:0.0001430511474609375 s, cost :57478610.32000001, index_size: 3469.3125
+INFO:root:0.00016355514526367188 s, cost :57705857.368999995, index_size: 3469.3125
+INFO:root:0.00014829635620117188 s, cost :57183101.37600002, index_size: 3469.3125
+INFO:root:0.00017976760864257812 s, cost :57251627.111, index_size: 3469.3125
+INFO:root:0.00014710426330566406 s, cost :57197326.03899999, index_size: 3469.3125
+INFO:root:0.00016355514526367188 s, cost :57905183.66100001, index_size: 3469.3125
+INFO:root:0.00013184547424316406 s, cost :57243217.93600002, index_size: 3469.3125
+INFO:root:0.00017881393432617188 s, cost :57112992.63600002, index_size: 3469.3125
+INFO:root:0.0001468658447265625 s, cost :57258323.36100001, index_size: 3469.3125
+INFO:root:0.00013947486877441406 s, cost :56937618.57900002, index_size: 3469.3125
+INFO:root:0.00013303756713867188 s, cost :57697811.157000005, index_size: 3469.3125
+INFO:root:0.0001628398895263672 s, cost :57475282.161999986, index_size: 3469.3125
+INFO:root:0.0001544952392578125 s, cost :57534995.56499998, index_size: 3469.3125
+INFO:root:0.00013756752014160156 s, cost :57380260.73099998, index_size: 3469.3125
+INFO:root:0.00011563301086425781 s, cost :57456288.867000006, index_size: 3469.3125
+INFO:root:0.0001418590545654297 s, cost :57723930.65900001, index_size: 3469.3125
+INFO:root:0.00015354156494140625 s, cost :57838368.22100001, index_size: 3469.3125
+INFO:root:0.0001575946807861328 s, cost :57961031.83900002, index_size: 3469.3125
+INFO:root:0.0001575946807861328 s, cost :57703355.952999994, index_size: 3469.3125
+INFO:root:0.0001289844512939453 s, cost :57342242.59800001, index_size: 3469.3125
+INFO:root:0.00013375282287597656 s, cost :57472000.322000004, index_size: 3469.3125
+INFO:root:0.0001633167266845703 s, cost :57762074.06400001, index_size: 3469.3125
+INFO:root:0.00016236305236816406 s, cost :57839745.608, index_size: 3469.3125
+INFO:root:0.0001862049102783203 s, cost :57239883.115, index_size: 3469.3125
+INFO:root:0.00015664100646972656 s, cost :57877230.95, index_size: 3469.3125
+INFO:root:0.0001678466796875 s, cost :57154060.598000005, index_size: 3469.3125
+INFO:root:0.00017499923706054688 s, cost :57366424.90400003, index_size: 3469.3125
+INFO:root:0.00016570091247558594 s, cost :57402308.84900002, index_size: 3469.3125
+INFO:root:0.0001690387725830078 s, cost :57708535.71700001, index_size: 3469.3125
+INFO:root:0.00016641616821289062 s, cost :57425450.914, index_size: 3469.3125
+INFO:root:0.000133514404296875 s, cost :57838641.40700001, index_size: 3469.3125
+INFO:root:0.00015807151794433594 s, cost :57313105.58799999, index_size: 3469.3125
+INFO:root:0.00014400482177734375 s, cost :57556602.11699999, index_size: 3469.3125
+INFO:root:0.00013756752014160156 s, cost :57936721.344000004, index_size: 3469.3125
+INFO:root:0.0001380443572998047 s, cost :58008114.80100002, index_size: 3469.3125
+INFO:root:0.0001575946807861328 s, cost :57918883.08400002, index_size: 3469.3125
+INFO:root:0.0001480579376220703 s, cost :58138784.04, index_size: 3469.3125
+INFO:root:0.00014328956604003906 s, cost :57480414.82300002, index_size: 3469.3125
+INFO:root:0.00018596649169921875 s, cost :57820842.39399997, index_size: 3469.3125
+INFO:root:0.00011348724365234375 s, cost :57700025.735000014, index_size: 3469.3125
+INFO:root:0.00019216537475585938 s, cost :57068316.974000014, index_size: 3469.3125
+INFO:root:0.00015115737915039062 s, cost :57213425.80499999, index_size: 3469.3125
+INFO:root:0.00014162063598632812 s, cost :57186682.938000016, index_size: 3469.3125
+INFO:root:0.00015735626220703125 s, cost :57380845.34499999, index_size: 3469.3125
+INFO:root:0.00013208389282226562 s, cost :57370201.42500001, index_size: 3469.3125
+INFO:root:0.00013756752014160156 s, cost :57746106.622, index_size: 3469.3125
+INFO:root:0.00015497207641601562 s, cost :57180257.985999994, index_size: 3469.3125
+INFO:root:0.00016188621520996094 s, cost :57333459.732999995, index_size: 3469.3125
+INFO:root:0.0001468658447265625 s, cost :57398861.42100002, index_size: 3469.3125
+INFO:root:0.0001838207244873047 s, cost :57244123.852, index_size: 3469.3125
+INFO:root:0.0001590251922607422 s, cost :57268369.067999996, index_size: 3469.3125
+INFO:root:0.0001609325408935547 s, cost :58058398.128000006, index_size: 3469.3125
+INFO:root:0.0001385211944580078 s, cost :58281237.505999975, index_size: 3469.3125
+INFO:root:0.0001342296600341797 s, cost :58591368.193, index_size: 3469.3125
+INFO:root:0.000186920166015625 s, cost :68173014.96799998, index_size: 3469.3125
+INFO:root:0.0001404285430908203 s, cost :64256386.74499999, index_size: 3469.3125
+INFO:root:0.0001766681671142578 s, cost :58446080.71100001, index_size: 3469.3125
+INFO:root:0.00017714500427246094 s, cost :58560825.46700001, index_size: 3469.3125
+INFO:root:0.0001735687255859375 s, cost :58787140.42599999, index_size: 3469.3125
+INFO:root:0.0001556873321533203 s, cost :58372302.934999995, index_size: 3469.3125
+INFO:root:0.00013208389282226562 s, cost :58044731.73400001, index_size: 3469.3125
+INFO:root:0.00018739700317382812 s, cost :57813650.47199999, index_size: 3469.3125
+INFO:root:0.00015163421630859375 s, cost :58260173.769999996, index_size: 3469.3125
+INFO:root:0.00015592575073242188 s, cost :57643562.96199999, index_size: 3469.3125
+INFO:root:0.00017213821411132812 s, cost :58277178.176, index_size: 3469.3125
+INFO:root:0.00012969970703125 s, cost :57741655.721999995, index_size: 3469.3125
+INFO:root:0.0001373291015625 s, cost :57799303.184999995, index_size: 3469.3125
+INFO:root:0.0001380443572998047 s, cost :57777000.926, index_size: 3469.3125
+INFO:root:0.000133514404296875 s, cost :57830949.314, index_size: 3469.3125
+INFO:root:0.00014162063598632812 s, cost :57658190.74099998, index_size: 3469.3125
+INFO:root:0.000156402587890625 s, cost :58784657.591999985, index_size: 3469.3125
+INFO:root:0.00018978118896484375 s, cost :58419144.14500001, index_size: 3469.3125
+INFO:root:0.00014090538024902344 s, cost :57799466.95800001, index_size: 3469.3125
+INFO:root:0.0001537799835205078 s, cost :57682937.70500001, index_size: 3469.3125
+INFO:root:0.0001957416534423828 s, cost :59364198.74399998, index_size: 3469.3125
+INFO:root:0.000148773193359375 s, cost :57402121.207, index_size: 3469.3125
+INFO:root:0.00015091896057128906 s, cost :58389726.276, index_size: 3469.3125
+INFO:root:0.00017118453979492188 s, cost :58294752.166, index_size: 3469.3125
+INFO:root:0.0001468658447265625 s, cost :58220201.69399999, index_size: 3469.3125
+INFO:root:0.00012493133544921875 s, cost :59056964.59299999, index_size: 3469.3125
+INFO:root:0.000156402587890625 s, cost :58199406.83499999, index_size: 3469.3125
+INFO:root:0.00014352798461914062 s, cost :58741838.17499999, index_size: 3469.3125
+INFO:root:0.0001819133758544922 s, cost :59232579.89400001, index_size: 3469.3125
+INFO:root:0.00016546249389648438 s, cost :58851786.261999995, index_size: 3469.3125
+INFO:root:0.00011372566223144531 s, cost :58961905.18099998, index_size: 3469.3125
+INFO:root:0.0001533031463623047 s, cost :58237314.875, index_size: 3469.3125
+INFO:root:0.00013208389282226562 s, cost :58641809.03700001, index_size: 3469.3125
+INFO:root:0.00012874603271484375 s, cost :59437166.286000006, index_size: 3469.3125
+INFO:root:0.00018095970153808594 s, cost :59274157.97300002, index_size: 3469.3125
+INFO:root:0.0001201629638671875 s, cost :58527805.50300001, index_size: 3469.3125
+INFO:root:0.00013685226440429688 s, cost :58930521.30199999, index_size: 3469.3125
+INFO:root:0.0001361370086669922 s, cost :59218927.72299999, index_size: 3469.3125
+INFO:root:0.00011539459228515625 s, cost :58631192.23200001, index_size: 3469.3125
+INFO:root:0.00018167495727539062 s, cost :58728075.22900001, index_size: 3469.3125
+INFO:root:0.00014019012451171875 s, cost :59087194.151, index_size: 3469.3125
+INFO:root:0.0001614093780517578 s, cost :58502073.699, index_size: 3469.3125
+INFO:root:0.00018525123596191406 s, cost :58711435.39800001, index_size: 3469.3125
+INFO:root:0.0001347064971923828 s, cost :61374930.313, index_size: 3469.3125
+INFO:root:0.00019216537475585938 s, cost :58400645.21899999, index_size: 3469.3125
+INFO:root:0.0001728534698486328 s, cost :59643796.91899998, index_size: 3469.3125
+INFO:root:0.00011682510375976562 s, cost :59487490.801999986, index_size: 3469.3125
+INFO:root:0.00017905235290527344 s, cost :58820552.534, index_size: 3469.3125
+INFO:root:0.0001399517059326172 s, cost :58730872.891, index_size: 3469.3125
+INFO:root:0.00016427040100097656 s, cost :59125884.186, index_size: 3469.3125
+INFO:root:0.0001766681671142578 s, cost :59095473.81300001, index_size: 3469.3125
+INFO:root:0.000164031982421875 s, cost :59160577.13299999, index_size: 3469.3125
+INFO:root:0.0001728534698486328 s, cost :59787862.95000001, index_size: 3469.3125
+INFO:root:0.0001678466796875 s, cost :58501252.619, index_size: 3469.3125
+INFO:root:0.00015926361083984375 s, cost :59103636.62399999, index_size: 3469.3125
+INFO:root:0.00015354156494140625 s, cost :59357826.45, index_size: 3469.3125
+INFO:root:0.00017070770263671875 s, cost :59108889.51899998, index_size: 3469.3125
+INFO:root:0.00013685226440429688 s, cost :58835524.434000015, index_size: 3469.3125
+INFO:root:0.00013947486877441406 s, cost :59019919.07300001, index_size: 3469.3125
+INFO:root:0.00013899803161621094 s, cost :59330681.63300001, index_size: 3469.3125
+INFO:root:0.00014662742614746094 s, cost :58784508.63199998, index_size: 3469.3125
+INFO:root:0.00013446807861328125 s, cost :59118076.85599999, index_size: 3469.3125
+INFO:root:0.00013518333435058594 s, cost :58784541.19899997, index_size: 3469.3125
+INFO:root:0.0001666545867919922 s, cost :59209987.63599999, index_size: 3469.3125
+INFO:root:0.0001614093780517578 s, cost :58931402.468000025, index_size: 3469.3125
+INFO:root:0.00018644332885742188 s, cost :59023859.49499999, index_size: 3469.3125
+INFO:root:0.00013971328735351562 s, cost :58722705.20000002, index_size: 3469.3125
+INFO:root:0.00016069412231445312 s, cost :59084094.702000014, index_size: 3469.3125
+INFO:root:0.00012230873107910156 s, cost :58780813.972, index_size: 3469.3125
+INFO:root:0.0001437664031982422 s, cost :58719288.20499999, index_size: 3469.3125
+INFO:root:0.0001423358917236328 s, cost :58846707.04600002, index_size: 3469.3125
+INFO:root:0.0001704692840576172 s, cost :59332971.51400002, index_size: 3469.3125
+INFO:root:0.00017404556274414062 s, cost :58704164.26699999, index_size: 3469.3125
+INFO:root:0.00015687942504882812 s, cost :59152528.062000014, index_size: 3469.3125
+INFO:root:0.0001251697540283203 s, cost :58777320.48800002, index_size: 3469.3125
+INFO:root:0.0001423358917236328 s, cost :58840920.51799999, index_size: 3469.3125
+INFO:root:0.0002651214599609375 s, cost :58658190.306, index_size: 3469.3125
+INFO:root:0.00012969970703125 s, cost :58433052.20399999, index_size: 3469.3125
+INFO:root:0.00012445449829101562 s, cost :58390897.988999985, index_size: 3469.3125
+INFO:root:0.0001418590545654297 s, cost :58575571.22800001, index_size: 3469.3125
+INFO:root:0.00012564659118652344 s, cost :59106863.12800002, index_size: 3469.3125
+INFO:root:0.00012969970703125 s, cost :59099819.02900001, index_size: 3469.3125
+INFO:root:0.00014781951904296875 s, cost :58701147.80099999, index_size: 3469.3125
+INFO:root:0.00014591217041015625 s, cost :58433975.24699999, index_size: 3469.3125
+INFO:root:0.00013065338134765625 s, cost :59230346.28499999, index_size: 3469.3125
+INFO:root:0.0001621246337890625 s, cost :58802186.48299999, index_size: 3469.3125
+INFO:root:0.00011849403381347656 s, cost :59165864.70599999, index_size: 3469.3125
+INFO:root:0.00013375282287597656 s, cost :58830542.068, index_size: 3469.3125
+INFO:root:0.000148773193359375 s, cost :59038615.271999985, index_size: 3469.3125
+INFO:root:0.00012922286987304688 s, cost :58705472.96399999, index_size: 3469.3125
+INFO:root:0.00014543533325195312 s, cost :59000359.29000001, index_size: 3469.3125
+INFO:root:0.00012040138244628906 s, cost :58744605.765, index_size: 3469.3125
+INFO:root:7.176399230957031e-05 s, cost :59222774.57200002, index_size: 3469.3125
+INFO:root:0.03137993812561035 s, cost :58783444.538, index_size: 3469.3125
+INFO:root:0.03545498847961426 s, cost :59115639.451999985, index_size: 3469.3125
+INFO:root:0.03026723861694336 s, cost :58975859.573, index_size: 3469.3125
+INFO:root:0.031214475631713867 s, cost :59010733.622000016, index_size: 3469.3125
+INFO:root:0.03372550010681152 s, cost :59080317.981999986, index_size: 3469.3125
+INFO:root:0.03145146369934082 s, cost :58446551.03599999, index_size: 3469.3125
+INFO:root:0.030760765075683594 s, cost :58154385.80500001, index_size: 3469.3125
+INFO:root:0.031197071075439453 s, cost :58813527.199999996, index_size: 3469.3125
+INFO:root:0.03131365776062012 s, cost :58925990.004000016, index_size: 3469.3125
+INFO:root:0.035680294036865234 s, cost :59062860.21500001, index_size: 3469.3125
+INFO:root:0.030539989471435547 s, cost :58402041.12499999, index_size: 3469.3125
+INFO:root:0.030907869338989258 s, cost :58907739.268000014, index_size: 3469.3125
+INFO:root:0.03042316436767578 s, cost :59120573.73500001, index_size: 3469.3125
+INFO:root:0.03106212615966797 s, cost :59286059.14800001, index_size: 3469.3125
+INFO:root:0.0312952995300293 s, cost :58460610.536, index_size: 3469.3125
+INFO:root:0.03475594520568848 s, cost :58295901.725, index_size: 3469.3125
+INFO:root:0.031020164489746094 s, cost :59344001.790000014, index_size: 3469.3125
+INFO:root:0.033498287200927734 s, cost :58779810.965, index_size: 3469.3125
+INFO:root:0.0300600528717041 s, cost :58502055.08999999, index_size: 3469.3125
+INFO:root:Dropping indexes
+DEBUG:root:Dropping index pagecounts_1_prt_p2_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p36_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p35_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p35_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p21_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p4_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p4_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p21_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p49_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p17_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p30_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p0_pagecategory_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p22_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p48_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p48_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p30_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p28_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p23_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p16_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p16_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p23_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p39_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p39_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p40_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p45_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p25_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p38_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p46_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p18_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p42_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p25_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p42_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p1_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p43_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p43_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p26_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p26_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p33_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p33_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p24_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p46_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p6_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p3_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p3_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p20_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p6_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p45_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p32_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p32_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p38_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p49_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p17_pagecount_idx
+INFO:root:Partition algorithm : Slalom, partitioning time :10981.620788812637s, partitioned cost : 52222659.612, index algorithm : Slalom, index_size :3469.3125, cost : 58983617.509, time : 44110.58058142662
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 40), (40, 41), (41, 42), (42, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 48), (48, 49), (49, 50)]
+DEBUG:root:Init selection algorithm
+INFO:root:Dropping indexes
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:Running algorithm {'budget_MB': 6000, 'max_index_width': 2, 'partition_num': 50, 'min_cost_improvement': 1.001}
+INFO:root:By data skipping index, the number of queries from 188500 to 26097
+INFO:root:Calculating best indexes Extend
+DEBUG:root:new best cost and size: 39612924.863999985	3468.91MB
+INFO:root:380.9764325618744 s, cost :37969052.58199999, index_size: 3468.90625
+DEBUG:root:new best cost and size: 35241094.583	3533.91MB
+INFO:root:484.71255564689636 s, cost :34529597.50900002, index_size: 3533.90625
+DEBUG:root:Add index. Current cost savings: 30.803, initial 30.803. Current storage: 3533.91
+DEBUG:root:Total cost cache hits:	0
+DEBUG:root:Total cost requests:		186
+DEBUG:root:Cost cache hit ratio:	0.0%
+INFO:root:Partition algorithm : Slalom, partitioning time :11169.364165067673s, partitioned cost : 52222659.612, index algorithm : Extend, index_size :3533.90625, cost : 34868130.848000005, time : 2444.786791086197
+
+INFO:root:Running algorithm {'budget_MB': 6000, 'max_index_width': 2, 'partition_num': 27, 'allowed_transformations': ['splitting', 'merging', 'prefixing', 'removal']}
+INFO:root:By data skipping index, the number of queries from 101790 to 17660
+INFO:root:Calculating best indexes Relaxation
+DEBUG:root:Q1
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q2
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q3
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q4
+DEBUG:root:Indexable columns: 1
+DEBUG:root:Potential indexes: 1
+DEBUG:root:Q5
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Q6
+DEBUG:root:Indexable columns: 2
+DEBUG:root:Potential indexes: 4
+DEBUG:root:Size of current configuration: 20368.71875. Budget: 6000.
+INFO:root:2824.7775440216064 s, cost :34102734.32800001, index_size: 8451.6875
+INFO:root:357.0938444137573 s, cost :34470797.90799999, index_size: 9839.6875
+INFO:root:244.0416567325592 s, cost :33858832.88599999, index_size: 4920.34375
+INFO:root:403.41927337646484 s, cost :34023341.118, index_size: 8451.6875
+DEBUG:root:Size of current configuration: 8451.6875. Budget: 6000.
+INFO:root:469.4846532344818 s, cost :48587088.00300001, index_size: 0
+DEBUG:root:Total cost cache hits:	0
+DEBUG:root:Total cost requests:		252
+DEBUG:root:Cost cache hit ratio:	0.0%
+INFO:root:Partition algorithm : Casper, partitioning time :149.59575247764587s, partitioned cost : 49835657.2, index algorithm : Relaxation, index_size :0, cost : 48512746.543000005, time : 6126.701375961304
+INFO:root:Running algorithm {'budget_MB': 6000, 'partition_num': 27, 'max_index_width': 2, 'min_cost_improvement': 1.003}
+INFO:root:By data skipping index, the number of queries from 101790 to 17660
+INFO:root:Calculating best indexes Slalom
+INFO:root:Finish Slalom statistics
+INFO:root:6144.577956199646 s, cost :49158864.348000005, index_size: 0
+INFO:root:0.00011777877807617188 s, cost :57810693.27199999, index_size: 3463.0
+INFO:root:7.867813110351562e-05 s, cost :58151392.544999994, index_size: 3463.15625
+INFO:root:8.58306884765625e-05 s, cost :58378386.66899999, index_size: 3463.4375
+INFO:root:8.487701416015625e-05 s, cost :58341510.751, index_size: 3463.5625
+INFO:root:7.963180541992188e-05 s, cost :58640011.94499999, index_size: 3463.5625
+INFO:root:9.036064147949219e-05 s, cost :58150310.447, index_size: 3463.6875
+INFO:root:0.00012040138244628906 s, cost :58465802.297, index_size: 3463.8125
+INFO:root:0.00010323524475097656 s, cost :58397088.684999995, index_size: 3463.9375
+INFO:root:9.465217590332031e-05 s, cost :58365744.09100001, index_size: 3464.09375
+INFO:root:8.153915405273438e-05 s, cost :58321367.08800001, index_size: 3464.21875
+INFO:root:8.082389831542969e-05 s, cost :58237687.76200001, index_size: 3464.21875
+INFO:root:7.915496826171875e-05 s, cost :58382302.061000004, index_size: 3464.21875
+INFO:root:8.320808410644531e-05 s, cost :58442672.649, index_size: 3464.21875
+INFO:root:8.034706115722656e-05 s, cost :58250091.98000001, index_size: 3464.21875
+INFO:root:8.606910705566406e-05 s, cost :58286293.93899999, index_size: 3464.34375
+INFO:root:8.440017700195312e-05 s, cost :57718600.411, index_size: 3464.34375
+INFO:root:8.034706115722656e-05 s, cost :58184464.67, index_size: 3464.34375
+INFO:root:0.00010251998901367188 s, cost :58363819.74699999, index_size: 3464.34375
+INFO:root:8.7738037109375e-05 s, cost :58050166.702999964, index_size: 3464.34375
+INFO:root:0.0001201629638671875 s, cost :57638693.129, index_size: 3464.34375
+INFO:root:0.00010442733764648438 s, cost :57634206.491, index_size: 3464.34375
+INFO:root:9.918212890625e-05 s, cost :57568698.475999996, index_size: 3464.34375
+INFO:root:8.630752563476562e-05 s, cost :57750475.61400001, index_size: 3464.34375
+INFO:root:9.608268737792969e-05 s, cost :58274847.16099999, index_size: 3464.34375
+INFO:root:9.703636169433594e-05 s, cost :58429234.293000005, index_size: 3464.34375
+INFO:root:9.036064147949219e-05 s, cost :58466447.41899999, index_size: 3464.34375
+INFO:root:9.131431579589844e-05 s, cost :58055557.96900001, index_size: 3464.34375
+INFO:root:8.559226989746094e-05 s, cost :58208042.323999986, index_size: 3464.34375
+INFO:root:8.511543273925781e-05 s, cost :58532324.633999996, index_size: 3464.34375
+INFO:root:8.463859558105469e-05 s, cost :58886009.433, index_size: 3464.34375
+INFO:root:9.393692016601562e-05 s, cost :58964758.54200002, index_size: 3464.34375
+INFO:root:8.678436279296875e-05 s, cost :59150827.146999985, index_size: 3464.34375
+INFO:root:9.632110595703125e-05 s, cost :58370575.134, index_size: 3464.34375
+INFO:root:8.749961853027344e-05 s, cost :58311419.856000006, index_size: 3464.34375
+INFO:root:9.179115295410156e-05 s, cost :58379579.29300003, index_size: 3464.34375
+INFO:root:9.1552734375e-05 s, cost :58318502.68299998, index_size: 3464.34375
+INFO:root:8.249282836914062e-05 s, cost :58196597.59100001, index_size: 3464.34375
+INFO:root:8.106231689453125e-05 s, cost :58299491.86899999, index_size: 3464.34375
+INFO:root:8.749961853027344e-05 s, cost :57665242.232999995, index_size: 3464.34375
+INFO:root:9.036064147949219e-05 s, cost :58373443.243, index_size: 3464.34375
+INFO:root:9.059906005859375e-05 s, cost :58288116.692999996, index_size: 3464.34375
+INFO:root:8.726119995117188e-05 s, cost :58259157.663999975, index_size: 3464.34375
+INFO:root:8.797645568847656e-05 s, cost :57754718.36000001, index_size: 3464.34375
+INFO:root:9.131431579589844e-05 s, cost :58418740.996999994, index_size: 3464.34375
+INFO:root:9.632110595703125e-05 s, cost :58063903.356000006, index_size: 3464.34375
+INFO:root:8.177757263183594e-05 s, cost :57678893.81500001, index_size: 3464.34375
+INFO:root:8.106231689453125e-05 s, cost :57647963.48000001, index_size: 3464.34375
+INFO:root:9.1552734375e-05 s, cost :57636091.457, index_size: 3464.34375
+INFO:root:0.0001277923583984375 s, cost :57704878.01099999, index_size: 3464.34375
+INFO:root:9.036064147949219e-05 s, cost :58333965.789000005, index_size: 3464.34375
+INFO:root:8.463859558105469e-05 s, cost :58274222.25400001, index_size: 3464.34375
+INFO:root:9.250640869140625e-05 s, cost :57810642.087, index_size: 3464.34375
+INFO:root:8.654594421386719e-05 s, cost :58048928.07000001, index_size: 3464.34375
+INFO:root:8.296966552734375e-05 s, cost :58294657.932000004, index_size: 3464.34375
+INFO:root:9.489059448242188e-05 s, cost :57613056.28899999, index_size: 3464.34375
+INFO:root:9.226799011230469e-05 s, cost :57652687.326999985, index_size: 3464.34375
+INFO:root:8.630752563476562e-05 s, cost :57644223.77400002, index_size: 3464.34375
+INFO:root:8.58306884765625e-05 s, cost :58286462.44600001, index_size: 3464.34375
+INFO:root:9.441375732421875e-05 s, cost :58351332.311, index_size: 3464.34375
+INFO:root:9.632110595703125e-05 s, cost :58446489.48999999, index_size: 3464.34375
+INFO:root:8.630752563476562e-05 s, cost :58324151.241000004, index_size: 3464.34375
+INFO:root:8.535385131835938e-05 s, cost :58238097.026999995, index_size: 3464.34375
+INFO:root:8.678436279296875e-05 s, cost :58288232.79500002, index_size: 3464.34375
+INFO:root:9.5367431640625e-05 s, cost :57761730.312, index_size: 3464.34375
+INFO:root:9.34600830078125e-05 s, cost :58314066.966, index_size: 3464.34375
+INFO:root:9.489059448242188e-05 s, cost :58304486.33499999, index_size: 3464.34375
+INFO:root:9.846687316894531e-05 s, cost :57609421.64500001, index_size: 3464.34375
+INFO:root:8.869171142578125e-05 s, cost :58357315.414000005, index_size: 3464.34375
+INFO:root:8.845329284667969e-05 s, cost :58263148.57600002, index_size: 3464.34375
+INFO:root:9.202957153320312e-05 s, cost :58341522.75999999, index_size: 3464.34375
+INFO:root:8.749961853027344e-05 s, cost :58298441.083000004, index_size: 3464.34375
+INFO:root:8.440017700195312e-05 s, cost :58328997.12799999, index_size: 3464.34375
+INFO:root:9.775161743164062e-05 s, cost :58313757.495000005, index_size: 3464.34375
+INFO:root:9.965896606445312e-05 s, cost :57706598.88700001, index_size: 3464.34375
+INFO:root:8.440017700195312e-05 s, cost :58222450.063000016, index_size: 3464.34375
+INFO:root:8.177757263183594e-05 s, cost :57671363.16199999, index_size: 3464.34375
+INFO:root:7.891654968261719e-05 s, cost :58277140.363, index_size: 3464.34375
+INFO:root:9.107589721679688e-05 s, cost :57788106.22800001, index_size: 3464.34375
+INFO:root:9.608268737792969e-05 s, cost :58264495.429, index_size: 3464.34375
+INFO:root:9.107589721679688e-05 s, cost :57437664.36799999, index_size: 3464.34375
+INFO:root:9.799003601074219e-05 s, cost :57724728.303, index_size: 3464.34375
+INFO:root:9.083747863769531e-05 s, cost :57702749.70399999, index_size: 3464.34375
+INFO:root:9.441375732421875e-05 s, cost :58269852.95900002, index_size: 3464.34375
+INFO:root:0.00010132789611816406 s, cost :58540186.16500001, index_size: 3464.34375
+INFO:root:8.106231689453125e-05 s, cost :58274781.322, index_size: 3464.34375
+INFO:root:8.606910705566406e-05 s, cost :58810717.76300003, index_size: 3464.34375
+INFO:root:7.581710815429688e-05 s, cost :58783689.24299999, index_size: 3464.34375
+INFO:root:9.012222290039062e-05 s, cost :58286673.97399999, index_size: 3464.34375
+INFO:root:8.726119995117188e-05 s, cost :61343447.99800001, index_size: 3464.34375
+INFO:root:0.00010013580322265625 s, cost :58994764.033000015, index_size: 3464.34375
+INFO:root:9.34600830078125e-05 s, cost :58155217.332, index_size: 3464.34375
+INFO:root:8.845329284667969e-05 s, cost :58139135.52199999, index_size: 3464.34375
+INFO:root:0.000125885009765625 s, cost :58018081.917, index_size: 3464.34375
+INFO:root:0.00010347366333007812 s, cost :58897899.883999996, index_size: 3464.34375
+INFO:root:9.965896606445312e-05 s, cost :58383811.401, index_size: 3464.34375
+INFO:root:8.678436279296875e-05 s, cost :58689834.34700001, index_size: 3464.34375
+INFO:root:8.463859558105469e-05 s, cost :61528903.64599999, index_size: 3464.34375
+INFO:root:9.489059448242188e-05 s, cost :59082306.296, index_size: 3464.34375
+INFO:root:8.153915405273438e-05 s, cost :58379688.50500001, index_size: 3464.34375
+INFO:root:8.940696716308594e-05 s, cost :58502908.64999999, index_size: 3464.34375
+INFO:root:8.678436279296875e-05 s, cost :58704292.715, index_size: 3464.34375
+INFO:root:8.296966552734375e-05 s, cost :58184208.338, index_size: 3464.34375
+INFO:root:9.298324584960938e-05 s, cost :58466416.849999994, index_size: 3464.34375
+INFO:root:9.226799011230469e-05 s, cost :58468860.906999975, index_size: 3464.34375
+INFO:root:8.654594421386719e-05 s, cost :58168787.713999994, index_size: 3464.34375
+INFO:root:9.1552734375e-05 s, cost :58082451.74600001, index_size: 3464.34375
+INFO:root:9.441375732421875e-05 s, cost :57928827.726, index_size: 3464.34375
+INFO:root:8.559226989746094e-05 s, cost :58658740.51499999, index_size: 3464.34375
+INFO:root:8.916854858398438e-05 s, cost :58082983.837000005, index_size: 3464.34375
+INFO:root:8.845329284667969e-05 s, cost :58071885.93500001, index_size: 3464.34375
+INFO:root:8.487701416015625e-05 s, cost :58668223.913, index_size: 3464.34375
+INFO:root:8.249282836914062e-05 s, cost :58412915.796000004, index_size: 3464.34375
+INFO:root:8.535385131835938e-05 s, cost :58595882.73999999, index_size: 3464.34375
+INFO:root:8.96453857421875e-05 s, cost :58557325.995, index_size: 3464.34375
+INFO:root:8.273124694824219e-05 s, cost :58227889.19, index_size: 3464.34375
+INFO:root:8.702278137207031e-05 s, cost :58513199.526, index_size: 3464.34375
+INFO:root:9.751319885253906e-05 s, cost :59035026.056, index_size: 3464.34375
+INFO:root:0.00010991096496582031 s, cost :60434686.628, index_size: 3464.34375
+INFO:root:0.00010418891906738281 s, cost :58693734.14199999, index_size: 3464.34375
+INFO:root:9.298324584960938e-05 s, cost :58352157.332, index_size: 3464.34375
+INFO:root:8.487701416015625e-05 s, cost :58464995.006, index_size: 3464.34375
+INFO:root:8.7738037109375e-05 s, cost :58176815.004999995, index_size: 3464.34375
+INFO:root:9.655952453613281e-05 s, cost :57994230.58100001, index_size: 3464.34375
+INFO:root:8.797645568847656e-05 s, cost :58347620.762, index_size: 3464.34375
+INFO:root:8.916854858398438e-05 s, cost :58546570.64600001, index_size: 3464.34375
+INFO:root:8.821487426757812e-05 s, cost :58198244.326000005, index_size: 3464.34375
+INFO:root:9.298324584960938e-05 s, cost :58081445.757, index_size: 3464.34375
+INFO:root:0.00010752677917480469 s, cost :58257939.629999995, index_size: 3464.34375
+INFO:root:9.036064147949219e-05 s, cost :57985611.19000001, index_size: 3464.34375
+INFO:root:9.226799011230469e-05 s, cost :58087745.881, index_size: 3464.34375
+INFO:root:8.273124694824219e-05 s, cost :58490713.176999986, index_size: 3464.34375
+INFO:root:9.322166442871094e-05 s, cost :58459865.41399999, index_size: 3464.34375
+INFO:root:8.440017700195312e-05 s, cost :58987492.982000016, index_size: 3464.34375
+INFO:root:8.869171142578125e-05 s, cost :58301434.452000014, index_size: 3464.34375
+INFO:root:9.846687316894531e-05 s, cost :58495984.783, index_size: 3464.34375
+INFO:root:9.775161743164062e-05 s, cost :58560835.83, index_size: 3464.34375
+INFO:root:8.273124694824219e-05 s, cost :58209875.71499998, index_size: 3464.34375
+INFO:root:8.535385131835938e-05 s, cost :58788405.80799999, index_size: 3464.34375
+INFO:root:7.963180541992188e-05 s, cost :59526393.842, index_size: 3464.34375
+INFO:root:0.00011277198791503906 s, cost :59313948.982000016, index_size: 3464.34375
+INFO:root:9.489059448242188e-05 s, cost :60001674.742999986, index_size: 3464.34375
+INFO:root:0.00010824203491210938 s, cost :58541118.05799999, index_size: 3464.34375
+INFO:root:0.00010704994201660156 s, cost :64484862.12800001, index_size: 3464.34375
+INFO:root:0.00011396408081054688 s, cost :66524088.995, index_size: 3464.34375
+INFO:root:0.00010013580322265625 s, cost :67612510.40699999, index_size: 3464.34375
+INFO:root:0.00011730194091796875 s, cost :64329811.905, index_size: 3464.34375
+INFO:root:0.0001125335693359375 s, cost :62816521.408, index_size: 3464.34375
+INFO:root:0.00014781951904296875 s, cost :58177051.37, index_size: 3464.34375
+INFO:root:0.00010848045349121094 s, cost :58557646.903000005, index_size: 3464.34375
+INFO:root:0.00014162063598632812 s, cost :58847803.16200001, index_size: 3464.34375
+INFO:root:9.655952453613281e-05 s, cost :58406627.452, index_size: 3464.34375
+INFO:root:9.512901306152344e-05 s, cost :58418851.73900001, index_size: 3464.34375
+INFO:root:0.00010752677917480469 s, cost :58813689.572000004, index_size: 3464.34375
+INFO:root:0.00011086463928222656 s, cost :58218748.23600002, index_size: 3464.34375
+INFO:root:0.00011110305786132812 s, cost :58115954.68999998, index_size: 3464.34375
+INFO:root:9.584426879882812e-05 s, cost :57847137.83799999, index_size: 3464.34375
+INFO:root:0.00010323524475097656 s, cost :57878187.827, index_size: 3464.34375
+INFO:root:0.00010442733764648438 s, cost :57836954.78699999, index_size: 3464.34375
+INFO:root:0.00010228157043457031 s, cost :57871075.254, index_size: 3464.34375
+INFO:root:0.00010514259338378906 s, cost :58660431.45600001, index_size: 3464.34375
+INFO:root:9.703636169433594e-05 s, cost :58521071.24000001, index_size: 3464.34375
+INFO:root:0.00010561943054199219 s, cost :57762798.11000001, index_size: 3464.34375
+INFO:root:9.632110595703125e-05 s, cost :58200087.50400001, index_size: 3464.34375
+INFO:root:0.00011086463928222656 s, cost :59803092.39300001, index_size: 3464.34375
+INFO:root:0.00010347366333007812 s, cost :64993531.334999986, index_size: 3464.34375
+INFO:root:9.799003601074219e-05 s, cost :70530192.287, index_size: 3464.34375
+INFO:root:9.846687316894531e-05 s, cost :60773808.69499999, index_size: 3464.34375
+INFO:root:0.00010991096496582031 s, cost :58322483.085, index_size: 3464.34375
+INFO:root:9.942054748535156e-05 s, cost :58209908.86800001, index_size: 3464.34375
+INFO:root:0.000102996826171875 s, cost :57741373.64299999, index_size: 3464.34375
+INFO:root:0.00010132789611816406 s, cost :57824298.13199998, index_size: 3464.34375
+INFO:root:9.703636169433594e-05 s, cost :58171352.405000016, index_size: 3464.34375
+INFO:root:0.00010800361633300781 s, cost :58701223.76600001, index_size: 3464.34375
+INFO:root:0.000118255615234375 s, cost :58189599.28, index_size: 3464.34375
+INFO:root:0.00010514259338378906 s, cost :57829898.68600001, index_size: 3464.34375
+INFO:root:0.00011348724365234375 s, cost :58504697.09999999, index_size: 3464.34375
+INFO:root:6.0558319091796875e-05 s, cost :58352223.625, index_size: 3464.34375
+INFO:root:0.008790254592895508 s, cost :57627084.943, index_size: 3464.34375
+INFO:root:0.008650779724121094 s, cost :57921912.816999994, index_size: 3464.34375
+INFO:root:0.008889436721801758 s, cost :58190725.33600001, index_size: 3464.34375
+INFO:root:0.008686065673828125 s, cost :57900166.16599999, index_size: 3464.34375
+INFO:root:0.008803844451904297 s, cost :57723325.468, index_size: 3464.34375
+INFO:root:0.008656978607177734 s, cost :57751975.006, index_size: 3464.34375
+INFO:root:0.008694887161254883 s, cost :57728743.56899999, index_size: 3464.34375
+INFO:root:0.00996708869934082 s, cost :58045443.828, index_size: 3464.34375
+INFO:root:0.008844375610351562 s, cost :57952831.182000004, index_size: 3464.34375
+INFO:root:0.008804798126220703 s, cost :58269911.03200001, index_size: 3464.34375
+INFO:root:0.008847713470458984 s, cost :58175436.688, index_size: 3464.34375
+INFO:root:0.008910894393920898 s, cost :58335539.19799999, index_size: 3464.34375
+INFO:root:0.008821487426757812 s, cost :58169002.633, index_size: 3464.34375
+INFO:root:0.008805274963378906 s, cost :58624652.52299999, index_size: 3464.34375
+INFO:root:0.0088653564453125 s, cost :57927695.399000004, index_size: 3464.34375
+INFO:root:0.00883030891418457 s, cost :58670584.184000015, index_size: 3464.34375
+INFO:root:0.008841991424560547 s, cost :58038393.97600001, index_size: 3464.34375
+INFO:root:0.008925199508666992 s, cost :58056595.41400001, index_size: 3464.34375
+INFO:root:Dropping indexes
+DEBUG:root:Dropping index pagecounts_1_prt_p0_pagecategory_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p3_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p20_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p24_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p6_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p21_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p20_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p26_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p2_pagename_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p22_pagecount_idx
+DEBUG:root:Dropping index pagecounts_1_prt_p16_pagename_idx
+INFO:root:Partition algorithm : Casper, partitioning time :149.59575247764587s, partitioned cost : 49835657.2, index algorithm : Slalom, index_size :3464.34375, cost : 57890214.76699998, time : 25089.547393798828
+INFO:root:Dropping indexes
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:Running algorithm {'budget_MB': 6000, 'max_index_width': 2, 'partition_num': 27, 'min_cost_improvement': 1.001}
+INFO:root:By data skipping index, the number of queries from 101790 to 17660
+INFO:root:Calculating best indexes Extend
+DEBUG:root:new best cost and size: 38752659.01200001	3466.34MB
+INFO:root:368.48520588874817 s, cost :39283531.70800001, index_size: 3466.34375
+DEBUG:root:new best cost and size: 34383598.915999986	3531.34MB
+INFO:root:463.1199905872345 s, cost :34008445.97700001, index_size: 3531.34375
+DEBUG:root:Add index. Current cost savings: 31.846, initial 31.846. Current storage: 3531.34
+DEBUG:root:Total cost cache hits:	0
+DEBUG:root:Total cost requests:		126
+DEBUG:root:Cost cache hit ratio:	0.0%
+INFO:root:Partition algorithm : Casper, partitioning time :149.59575247764587s, partitioned cost : 49835657.2, index algorithm : Extend, index_size :3531.34375, cost : 34487432.127, time : 2455.951274871826

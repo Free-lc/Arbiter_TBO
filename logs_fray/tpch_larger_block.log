@@ -1,0 +1,1320 @@
+nohup: ignoring input
+INFO:root:Init Black Box
+INFO:root:Using config file benchmark_results/fray_op/config_tpch.json
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:Generating tpch_userdef data
+INFO:root:scale factor: 10
+INFO:root:No need to run make
+INFO:root:[SUBPROCESS OUTPUT] TPC-H Population Generator (Version 2.17.3)
+INFO:root:[SUBPROCESS OUTPUT] Copyright Transaction Processing Performance Council 1994 - 2010
+INFO:root:[Generate command] ./dbgen -s 10 -f
+INFO:root:Files generated: ['supplier.tbl', 'partsupp.tbl', 'part.tbl', 'customer.tbl', 'orders.tbl', 'nation.tbl', 'region.tbl', 'lineitem.tbl']
+INFO:root:Database test_database2 created
+INFO:root:Creating tables
+INFO:root:Loading data into the tables
+INFO:root:Creating partition tables
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:[460, 421, 213, 204, 324, 640, 930, 697, 343, 336, 437, 94, 642, 530, 824]
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:By Space Compactor the number of candidate indexes from 180 to 166
+[2023-12-22 12:07:53,003][basic_search][INFO][color_logger.py:203] Logfile: /data2/fray/small_experiments/logs_gray_clapboard_search/basic_search_2023-12-22-12-07-53-002020.log
+[2023-12-22 12:07:53,061][basic_search][INFO][generic_advisor.py:157] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.
+[2023-12-22 12:07:53,094][basic_search][WARNING][base.py:91] [Build Surrogate] Use probabilistic random forest based on scikit-learn. For better performance, please install pyrfr: https://open-box.readthedocs.io/en/latest/installation/install_pyrfr.html
+[2023-12-22 12:07:53,386][basic_search][INFO][html_visualizer.py:462] Please open the html file to view visualization result: file:///data2/fray/small_experiments/logs_gray_clapboard_search/history/basic_search/basic_search_2023-12-22-12-07-53-379267.html
+/data2/fray/small_experiments
+/data2/fray/small_experiments
+/data2/fray/small_experiments
+['/data2/fray/small_experiments/selection', '/usr/local/src/python38/lib/python38.zip', '/usr/local/src/python38/lib/python3.8', '/usr/local/src/python38/lib/python3.8/lib-dynload', '/data2/fray/py38venv/lib/python3.8/site-packages', '/data2/fray/small_experiments', '/mydata/BOindex_selection_evaluation', '/data2/fray/small_experiments', '/data2/fray/small_experiments', '/mydata/fray/index_selection_evaluation']
+-----
+
+  0%|          | 0/100 [00:00<?, ?it/s]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 5), (5, 7), (7, 9), (9, 10)], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 5), (5, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29856
+INFO:root:skip time 40.48424768447876
+INFO:root:evaluation time 19.93649458885193
+INFO:root:cost = 11571853.328999998, index_combination_size = 0
+[2023-12-22 12:18:05,308][basic_search][INFO][generic_smbo.py:293] Iter 1, objectives: [11571853.328999998]. constraints: [-5000.0].
+
+  1%|          | 1/100 [10:11<16:49:39, 611.92s/it]INFO:root:Gray code X: [[(0, 5), (5, 6), (6, 8), (8, 10)], 255316, 44319, 61736, 60266, 60627, 30723, 35577, 173847, 25013, 60585]
+INFO:root:Binary code: [[(0, 5), (5, 8), (8, 9), (9, 10)], 178584, 51690, 41423, 45644, 46946, 20482, 62289, 211482, 16678, 46897]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 37.12800049781799
+INFO:root:evaluation time 474.2908978462219
+INFO:root:cost = 5358277.019, index_combination_size = 4613.90625
+[2023-12-22 12:34:00,123][basic_search][INFO][generic_smbo.py:293] Iter 2, objectives: [5358277.019]. constraints: [-386.09375].
+
+  2%|▏         | 2/100 [26:06<22:08:54, 813.62s/it]INFO:root:Gray code X: [[(0, 1), (1, 4), (4, 5), (5, 7), (7, 10)], 89768, 59937, 314, 22718, 4664, 35014, 219016, 87843, 53418, 40555]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 5), (5, 6), (6, 10)], 103631, 46017, 467, 28459, 7215, 61572, 156943, 105021, 40755, 60338]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 5), (5, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29435
+INFO:root:skip time 38.767483949661255
+INFO:root:evaluation time 396.6688907146454
+INFO:root:cost = 7489753.164000001, index_combination_size = 3605.78125
+[2023-12-22 12:49:50,372][basic_search][INFO][generic_smbo.py:293] Iter 3, objectives: [7489753.164000001]. constraints: [-1394.21875].
+
+  3%|▎         | 3/100 [41:56<23:36:12, 876.01s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 161301, 4240, 55038, 2101, 6899, 31329, 62010, 142462, 62653, 3604]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 238617, 7967, 39764, 4057, 4957, 21438, 41939, 247892, 42793, 3047]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 37.546926498413086
+INFO:root:evaluation time 327.74634742736816
+INFO:root:cost = 6391751.887, index_combination_size = 4167.25
+[2023-12-22 13:03:46,407][basic_search][INFO][generic_smbo.py:293] Iter 4, objectives: [6391751.887]. constraints: [-832.75].
+
+  4%|▍         | 4/100 [55:53<22:56:22, 860.23s/it]INFO:root:Gray code X: [[(0, 2), (2, 6), (6, 7), (7, 8), (8, 10)], 74289, 3218, 28538, 57829, 9712, 20145, 194581, 93376, 432, 5449]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 10)], 115678, 2275, 19027, 48825, 14687, 29918, 217113, 112511, 288, 6542]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 41.44489812850952
+INFO:root:evaluation time 378.78705954551697
+INFO:root:cost = 5970142.926999999, index_combination_size = 4556.5625
+[2023-12-22 13:21:21,841][basic_search][INFO][generic_smbo.py:293] Iter 5, objectives: [5970142.926999999]. constraints: [-443.4375].
+
+  5%|▌         | 5/100 [1:13:28<24:33:28, 930.62s/it]INFO:root:Gray code X: [[(0, 1), (1, 7), (7, 9), (9, 10)], 230449, 61784, 36899, 24085, 18226, 64188, 257, 113735, 2857, 8110]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 194593, 41360, 57405, 27622, 31267, 44247, 510, 75898, 3534, 5428]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 56760 to 38187
+INFO:root:skip time 45.55830001831055
+INFO:root:evaluation time 278.90816926956177
+INFO:root:cost = 5661132.248000001, index_combination_size = 3479.6875
+[2023-12-22 13:35:12,340][basic_search][INFO][generic_smbo.py:293] Iter 6, objectives: [5661132.248000001]. constraints: [-1520.3125].
+
+  6%|▌         | 6/100 [1:27:18<23:24:38, 896.58s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 7), (7, 9), (9, 10)], 249586, 12493, 41623, 58481, 46992, 41595, 205774, 67801, 63564, 22120]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 166748, 8329, 49946, 47198, 56032, 50093, 146804, 127121, 44936, 25679]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 40.10325479507446
+INFO:root:evaluation time 310.10226368904114
+INFO:root:cost = 7952462.556999999, index_combination_size = 3897.34375
+[2023-12-22 13:53:55,593][basic_search][INFO][generic_smbo.py:293] Iter 7, objectives: [7952462.556999999]. constraints: [-1102.65625].
+
+  7%|▋         | 7/100 [1:46:02<25:04:33, 970.69s/it]INFO:root:Gray code X: [[(0, 3), (3, 7), (7, 9), (9, 10)], 129050, 16627, 64635, 10551, 32699, 4332, 197831, 18836, 19901, 63792]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 86035, 32605, 43090, 12762, 21805, 8008, 132986, 28952, 30422, 44576]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 5), (5, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 28975
+INFO:root:skip time 37.91424632072449
+INFO:root:evaluation time 459.56895327568054
+INFO:root:cost = 5874156.553000001, index_combination_size = 4131.46875
+[2023-12-22 14:11:29,292][basic_search][INFO][generic_smbo.py:293] Iter 8, objectives: [5874156.553000001]. constraints: [-868.53125].
+
+  8%|▊         | 8/100 [2:03:35<25:28:54, 997.12s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 6), (6, 7), (7, 9), (9, 10)], 36598, 23695, 51354, 43491, 9928, 28235, 94352, 258535, 62153, 42335]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 62628, 26869, 36627, 52925, 15216, 19341, 106720, 172357, 41841, 50794]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 34232
+INFO:root:skip time 41.71750807762146
+INFO:root:evaluation time 327.1687548160553
+INFO:root:cost = 5120573.313, index_combination_size = 3838.1875
+[2023-12-22 14:27:14,081][basic_search][INFO][generic_smbo.py:293] Iter 9, objectives: [5120573.313]. constraints: [-1161.8125].
+
+  9%|▉         | 9/100 [2:19:20<24:47:28, 980.75s/it]INFO:root:Gray code X: [[(0, 3), (3, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 82651, 16303, 4055, 46936, 32860, 29340, 6876, 120443, 52338, 62213]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 99181, 10954, 2714, 55919, 65431, 23784, 4968, 91218, 34908, 41478]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 6), (6, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 38.10161256790161
+INFO:root:evaluation time 324.0326747894287
+INFO:root:cost = 5300989.993, index_combination_size = 4152.09375
+[2023-12-22 14:42:57,594][basic_search][INFO][generic_smbo.py:293] Iter 10, objectives: [5300989.993]. constraints: [-847.90625].
+
+ 10%|█         | 10/100 [2:35:04<24:13:53, 969.26s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 9), (9, 10)], 231811, 28428, 1548, 8255, 47790, 21693, 72294, 61670, 34757, 16194]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 5), (5, 6), (6, 9), (9, 10)], 192770, 18952, 1032, 16341, 54068, 26409, 126020, 41147, 64134, 10876]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 5), (5, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29435
+INFO:root:skip time 41.198933362960815
+INFO:root:evaluation time 294.1514620780945
+INFO:root:cost = 5737363.101, index_combination_size = 3662.4375
+[2023-12-22 14:55:24,080][basic_search][INFO][generic_smbo.py:293] Iter 11, objectives: [5737363.101]. constraints: [-1337.5625].
+
+ 11%|█         | 11/100 [2:47:30<22:16:35, 901.08s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 7), (7, 10)], 62717, 42033, 48477, 65105, 52525, 24803, 7596, 123584, 18368, 18741]
+INFO:root:Binary code: [[(0, 1), (1, 7), (7, 8), (8, 9), (9, 10)], 42838, 51166, 54889, 43934, 35273, 16573, 5832, 82815, 31360, 29145]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 7), (7, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25480
+INFO:root:skip time 37.24532914161682
+INFO:root:evaluation time 366.6812641620636
+INFO:root:cost = 6195787.827, index_combination_size = 4662.3125
+[2023-12-22 15:09:57,355][basic_search][INFO][generic_smbo.py:293] Iter 12, objectives: [6195787.827]. constraints: [-337.6875].
+
+ 12%|█▏        | 12/100 [3:02:03<21:49:10, 892.62s/it]INFO:root:Gray code X: [[(0, 3), (3, 7), (7, 10)], 194803, 48564, 17681, 56458, 17100, 63076, 217929, 33060, 7287, 38561]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 5), (5, 6), (6, 10)], 217250, 55000, 31201, 38668, 31880, 42055, 156273, 65080, 6053, 58561]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 5), (5, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 24599
+INFO:root:skip time 41.42689394950867
+INFO:root:evaluation time 489.8940522670746
+INFO:root:cost = 5813413.878, index_combination_size = 4496.59375
+[2023-12-22 15:26:43,594][basic_search][INFO][generic_smbo.py:293] Iter 13, objectives: [5813413.878]. constraints: [-503.40625].
+
+ 13%|█▎        | 13/100 [3:18:50<22:24:18, 927.11s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 114589, 29775, 56022, 11327, 48285, 25291, 252672, 176685, 23216, 18490]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 76521, 22645, 37732, 14293, 55062, 17266, 168448, 205769, 27871, 28716]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 40.253894090652466
+INFO:root:evaluation time 449.0400826931
+INFO:root:cost = 3833455.0499999993, index_combination_size = 4540.0
+[2023-12-22 15:41:47,680][basic_search][INFO][generic_smbo.py:293] Iter 14, objectives: [3833455.0499999993]. constraints: [-460.0].
+
+ 14%|█▍        | 14/100 [3:33:54<21:58:50, 920.12s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 5842, 12387, 4092, 44156, 28063, 60922, 104442, 216011, 14946, 34265]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 6), (6, 9), (9, 10)], 7011, 8258, 2728, 51287, 18709, 46764, 72364, 160397, 11331, 63854]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 38.903348207473755
+INFO:root:evaluation time 301.0775685310364
+INFO:root:cost = 3944759.2069999995, index_combination_size = 4250.8125
+[2023-12-22 15:56:03,730][basic_search][INFO][generic_smbo.py:293] Iter 15, objectives: [3944759.2069999995]. constraints: [-749.1875].
+
+ 15%|█▌        | 15/100 [3:48:10<21:16:05, 900.77s/it]INFO:root:Gray code X: [[(0, 3), (3, 5), (5, 6), (6, 9), (9, 10)], 145726, 4952, 62348, 55682, 12339, 63828, 6039, 209793, 46407, 38062]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 250324, 7568, 41719, 37123, 8226, 44647, 6885, 140030, 55685, 59188]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 41.30572247505188
+INFO:root:evaluation time 335.13724398612976
+INFO:root:cost = 5748433.612, index_combination_size = 3364.21875
+[2023-12-22 16:09:49,184][basic_search][INFO][generic_smbo.py:293] Iter 16, objectives: [5748433.612]. constraints: [-1635.78125].
+
+ 16%|█▌        | 16/100 [4:01:55<20:29:22, 878.13s/it]INFO:root:Gray code X: [[(0, 2), (2, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 170596, 23231, 23842, 4306, 13191, 48228, 31758, 170372, 10685, 62119]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 5), (5, 7), (7, 9), (9, 10)], 201656, 27861, 27075, 8035, 8954, 55224, 22516, 200967, 12585, 41786]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 5), (5, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 40.77106595039368
+INFO:root:evaluation time 368.5304870605469
+INFO:root:cost = 3547244.7219999996, index_combination_size = 4584.375
+[2023-12-22 16:24:05,965][basic_search][INFO][generic_smbo.py:293] Iter 17, objectives: [3547244.7219999996]. constraints: [-415.625].
+
+ 17%|█▋        | 17/100 [4:16:12<20:05:49, 871.68s/it]INFO:root:Gray code X: [[(0, 3), (3, 5), (5, 7), (7, 8), (8, 9), (9, 10)], 130996, 58503, 63266, 1071, 4044, 64708, 203159, 101725, 22760, 11281]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 7), (7, 9), (9, 10)], 87335, 47354, 42435, 1994, 2696, 43143, 135450, 67990, 28495, 14305]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 39.507097244262695
+INFO:root:evaluation time 615.9842929840088
+INFO:root:cost = 7556903.887999999, index_combination_size = 4264.46875
+[2023-12-22 16:42:46,212][basic_search][INFO][generic_smbo.py:293] Iter 18, objectives: [7556903.887999999]. constraints: [-735.53125].
+
+ 18%|█▊        | 18/100 [4:34:52<21:33:22, 946.37s/it]INFO:root:Gray code X: [[(0, 3), (3, 4), (4, 6), (6, 10)], 261090, 12874, 23911, 30307, 56148, 59237, 195544, 223684, 64125, 1336]
+INFO:root:Binary code: [[(0, 3), (3, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 175427, 9100, 27066, 23485, 37479, 47686, 217744, 151175, 44118, 1583]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 6), (6, 7), (7, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 39.064209938049316
+INFO:root:evaluation time 284.0751533508301
+INFO:root:cost = 7104926.166999999, index_combination_size = 4065.6875
+[2023-12-22 16:56:43,003][basic_search][INFO][generic_smbo.py:293] Iter 19, objectives: [7104926.166999999]. constraints: [-934.3125].
+
+ 19%|█▉        | 19/100 [4:48:49<20:33:10, 913.46s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 7), (7, 10)], 177544, 54037, 17783, 59849, 21610, 29631, 182518, 230012, 20552, 32932]
+INFO:root:Binary code: [[(0, 1), (1, 7), (7, 8), (8, 9), (9, 10)], 206576, 40422, 31141, 45425, 26547, 23850, 225444, 195671, 24688, 65336]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 7), (7, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25480
+INFO:root:skip time 0.007188081741333008
+INFO:root:evaluation time 445.4767999649048
+INFO:root:cost = 5205803.7930000005, index_combination_size = 4788.40625
+[2023-12-22 17:11:14,053][basic_search][INFO][generic_smbo.py:293] Iter 20, objectives: [5205803.7930000005]. constraints: [-211.59375].
+
+ 20%|██        | 20/100 [5:03:20<20:00:59, 900.74s/it]INFO:root:Gray code X: [[(0, 5), (5, 7), (7, 8), (8, 9), (9, 10)], 55255, 20866, 3964, 32692, 49258, 53665, 98671, 133260, 5098, 24412]
+INFO:root:Binary code: [[(0, 5), (5, 6), (6, 8), (8, 10)], 39578, 24835, 2647, 21799, 32844, 40641, 65973, 258295, 7500, 27240]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 37.17446041107178
+INFO:root:evaluation time 453.80158829689026
+INFO:root:cost = 4158174.947, index_combination_size = 4661.625
+[2023-12-22 17:26:09,391][basic_search][INFO][generic_smbo.py:293] Iter 21, objectives: [4158174.947]. constraints: [-338.375].
+
+ 21%|██        | 21/100 [5:18:16<19:43:49, 899.10s/it]INFO:root:Gray code X: [[(0, 1), (1, 4), (4, 7), (7, 9), (9, 10)], 116652, 61607, 38011, 17562, 26162, 6272, 9833, 184212, 63063, 60358]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 7), (7, 8), (8, 10)], 96968, 41157, 59309, 30956, 17443, 4351, 15281, 226584, 42085, 45700]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29856
+INFO:root:skip time 44.87017893791199
+INFO:root:evaluation time 636.4688549041748
+INFO:root:cost = 7394201.795, index_combination_size = 3858.8125
+[2023-12-22 17:49:32,707][basic_search][INFO][generic_smbo.py:293] Iter 22, objectives: [7394201.795]. constraints: [-1141.1875].
+
+ 22%|██▏       | 22/100 [5:41:39<22:45:33, 1050.43s/it]INFO:root:Gray code X: [[(0, 1), (1, 4), (4, 5), (5, 6), (6, 8), (8, 10)], 37888, 4879, 53503, 30318, 4476, 44434, 112595, 50383, 26671, 53859]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 9), (9, 10)], 59391, 7669, 40789, 23476, 7767, 51484, 75106, 34677, 20426, 40002]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 40.273624897003174
+INFO:root:evaluation time 580.3187961578369
+INFO:root:cost = 7769801.985999999, index_combination_size = 3990.6875
+[2023-12-22 18:10:22,221][basic_search][INFO][generic_smbo.py:293] Iter 23, objectives: [7769801.985999999]. constraints: [-1009.3125].
+
+ 23%|██▎       | 23/100 [6:02:28<23:44:45, 1110.19s/it]INFO:root:Gray code X: [[(0, 10)], 162870, 65525, 59882, 56836, 2952, 29881, 7715, 180407, 48581, 53786]
+INFO:root:Binary code: [[(0, 10)], 239652, 43686, 45388, 37895, 3343, 22737, 5181, 229157, 54918, 39955]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 10)]
+INFO:root:By data skipping index, the number of queries from 7095 to 7095
+INFO:root:skip time 42.71841907501221
+INFO:root:evaluation time 617.7947957515717
+INFO:root:cost = 3066484.2090000003, index_combination_size = 5774.9375
+[2023-12-22 18:30:30,444][basic_search][INFO][generic_smbo.py:293] Iter 24, objectives: [3066484.2090000003]. constraints: [774.9375].
+
+ 24%|██▍       | 24/100 [6:22:37<24:03:28, 1139.59s/it]INFO:root:Gray code X: [[(0, 10)], 9392, 8624, 55372, 31026, 62003, 692, 148534, 176645, 30028, 37905]
+INFO:root:Binary code: [[(0, 10)], 14559, 16095, 36983, 20956, 41949, 807, 231387, 205817, 22920, 59361]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 10)]
+INFO:root:By data skipping index, the number of queries from 7095 to 7095
+INFO:root:skip time 0.0016186237335205078
+INFO:root:evaluation time 517.9549331665039
+INFO:root:cost = 4046029.673000001, index_combination_size = 5774.9375
+[2023-12-22 18:50:34,359][basic_search][INFO][generic_smbo.py:293] Iter 25, objectives: [4046029.673000001]. constraints: [774.9375].
+
+ 25%|██▌       | 25/100 [6:42:40<24:08:36, 1158.89s/it]INFO:root:Gray code X: [[(0, 4), (4, 6), (6, 10)], 68221, 30113, 21407, 20315, 18164, 25883, 211330, 236071, 40481, 13811]
+INFO:root:Binary code: [[(0, 4), (4, 5), (5, 10)], 127913, 22846, 25322, 30098, 31576, 17938, 143100, 191546, 60353, 9890]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 5), (5, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 15847
+INFO:root:skip time 36.703601598739624
+INFO:root:evaluation time 518.7056701183319
+INFO:root:cost = 4088093.278, index_combination_size = 5563.625
+[2023-12-22 19:08:50,822][basic_search][INFO][generic_smbo.py:293] Iter 26, objectives: [4088093.278]. constraints: [563.625].
+
+ 26%|██▌       | 26/100 [7:00:57<23:26:11, 1140.16s/it]INFO:root:Gray code X: [[(0, 1), (1, 6), (6, 7), (7, 8), (8, 10)], 23774, 50504, 1427, 36387, 47706, 62257, 197312, 238443, 62021, 31428]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 10)], 26772, 34416, 1762, 62525, 54163, 41505, 131967, 180813, 41862, 21368]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 34232
+INFO:root:skip time 39.119406938552856
+INFO:root:evaluation time 332.4636228084564
+INFO:root:cost = 5021904.875000001, index_combination_size = 4039.90625
+[2023-12-22 19:22:24,565][basic_search][INFO][generic_smbo.py:293] Iter 27, objectives: [5021904.875000001]. constraints: [-960.09375].
+
+ 27%|██▋       | 27/100 [7:14:31<21:08:02, 1042.23s/it]INFO:root:Gray code X: [[(0, 2), (2, 4), (4, 6), (6, 7), (7, 10)], 259585, 36356, 38275, 18973, 8824, 53836, 148725, 150571, 59987, 44559]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 6), (6, 10)], 173057, 62471, 59133, 29673, 15440, 40055, 231257, 231474, 45981, 52213]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 37.77085590362549
+INFO:root:evaluation time 387.05041909217834
+INFO:root:cost = 4887943.9969999995, index_combination_size = 4574.8125
+[2023-12-22 19:37:53,146][basic_search][INFO][generic_smbo.py:293] Iter 28, objectives: [4887943.9969999995]. constraints: [-425.1875].
+
+ 28%|██▊       | 28/100 [7:29:59<20:09:45, 1008.13s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 6), (6, 8), (8, 10)], 220530, 48473, 45270, 21100, 6217, 10952, 245429, 209087, 60681, 11974]
+INFO:root:Binary code: [[(0, 1), (1, 6), (6, 7), (7, 10)], 158115, 54894, 57188, 25527, 4209, 13168, 185561, 139477, 46606, 13444]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 6), (6, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 21104
+INFO:root:skip time 37.19436717033386
+INFO:root:evaluation time 390.5597651004791
+INFO:root:cost = 6579342.08, index_combination_size = 4665.375
+[2023-12-22 19:53:24,579][basic_search][INFO][generic_smbo.py:293] Iter 29, objectives: [6579342.08]. constraints: [-334.625].
+
+ 29%|██▉       | 29/100 [7:45:31<19:25:43, 985.12s/it] INFO:root:Gray code X: [[(0, 6), (6, 8), (8, 10)], 236293, 43261, 40378, 58061, 2369, 22543, 62736, 26236, 1393, 16420]
+INFO:root:Binary code: [[(0, 6), (6, 7), (7, 10)], 191993, 53078, 59692, 48265, 3710, 28661, 42527, 17495, 1630, 32711]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 6), (6, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 35.1396746635437
+INFO:root:evaluation time 446.5170271396637
+INFO:root:cost = 6369734.392000001, index_combination_size = 5069.75
+[2023-12-22 20:10:01,077][basic_search][INFO][generic_smbo.py:293] Iter 30, objectives: [6369734.392000001]. constraints: [69.75].
+
+ 30%|███       | 30/100 [8:02:07<19:13:17, 988.53s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 7), (7, 10)], 9524, 11778, 5462, 45753, 27234, 61678, 102939, 220158, 22709, 32816]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 6), (6, 10)], 14808, 13315, 6555, 56529, 19523, 41140, 72722, 159060, 28454, 65503]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20683
+INFO:root:skip time 39.123029470443726
+INFO:root:evaluation time 480.2615005970001
+INFO:root:cost = 6382817.216, index_combination_size = 4630.53125
+[2023-12-22 20:26:45,608][basic_search][INFO][generic_smbo.py:293] Iter 31, objectives: [6382817.216]. constraints: [-369.46875].
+
+ 31%|███       | 31/100 [8:18:52<19:02:19, 993.33s/it]INFO:root:Gray code X: [[(0, 5), (5, 8), (8, 10)], 47055, 18959, 1185, 31286, 54609, 58538, 95852, 135948, 3160, 24883]
+INFO:root:Binary code: [[(0, 5), (5, 6), (6, 7), (7, 10)], 55946, 29685, 1854, 21467, 39326, 47308, 107592, 254472, 2159, 16861]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 6), (6, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20644
+INFO:root:skip time 38.77816033363342
+INFO:root:evaluation time 465.58572030067444
+INFO:root:cost = 5806746.489, index_combination_size = 4901.875
+[2023-12-22 20:43:43,270][basic_search][INFO][generic_smbo.py:293] Iter 32, objectives: [5806746.489]. constraints: [-98.125].
+
+ 32%|███▏      | 32/100 [8:35:49<18:54:02, 1000.63s/it]INFO:root:Gray code X: [[(0, 5), (5, 7), (7, 8), (8, 9), (9, 10)], 54163, 20491, 3204, 14027, 49968, 54816, 98686, 143260, 4458, 25352]
+INFO:root:Binary code: [[(0, 5), (5, 6), (6, 8), (8, 10)], 40221, 24589, 2296, 9357, 33312, 39872, 65963, 248552, 7756, 16911]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 0.0062465667724609375
+INFO:root:evaluation time 396.63217663764954
+INFO:root:cost = 7472724.641, index_combination_size = 4220.8125
+[2023-12-22 20:58:10,596][basic_search][INFO][generic_smbo.py:293] Iter 33, objectives: [7472724.641]. constraints: [-779.1875].
+
+ 33%|███▎      | 33/100 [8:50:17<17:52:42, 960.64s/it] INFO:root:Gray code X: [[(0, 3), (3, 5), (5, 6), (6, 9), (9, 10)], 161260, 49603, 15817, 39759, 18195, 20635, 31386, 203903, 55020, 45799]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 239287, 33149, 10609, 60810, 31261, 24813, 21267, 137130, 39752, 56506]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29396
+INFO:root:skip time 0.009337425231933594
+INFO:root:evaluation time 408.5480606555939
+INFO:root:cost = 5380314.171999999, index_combination_size = 4539.03125
+[2023-12-22 21:12:59,464][basic_search][INFO][generic_smbo.py:293] Iter 34, objectives: [5380314.171999999]. constraints: [-460.96875].
+
+ 34%|███▍      | 34/100 [9:05:06<17:13:01, 939.11s/it]INFO:root:Gray code X: [[(0, 5), (5, 6), (6, 9), (9, 10)], 243190, 43623, 59437, 34442, 63748, 28303, 33333, 171355, 16627, 61737]
+INFO:root:Binary code: [[(0, 5), (5, 9), (9, 10)], 186715, 52293, 45110, 64268, 44551, 19210, 64550, 202349, 32605, 41422]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 15847
+INFO:root:skip time 36.83208966255188
+INFO:root:evaluation time 460.3697385787964
+INFO:root:cost = 4865567.461999999, index_combination_size = 5114.3125
+[2023-12-22 21:28:36,604][basic_search][INFO][generic_smbo.py:293] Iter 35, objectives: [4865567.461999999]. constraints: [114.3125].
+
+ 35%|███▌      | 35/100 [9:20:43<16:56:43, 938.52s/it]INFO:root:Gray code X: [[(0, 1), (1, 7), (7, 8), (8, 9), (9, 10)], 129215, 28660, 34153, 13291, 58427, 61089, 12860, 157922, 7716, 23524]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 10)], 86229, 19111, 63921, 8882, 47149, 46273, 9175, 241852, 5176, 27975]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 56760 to 38187
+INFO:root:skip time 41.46493744850159
+INFO:root:evaluation time 286.7655072212219
+INFO:root:cost = 6045217.63, index_combination_size = 3637.6875
+[2023-12-22 21:42:24,944][basic_search][INFO][generic_smbo.py:293] Iter 36, objectives: [6045217.63]. constraints: [-1362.3125].
+
+ 36%|███▌      | 36/100 [9:34:31<16:05:49, 905.46s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 112515, 30412, 55649, 18765, 47486, 41503, 201466, 168728, 16605, 42707]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 75010, 23415, 37310, 29065, 53675, 50154, 138412, 204271, 32617, 50333]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007814645767211914
+INFO:root:evaluation time 426.2673406600952
+INFO:root:cost = 3779722.6440000003, index_combination_size = 4539.53125
+[2023-12-22 21:57:39,939][basic_search][INFO][generic_smbo.py:293] Iter 37, objectives: [3779722.6440000003]. constraints: [-460.46875].
+
+ 37%|███▋      | 37/100 [9:49:46<15:53:44, 908.32s/it]INFO:root:Gray code X: [[(0, 5), (5, 7), (7, 8), (8, 9), (9, 10)], 55255, 20866, 3964, 32692, 49258, 53665, 98671, 164645, 5098, 24412]
+INFO:root:Binary code: [[(0, 5), (5, 6), (6, 8), (8, 10)], 39578, 24835, 2647, 21799, 32844, 40641, 65973, 197177, 7500, 27240]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 0.006019115447998047
+INFO:root:evaluation time 371.4664511680603
+INFO:root:cost = 4367909.556, index_combination_size = 4752.125
+[2023-12-22 22:12:10,179][basic_search][INFO][generic_smbo.py:293] Iter 38, objectives: [4367909.556]. constraints: [-247.875].
+
+ 38%|███▊      | 38/100 [10:04:16<15:26:47, 896.90s/it][2023-12-22 22:12:10,183][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 5), (5, 7), (7, 9), (9, 10)], 179133, 28584, 29732, 50321, 18328, 22648, 234437, 41685, 55078, 18435]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 5), (5, 6), (6, 9), (9, 10)], 208169, 19151, 22584, 34590, 31471, 28591, 189062, 50022, 39483, 28674]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 5), (5, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29435
+INFO:root:skip time 40.2531635761261
+INFO:root:evaluation time 445.3620569705963
+INFO:root:cost = 5694384.245, index_combination_size = 4371.96875
+[2023-12-22 22:27:16,138][basic_search][INFO][generic_smbo.py:293] Iter 39, objectives: [5694384.245]. constraints: [-628.03125].
+
+ 39%|███▉      | 39/100 [10:19:22<15:14:36, 899.62s/it]INFO:root:Gray code X: [[(0, 5), (5, 6), (6, 10)], 55085, 25753, 3182, 33604, 57482, 54241, 72655, 138328, 5081, 42378]
+INFO:root:Binary code: [[(0, 5), (5, 10)], 39478, 18193, 2123, 64903, 48908, 40257, 126325, 256111, 7534, 50931]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 10)]
+INFO:root:By data skipping index, the number of queries from 14190 to 11471
+INFO:root:skip time 36.12932753562927
+INFO:root:evaluation time 605.7852351665497
+INFO:root:cost = 3628559.6890000002, index_combination_size = 5734.40625
+[2023-12-22 22:49:16,506][basic_search][INFO][generic_smbo.py:293] Iter 40, objectives: [3628559.6890000002]. constraints: [734.40625].
+
+ 40%|████      | 40/100 [10:41:23<17:05:50, 1025.84s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 9), (9, 10)], 56244, 23317, 2050, 14038, 49265, 54195, 116487, 164645, 4592, 24412]
+INFO:root:Binary code: [[(0, 4), (4, 9), (9, 10)], 37592, 28134, 4092, 9371, 32862, 40226, 96773, 197177, 7840, 27240]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 15847
+INFO:root:skip time 37.949739933013916
+INFO:root:evaluation time 568.7482125759125
+INFO:root:cost = 4269757.035999999, index_combination_size = 5412.375
+[2023-12-22 23:10:43,604][basic_search][INFO][generic_smbo.py:293] Iter 41, objectives: [4269757.035999999]. constraints: [412.375].
+
+ 41%|████      | 41/100 [11:02:50<18:05:48, 1104.22s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 114543, 50394, 23213, 57081, 14478, 64739, 193180, 150061, 9020, 45175]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 76362, 34668, 27849, 38062, 12043, 43197, 220392, 232502, 15831, 57253]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 39.704161167144775
+INFO:root:evaluation time 697.2004725933075
+INFO:root:cost = 5991499.472999999, index_combination_size = 4373.75
+[2023-12-22 23:33:40,400][basic_search][INFO][generic_smbo.py:293] Iter 42, objectives: [5991499.472999999]. constraints: [-626.25].
+
+ 42%|████▏     | 42/100 [11:25:47<19:06:29, 1186.02s/it][2023-12-22 23:33:40,501][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 2), (2, 4), (4, 7), (7, 9), (9, 10)], 170028, 21372, 21273, 17646, 23770, 44112, 5807, 30369, 44773, 26909]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 7), (7, 8), (8, 10)], 200759, 25175, 25105, 30900, 26771, 51296, 6965, 23358, 52038, 19990]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 39.6189751625061
+INFO:root:evaluation time 474.3618371486664
+INFO:root:cost = 6609057.6, index_combination_size = 3611.03125
+[2023-12-22 23:52:28,684][basic_search][INFO][generic_smbo.py:293] Iter 43, objectives: [6609057.6]. constraints: [-1388.96875].
+
+ 43%|████▎     | 43/100 [11:44:35<18:30:14, 1168.67s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 24421, 29766, 56025, 11436, 57360, 25303, 252597, 176632, 17486, 18504]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 27206, 22651, 37742, 14135, 49120, 17253, 168742, 205136, 30836, 28784]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.0074999332427978516
+INFO:root:evaluation time 405.728013753891
+INFO:root:cost = 3827072.287, index_combination_size = 3790.125
+[2023-12-23 00:09:48,306][basic_search][INFO][generic_smbo.py:293] Iter 44, objectives: [3827072.287]. constraints: [-1209.875].
+
+ 44%|████▍     | 44/100 [12:01:54<17:34:37, 1129.96s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 114953, 29766, 56025, 20287, 46768, 42691, 203939, 171475, 5057, 42850]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 97806, 22651, 37742, 30165, 56096, 50306, 137021, 202397, 7550, 50620]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.008180618286132812
+INFO:root:evaluation time 500.77578616142273
+INFO:root:cost = 4045359.202, index_combination_size = 4568.375
+[2023-12-23 00:27:47,988][basic_search][INFO][generic_smbo.py:293] Iter 45, objectives: [4045359.202]. constraints: [-431.625].
+
+ 45%|████▌     | 45/100 [12:19:54<17:01:58, 1114.87s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 40486, 30412, 57202, 11481, 54809, 29063, 250805, 176183, 17763, 16850]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 60356, 23415, 38307, 14190, 39918, 24314, 171302, 204837, 31165, 32412]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.008249998092651367
+INFO:root:evaluation time 403.29407691955566
+INFO:root:cost = 3736250.1099999994, index_combination_size = 4708.9375
+[2023-12-23 00:41:43,118][basic_search][INFO][generic_smbo.py:293] Iter 46, objectives: [3736250.1099999994]. constraints: [-291.0625].
+
+ 46%|████▌     | 46/100 [12:33:49<15:27:51, 1030.95s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 99837, 31443, 56763, 18168, 57968, 40477, 199938, 171878, 17464, 43192]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 67241, 21346, 38610, 31568, 48223, 60393, 133628, 202171, 30767, 53039]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.008096694946289062
+INFO:root:evaluation time 407.75558733940125
+INFO:root:cost = 4301310.303, index_combination_size = 4592.1875
+[2023-12-23 00:57:17,782][basic_search][INFO][generic_smbo.py:293] Iter 47, objectives: [4301310.303]. constraints: [-407.8125].
+
+ 47%|████▋     | 47/100 [12:49:24<14:45:09, 1002.06s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 97513, 29766, 55983, 12386, 48182, 38990, 203939, 171475, 5057, 40993]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 108721, 22651, 37685, 8259, 55259, 61323, 137021, 202397, 7550, 49214]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007190227508544922
+INFO:root:evaluation time 425.2123568058014
+INFO:root:cost = 4358228.704, index_combination_size = 4655.125
+[2023-12-23 01:12:13,441][basic_search][INFO][generic_smbo.py:293] Iter 48, objectives: [4358228.704]. constraints: [-344.875].
+
+ 48%|████▊     | 48/100 [13:04:20<14:00:47, 970.14s/it] [2023-12-23 01:12:13,445][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 11299, 15493, 38480, 44263, 24685, 65296, 189095, 132371, 37247, 52398]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 14274, 10489, 58464, 51386, 16457, 43551, 213818, 260578, 57770, 35019]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 5), (5, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 40.1397500038147
+INFO:root:evaluation time 295.7066283226013
+INFO:root:cost = 6962765.435000001, index_combination_size = 4053.46875
+[2023-12-23 01:26:22,066][basic_search][INFO][generic_smbo.py:293] Iter 49, objectives: [6962765.435000001]. constraints: [-946.53125].
+
+ 49%|████▉     | 49/100 [13:18:28<13:13:38, 933.69s/it][2023-12-23 01:26:22,070][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 3), (3, 7), (7, 10)], 45940, 33302, 20056, 3643, 3272, 42177, 170789, 206029, 41320, 50008]
+INFO:root:Binary code: [[(0, 3), (3, 4), (4, 5), (5, 6), (6, 10)], 56743, 64539, 29807, 3026, 2191, 51070, 201273, 145545, 49584, 33391]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 4), (4, 5), (5, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 24599
+INFO:root:skip time 0.007166385650634766
+INFO:root:evaluation time 462.0526776313782
+INFO:root:cost = 5564666.619, index_combination_size = 4909.8125
+[2023-12-23 01:42:33,721][basic_search][INFO][generic_smbo.py:293] Iter 50, objectives: [5564666.619]. constraints: [-90.1875].
+
+ 50%|█████     | 50/100 [13:34:40<13:07:33, 945.08s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 114589, 29775, 58374, 11327, 48886, 21839, 252672, 176685, 13169, 19643]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 76521, 22645, 47108, 14293, 54436, 26229, 168448, 205769, 8798, 30509]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007518768310546875
+INFO:root:evaluation time 350.2858679294586
+INFO:root:cost = 4597876.819999999, index_combination_size = 4362.59375
+[2023-12-23 01:56:46,593][basic_search][INFO][generic_smbo.py:293] Iter 51, objectives: [4597876.819999999]. constraints: [-637.40625].
+
+ 51%|█████     | 51/100 [13:48:53<12:29:13, 917.42s/it][2023-12-23 01:56:46,598][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 2), (2, 7), (7, 8), (8, 10)], 173751, 2077, 37735, 30311, 50028, 10236, 181715, 211245, 41560, 39372]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 211749, 4073, 57925, 23482, 33352, 15016, 227682, 142902, 50064, 61064]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 56760 to 37727
+INFO:root:skip time 42.51521611213684
+INFO:root:evaluation time 346.83871960639954
+INFO:root:cost = 8143322.52, index_combination_size = 3205.0625
+[2023-12-23 02:10:51,010][basic_search][INFO][generic_smbo.py:293] Iter 52, objectives: [8143322.52]. constraints: [-1794.9375].
+
+ 52%|█████▏    | 52/100 [14:02:57<11:56:24, 895.52s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 97513, 29766, 55599, 12386, 47715, 38990, 203939, 171475, 5057, 40993]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 108721, 22651, 37322, 8259, 54205, 61323, 137021, 202397, 7550, 49214]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.0074462890625
+INFO:root:evaluation time 389.55321168899536
+INFO:root:cost = 4192019.232, index_combination_size = 4621.09375
+[2023-12-23 02:25:20,102][basic_search][INFO][generic_smbo.py:293] Iter 53, objectives: [4192019.232]. constraints: [-378.90625].
+
+ 53%|█████▎    | 53/100 [14:17:26<11:35:16, 887.59s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 5789, 20859, 3189, 43775, 28395, 60102, 204119, 180457, 17170, 34536]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 6), (6, 9), (9, 10)], 6934, 25005, 2137, 52394, 19277, 45947, 136805, 229198, 32227, 64335]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 6), (6, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007639646530151367
+INFO:root:evaluation time 437.3602409362793
+INFO:root:cost = 5161529.822000001, index_combination_size = 4574.3125
+[2023-12-23 02:41:57,641][basic_search][INFO][generic_smbo.py:293] Iter 54, objectives: [5161529.822000001]. constraints: [-425.6875].
+
+ 54%|█████▍    | 54/100 [14:34:04<11:45:46, 920.57s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 114459, 25103, 55205, 5198, 28187, 156, 195267, 165877, 17798, 64544]
+INFO:root:Binary code: [[(0, 4), (4, 7), (7, 10)], 76306, 17397, 39622, 6260, 19437, 232, 217981, 197977, 30980, 43071]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 36.352941274642944
+INFO:root:evaluation time 469.9262742996216
+INFO:root:cost = 4225161.772000001, index_combination_size = 4951.96875
+[2023-12-23 02:57:21,183][basic_search][INFO][generic_smbo.py:293] Iter 55, objectives: [4225161.772000001]. constraints: [-48.03125].
+
+ 55%|█████▌    | 55/100 [14:49:27<11:31:05, 921.46s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 114017, 24233, 55083, 5305, 37946, 15638, 197083, 171471, 17723, 64880]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 76222, 27441, 39474, 6353, 59347, 10724, 131437, 202378, 31186, 43424]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 0.009210348129272461
+INFO:root:evaluation time 377.9774432182312
+INFO:root:cost = 4739621.853, index_combination_size = 4391.9375
+[2023-12-23 03:11:56,583][basic_search][INFO][generic_smbo.py:293] Iter 56, objectives: [4739621.853]. constraints: [-608.0625].
+
+ 56%|█████▌    | 56/100 [15:04:03<11:05:36, 907.65s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 109661, 24194, 55078, 4364, 48564, 45066, 195267, 165877, 17762, 64576]
+INFO:root:Binary code: [[(0, 4), (4, 7), (7, 10)], 79766, 27395, 39483, 7688, 55000, 57331, 217981, 197977, 31164, 43135]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 0.004647493362426758
+INFO:root:evaluation time 485.0848035812378
+INFO:root:cost = 3643196.958, index_combination_size = 5525.71875
+[2023-12-23 03:28:29,055][basic_search][INFO][generic_smbo.py:293] Iter 57, objectives: [3643196.958]. constraints: [525.71875].
+
+ 57%|█████▋    | 57/100 [15:20:35<11:08:43, 933.09s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 10)], 112082, 29760, 56284, 10990, 48219, 24290, 252425, 171126, 17725, 18860]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)], 75420, 22655, 37527, 13131, 55186, 27459, 168945, 202660, 31190, 28983]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 41.077741384506226
+INFO:root:evaluation time 299.2537157535553
+INFO:root:cost = 7159260.418, index_combination_size = 3615.5
+[2023-12-23 03:42:27,905][basic_search][INFO][generic_smbo.py:293] Iter 58, objectives: [7159260.418]. constraints: [-1384.5].
+
+ 58%|█████▊    | 58/100 [15:34:34<10:33:22, 904.82s/it][2023-12-23 03:42:27,910][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 2), (2, 4), (4, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 182342, 4072, 14330, 22168, 17332, 48442, 16127, 214571, 15441, 26080]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 6), (6, 8), (8, 10)], 225403, 2736, 9555, 25839, 32039, 54828, 11093, 162765, 10337, 18111]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 24599
+INFO:root:skip time 39.841108083724976
+INFO:root:evaluation time 408.10969257354736
+INFO:root:cost = 6344167.07, index_combination_size = 4499.28125
+[2023-12-23 03:57:14,500][basic_search][INFO][generic_smbo.py:293] Iter 59, objectives: [6344167.07]. constraints: [-500.71875].
+
+ 59%|█████▉    | 59/100 [15:49:21<10:14:33, 899.35s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 90609, 25027, 65378, 2362, 37314, 6737, 253044, 172999, 16719, 44408]
+INFO:root:Binary code: [[(0, 4), (4, 7), (7, 10)], 114337, 16765, 43587, 3628, 57724, 5022, 169895, 212346, 32373, 51631]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 0.00520777702331543
+INFO:root:evaluation time 468.2705237865448
+INFO:root:cost = 3121494.834, index_combination_size = 5650.5625
+[2023-12-23 04:13:57,700][basic_search][INFO][generic_smbo.py:293] Iter 60, objectives: [3121494.834]. constraints: [650.5625].
+
+ 60%|██████    | 60/100 [16:06:04<10:20:20, 930.51s/it][2023-12-23 04:13:57,710][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 7), (7, 9), (9, 10)], 259325, 14857, 48528, 31492, 45249, 14717, 8041, 109312, 21084, 23883]
+INFO:root:Binary code: [[(0, 7), (7, 8), (8, 10)], 173910, 11278, 55008, 20999, 57214, 11862, 5553, 78336, 25495, 27021]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 35.406097173690796
+INFO:root:evaluation time 474.4567115306854
+INFO:root:cost = 5743999.374, index_combination_size = 4832.5625
+[2023-12-23 04:29:53,571][basic_search][INFO][generic_smbo.py:293] Iter 61, objectives: [5743999.374]. constraints: [-167.4375].
+
+ 61%|██████    | 61/100 [16:22:00<10:09:46, 938.12s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 10)], 114446, 29775, 60111, 11327, 48886, 27488, 252672, 176685, 13229, 18162]
+INFO:root:Binary code: [[(0, 1), (1, 10)], 76299, 22645, 45941, 14293, 54436, 19903, 168448, 205769, 8905, 31580]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 10)]
+INFO:root:By data skipping index, the number of queries from 14190 to 11931
+INFO:root:skip time 31.676658391952515
+INFO:root:evaluation time 506.847149848938
+INFO:root:cost = 4614244.120999999, index_combination_size = 5330.84375
+[2023-12-23 04:45:46,755][basic_search][INFO][generic_smbo.py:293] Iter 62, objectives: [4614244.120999999]. constraints: [330.84375].
+
+ 62%|██████▏   | 62/100 [16:37:53<9:57:00, 942.64s/it] INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 40486, 29918, 57202, 11481, 54809, 29063, 204389, 176183, 17763, 16850]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 60356, 22676, 38307, 14190, 39918, 24314, 136262, 204837, 31165, 32412]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007248640060424805
+INFO:root:evaluation time 375.45015478134155
+INFO:root:cost = 4296885.108, index_combination_size = 4641.1875
+[2023-12-23 05:00:45,303][basic_search][INFO][generic_smbo.py:293] Iter 63, objectives: [4296885.108]. constraints: [-358.8125].
+
+ 63%|██████▎   | 63/100 [16:52:51<9:33:08, 929.41s/it][2023-12-23 05:00:45,308][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 2), (2, 4), (4, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 222575, 55892, 59807, 5047, 18002, 49160, 41226, 103030, 35426, 3222]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 6), (6, 8), (8, 10)], 149066, 37784, 45333, 7461, 31644, 32783, 49651, 72795, 62396, 2276]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 6), (6, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 24599
+INFO:root:skip time 0.007061481475830078
+INFO:root:evaluation time 482.44010519981384
+INFO:root:cost = 4731128.490999999, index_combination_size = 4829.0
+[2023-12-23 05:16:33,437][basic_search][INFO][generic_smbo.py:293] Iter 64, objectives: [4731128.490999999]. constraints: [-171.0].
+
+ 64%|██████▍   | 64/100 [17:08:40<9:21:00, 935.03s/it][2023-12-23 05:16:33,442][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 10)], 951, 17927, 23661, 10488, 46711, 60109, 165647, 195728, 14045, 53946]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 5), (5, 6), (6, 10)], 730, 31738, 26697, 12463, 56229, 45942, 198133, 218911, 9366, 40147]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 5), (5, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 38.56577730178833
+INFO:root:evaluation time 425.68413639068604
+INFO:root:cost = 4852452.15, index_combination_size = 4829.15625
+[2023-12-23 05:31:27,157][basic_search][INFO][generic_smbo.py:293] Iter 65, objectives: [4852452.15]. constraints: [-170.84375].
+
+ 65%|██████▌   | 65/100 [17:23:33<8:58:12, 922.63s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 114589, 29775, 58374, 17591, 48886, 21839, 252672, 176685, 13169, 18270]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 76521, 22645, 47108, 30938, 54436, 26229, 168448, 205769, 8798, 31339]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007551670074462891
+INFO:root:evaluation time 443.07382249832153
+INFO:root:cost = 5609093.193, index_combination_size = 4461.1875
+[2023-12-23 05:46:45,266][basic_search][INFO][generic_smbo.py:293] Iter 66, objectives: [5609093.193]. constraints: [-538.8125].
+
+ 66%|██████▌   | 66/100 [17:38:51<8:42:03, 921.28s/it][2023-12-23 05:46:45,271][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 4357, 24797, 58561, 62641, 57353, 43000, 17190, 89071, 4499, 31092]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 6), (6, 8), (8, 9), (9, 10)], 7686, 16534, 47233, 42785, 49137, 50512, 32196, 103093, 7906, 20903]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29435
+INFO:root:skip time 38.94484996795654
+INFO:root:evaluation time 274.20920157432556
+INFO:root:cost = 5674123.64, index_combination_size = 3154.71875
+[2023-12-23 05:58:52,249][basic_search][INFO][generic_smbo.py:293] Iter 67, objectives: [5674123.64]. constraints: [-1845.28125].
+
+ 67%|██████▋   | 67/100 [17:50:58<7:54:38, 862.99s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 136700, 29763, 55451, 20148, 2925, 42926, 206809, 173166, 5116, 40339]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 255656, 22653, 37101, 29912, 3510, 50484, 146065, 211019, 7511, 59677]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007493257522583008
+INFO:root:evaluation time 455.88725185394287
+INFO:root:cost = 5406849.072000001, index_combination_size = 4294.4375
+[2023-12-23 06:14:23,131][basic_search][INFO][generic_smbo.py:293] Iter 68, objectives: [5406849.072000001]. constraints: [-705.5625].
+
+ 68%|██████▊   | 68/100 [18:06:29<7:51:07, 883.36s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 114024, 30442, 55081, 11261, 35770, 31393, 186791, 171463, 16399, 61003]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 76208, 23372, 39473, 12969, 62163, 21310, 224965, 202373, 32757, 46194]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 0.007678985595703125
+INFO:root:evaluation time 414.01889753341675
+INFO:root:cost = 5424886.523, index_combination_size = 4348.65625
+[2023-12-23 06:28:50,320][basic_search][INFO][generic_smbo.py:293] Iter 69, objectives: [5424886.523]. constraints: [-651.34375].
+
+ 69%|██████▉   | 69/100 [18:20:56<7:33:53, 878.51s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 40486, 29918, 57202, 11481, 54809, 29063, 253334, 176183, 17763, 16850]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 60356, 22676, 38307, 14190, 39918, 24314, 169700, 204837, 31165, 32412]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.009071826934814453
+INFO:root:evaluation time 375.2405400276184
+INFO:root:cost = 4385428.287, index_combination_size = 4645.1875
+[2023-12-23 06:44:00,713][basic_search][INFO][generic_smbo.py:293] Iter 70, objectives: [4385428.287]. constraints: [-354.8125].
+
+ 70%|███████   | 70/100 [18:36:07<7:24:02, 888.07s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 10)], 100040, 30265, 55893, 11657, 59675, 26642, 252316, 176382, 18103, 13191]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)], 66703, 23505, 37785, 14065, 45549, 20451, 168215, 204971, 31525, 8954]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 0.010225534439086914
+INFO:root:evaluation time 373.0862054824829
+INFO:root:cost = 5086794.467000001, index_combination_size = 4148.59375
+[2023-12-23 06:58:04,286][basic_search][INFO][generic_smbo.py:293] Iter 71, objectives: [5086794.467000001]. constraints: [-851.40625].
+
+ 71%|███████   | 71/100 [18:50:10<7:02:46, 874.72s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 79529, 29771, 58051, 11579, 53915, 10553, 200599, 168917, 16870, 19252]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 121649, 22642, 48258, 13869, 40173, 12753, 133861, 204134, 32443, 29223]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007462501525878906
+INFO:root:evaluation time 344.45032572746277
+INFO:root:cost = 3649826.6, index_combination_size = 4825.59375
+[2023-12-23 07:12:20,753][basic_search][INFO][generic_smbo.py:293] Iter 72, objectives: [3649826.6]. constraints: [-174.40625].
+
+ 72%|███████▏  | 72/100 [19:04:27<6:45:38, 869.25s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 107805, 29765, 59286, 12299, 48900, 40759, 199474, 176645, 17150, 27899]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 80361, 22649, 47844, 8205, 54776, 59941, 134620, 205817, 31915, 18605]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007469654083251953
+INFO:root:evaluation time 502.1250944137573
+INFO:root:cost = 4310074.9969999995, index_combination_size = 5070.8125
+[2023-12-23 07:28:33,500][basic_search][INFO][generic_smbo.py:293] Iter 73, objectives: [4310074.9969999995]. constraints: [70.8125].
+
+ 73%|███████▎  | 73/100 [19:20:40<6:45:08, 900.30s/it][2023-12-23 07:28:33,510][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 10)], 161425, 19887, 18674, 1372, 22706, 44091, 124904, 160406, 11376, 22937]
+INFO:root:Binary code: [[(0, 3), (3, 5), (5, 8), (8, 9), (9, 10)], 238817, 30410, 28835, 1640, 28451, 51245, 83279, 238363, 14240, 28398]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 5), (5, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 24599
+INFO:root:skip time 38.2093243598938
+INFO:root:evaluation time 349.17481780052185
+INFO:root:cost = 4230918.802000001, index_combination_size = 4144.9375
+[2023-12-23 07:41:59,335][basic_search][INFO][generic_smbo.py:293] Iter 74, objectives: [4230918.802000001]. constraints: [-855.0625].
+
+ 74%|███████▍  | 74/100 [19:34:05<6:17:50, 871.96s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 80164, 29842, 55829, 5526, 28028, 67, 194204, 164975, 15844, 64627]
+INFO:root:Binary code: [[(0, 4), (4, 7), (7, 10)], 119239, 22755, 37862, 6427, 18856, 125, 219927, 198581, 10567, 43101]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 16268
+INFO:root:skip time 0.004763126373291016
+INFO:root:evaluation time 502.83718967437744
+INFO:root:cost = 3710179.2479999997, index_combination_size = 5581.71875
+[2023-12-23 07:58:49,078][basic_search][INFO][generic_smbo.py:293] Iter 75, objectives: [3710179.2479999997]. constraints: [581.71875].
+
+ 75%|███████▌  | 75/100 [19:50:55<6:20:32, 913.29s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 116735, 29814, 56292, 2486, 47659, 41504, 201012, 168955, 17374, 16635]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 96938, 22619, 37560, 3803, 54221, 50112, 138791, 204114, 32107, 32594]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.023756742477416992
+INFO:root:evaluation time 445.8088641166687
+INFO:root:cost = 5345912.9399999995, index_combination_size = 4473.40625
+[2023-12-23 08:13:58,705][basic_search][INFO][generic_smbo.py:293] Iter 76, objectives: [5345912.9399999995]. constraints: [-526.59375].
+
+ 76%|███████▌  | 76/100 [20:06:05<6:04:52, 912.19s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 34596, 29789, 58053, 10332, 53915, 10553, 200599, 168918, 6930, 19252]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 64056, 22633, 48262, 12392, 40173, 12753, 133861, 204132, 4636, 29223]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007529497146606445
+INFO:root:evaluation time 387.99326491355896
+INFO:root:cost = 3255562.0409999997, index_combination_size = 4878.25
+[2023-12-23 08:28:26,732][basic_search][INFO][generic_smbo.py:293] Iter 77, objectives: [3255562.0409999997]. constraints: [-121.75].
+
+ 77%|███████▋  | 77/100 [20:20:33<5:44:35, 898.94s/it][2023-12-23 08:28:26,738][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 9), (9, 10)], 111317, 1529, 60751, 17387, 58382, 61544, 88661, 37993, 6630, 8773]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 4), (4, 8), (8, 10)], 74598, 1710, 46709, 32077, 47115, 41039, 103321, 59313, 4420, 15481]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 4), (4, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 39.315855264663696
+INFO:root:evaluation time 465.1945540904999
+INFO:root:cost = 3922679.4099999997, index_combination_size = 4787.65625
+[2023-12-23 08:44:13,794][basic_search][INFO][generic_smbo.py:293] Iter 78, objectives: [3922679.4099999997]. constraints: [-212.34375].
+
+ 78%|███████▊  | 78/100 [20:36:20<5:34:54, 913.38s/it][2023-12-23 08:44:13,800][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 3), (3, 4), (4, 5), (5, 7), (7, 10)], 213255, 1337, 44508, 15197, 57738, 60671, 178229, 172379, 17098, 26273]
+INFO:root:Binary code: [[(0, 3), (3, 5), (5, 6), (6, 10)], 163333, 1582, 51560, 11670, 48883, 46933, 208857, 212589, 31884, 17601]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 5), (5, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20223
+INFO:root:skip time 38.12735080718994
+INFO:root:evaluation time 394.6317994594574
+INFO:root:cost = 3898150.664, index_combination_size = 4700.375
+[2023-12-23 08:59:15,646][basic_search][INFO][generic_smbo.py:293] Iter 79, objectives: [3898150.664]. constraints: [-299.625].
+
+ 79%|███████▉  | 79/100 [20:51:22<5:18:28, 909.92s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 98453, 24233, 55853, 15776, 37946, 15638, 197083, 173765, 14074, 64880]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 65766, 27441, 37833, 10559, 59347, 10724, 131437, 211833, 9388, 43424]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 0.007264614105224609
+INFO:root:evaluation time 387.95160150527954
+INFO:root:cost = 3594152.591, index_combination_size = 4656.9375
+[2023-12-23 09:14:11,691][basic_search][INFO][generic_smbo.py:293] Iter 80, objectives: [3594152.591]. constraints: [-343.0625].
+
+ 80%|████████  | 80/100 [21:06:18<5:01:55, 905.76s/it]INFO:root:Gray code X: [[(0, 2), (2, 6), (6, 7), (7, 9), (9, 10)], 90652, 2139, 59160, 11345, 53292, 20295, 192496, 175964, 18621, 6711]
+INFO:root:Binary code: [[(0, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 113687, 3986, 47632, 14238, 40904, 30085, 215712, 210327, 28886, 5082]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 2), (2, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33772
+INFO:root:skip time 44.55328321456909
+INFO:root:evaluation time 323.32295322418213
+INFO:root:cost = 9113052.300999999, index_combination_size = 3009.9375
+[2023-12-23 09:28:24,125][basic_search][INFO][generic_smbo.py:293] Iter 81, objectives: [9113052.300999999]. constraints: [-1990.0625].
+
+ 81%|████████  | 81/100 [21:20:30<4:41:45, 889.76s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 8), (8, 9), (9, 10)], 31475, 29771, 58844, 11579, 53915, 10553, 200827, 168917, 16870, 19252]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 8), (8, 10)], 21341, 22642, 47464, 13869, 40173, 12753, 139181, 204134, 32443, 29223]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 37.69138765335083
+INFO:root:evaluation time 377.9198305606842
+INFO:root:cost = 4719258.714, index_combination_size = 4813.125
+[2023-12-23 09:43:53,353][basic_search][INFO][generic_smbo.py:293] Iter 82, objectives: [4719258.714]. constraints: [-186.875].
+
+ 82%|████████▏ | 82/100 [21:35:59<4:30:28, 901.60s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 90286, 29771, 58041, 11936, 53915, 1981, 165037, 170122, 11882, 65154]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 114484, 22642, 48337, 13504, 40173, 1321, 198454, 200947, 13388, 43779]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 5), (5, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 34232
+INFO:root:skip time 40.37379312515259
+INFO:root:evaluation time 347.7835018634796
+INFO:root:cost = 6498327.53, index_combination_size = 3396.1875
+[2023-12-23 09:59:28,404][basic_search][INFO][generic_smbo.py:293] Iter 83, objectives: [6498327.53]. constraints: [-1603.8125].
+
+ 83%|████████▎ | 83/100 [21:51:35<4:18:17, 911.64s/it][2023-12-23 09:59:28,410][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 3), (3, 4), (4, 8), (8, 9), (9, 10)], 175174, 35150, 40633, 30160, 54213, 25467, 170802, 57914, 52162, 43328]
+INFO:root:Binary code: [[(0, 3), (3, 8), (8, 10)], 210820, 61835, 60206, 22880, 40313, 16978, 201251, 48172, 36220, 52863]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 3), (3, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 21285 to 15847
+INFO:root:skip time 36.59971523284912
+INFO:root:evaluation time 511.0574736595154
+INFO:root:cost = 3856549.499, index_combination_size = 5024.21875
+[2023-12-23 10:15:31,108][basic_search][INFO][generic_smbo.py:293] Iter 84, objectives: [3856549.499]. constraints: [24.21875].
+
+ 84%|████████▍ | 84/100 [22:07:37<4:07:11, 926.96s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 61569, 27888, 55893, 13253, 54468, 26642, 199972, 173170, 10648, 21559]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 41214, 18592, 37785, 8838, 39047, 20451, 133575, 211036, 12560, 26586]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.0073239803314208984
+INFO:root:evaluation time 330.27846360206604
+INFO:root:cost = 5956674.6850000005, index_combination_size = 3797.3125
+[2023-12-23 10:30:15,748][basic_search][INFO][generic_smbo.py:293] Iter 85, objectives: [5956674.6850000005]. constraints: [-1202.6875].
+
+ 85%|████████▌ | 85/100 [22:22:22<3:48:33, 914.26s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 7), (7, 9), (9, 10)], 73625, 29260, 57476, 12900, 40922, 10553, 173658, 164636, 15193, 14943]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 7), (7, 8), (8, 10)], 125678, 23671, 48903, 9144, 60051, 12753, 211859, 197143, 11665, 11370]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29856
+INFO:root:skip time 39.2141969203949
+INFO:root:evaluation time 398.678631067276
+INFO:root:cost = 6566009.904999999, index_combination_size = 3961.34375
+[2023-12-23 10:45:12,226][basic_search][INFO][generic_smbo.py:293] Iter 86, objectives: [6566009.904999999]. constraints: [-1038.65625].
+
+ 86%|████████▌ | 86/100 [22:37:18<3:32:04, 908.93s/it][2023-12-23 10:45:12,233][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 5), (5, 7), (7, 8), (8, 10)], 53396, 24184, 1966, 35222, 39556, 47396, 180893, 214113, 37477, 52161]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 40728, 27567, 1332, 61723, 60664, 53703, 228585, 161857, 58297, 36222]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 5), (5, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 39.890236616134644
+INFO:root:evaluation time 338.11990213394165
+INFO:root:cost = 4990231.011, index_combination_size = 4288.0
+[2023-12-23 10:59:58,187][basic_search][INFO][generic_smbo.py:293] Iter 87, objectives: [4990231.011]. constraints: [-712.0].
+
+ 87%|████████▋ | 87/100 [22:52:04<3:15:26, 902.04s/it][2023-12-23 10:59:58,193][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 10)], 138633, 21777, 12484, 18802, 34130, 59989, 121209, 110517, 61553, 29762]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 5), (5, 7), (7, 10)], 256270, 26142, 8327, 29091, 63900, 45977, 93777, 79142, 41054, 22652]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 5), (5, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29856
+INFO:root:skip time 39.719282388687134
+INFO:root:evaluation time 425.2183952331543
+INFO:root:cost = 7797407.299999999, index_combination_size = 3999.15625
+[2023-12-23 11:15:15,959][basic_search][INFO][generic_smbo.py:293] Iter 88, objectives: [7797407.299999999]. constraints: [-1000.84375].
+
+ 88%|████████▊ | 88/100 [23:07:22<3:01:21, 906.76s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 62944, 29775, 56022, 11327, 53257, 25291, 252672, 192039, 17498, 22917]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 42687, 22645, 37732, 14293, 40945, 17266, 168448, 216005, 30828, 28409]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007565975189208984
+INFO:root:evaluation time 432.385596036911
+INFO:root:cost = 3477331.1040000003, index_combination_size = 4783.15625
+[2023-12-23 11:30:26,508][basic_search][INFO][generic_smbo.py:293] Iter 89, objectives: [3477331.1040000003]. constraints: [-216.84375].
+
+ 89%|████████▉ | 89/100 [23:22:33<2:46:26, 907.90s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 7), (7, 10)], 66442, 29814, 56109, 2780, 53092, 41504, 201012, 168955, 17374, 19379]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 7), (7, 8), (8, 9), (9, 10)], 130316, 22619, 37430, 3223, 35399, 50112, 138791, 204114, 32107, 29405]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 7), (7, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 34232
+INFO:root:skip time 38.82619643211365
+INFO:root:evaluation time 372.3937723636627
+INFO:root:cost = 8181231.94, index_combination_size = 3224.53125
+[2023-12-23 11:44:07,573][basic_search][INFO][generic_smbo.py:293] Iter 90, objectives: [8181231.94]. constraints: [-1775.46875].
+
+ 90%|█████████ | 90/100 [23:36:14<2:26:58, 881.85s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 10)], 63008, 29765, 56025, 11335, 53261, 25304, 183441, 176988, 17514, 19807]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 7), (7, 10)], 42047, 22649, 37742, 14213, 40950, 17263, 227102, 205416, 30796, 30314]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 42570 to 29856
+INFO:root:skip time 41.984004735946655
+INFO:root:evaluation time 766.1076319217682
+INFO:root:cost = 6925158.269, index_combination_size = 4326.84375
+[2023-12-23 12:12:24,334][basic_search][INFO][generic_smbo.py:293] Iter 91, objectives: [6925158.269]. constraints: [-673.15625].
+
+ 91%|█████████ | 91/100 [24:04:30<2:48:56, 1126.32s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 77026, 29732, 58767, 11563, 53840, 10553, 200565, 168699, 13667, 33129]
+INFO:root:Binary code: [[(0, 1), (1, 5), (5, 7), (7, 9), (9, 10)], 116924, 22584, 47370, 13874, 40032, 12753, 133721, 203949, 9794, 65102]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 5), (5, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25480
+INFO:root:skip time 38.46359610557556
+INFO:root:evaluation time 366.33757972717285
+INFO:root:cost = 6082647.608, index_combination_size = 4360.71875
+[2023-12-23 12:28:39,575][basic_search][INFO][generic_smbo.py:293] Iter 92, objectives: [6082647.608]. constraints: [-639.28125].
+
+ 92%|█████████▏| 92/100 [24:20:46<2:24:07, 1081.00s/it]INFO:root:Gray code X: [[(0, 4), (4, 5), (5, 6), (6, 9), (9, 10)], 115844, 29834, 54078, 329, 55878, 15638, 197057, 173051, 16045, 64873]
+INFO:root:Binary code: [[(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)], 96504, 22771, 40404, 398, 37764, 10724, 131454, 212306, 11062, 43441]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 4), (4, 6), (6, 7), (7, 8), (8, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25020
+INFO:root:skip time 0.007250785827636719
+INFO:root:evaluation time 368.6731288433075
+INFO:root:cost = 4779364.709, index_combination_size = 4340.3125
+[2023-12-23 12:42:19,612][basic_search][INFO][generic_smbo.py:293] Iter 93, objectives: [4779364.709]. constraints: [-659.6875].
+
+ 93%|█████████▎| 93/100 [24:34:26<1:56:58, 1002.71s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 8), (8, 9), (9, 10)], 35259, 31646, 58046, 11414, 57523, 1980, 218314, 172558, 14343, 51982]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 7), (7, 9), (9, 10)], 61741, 21227, 48340, 14107, 48930, 1320, 157555, 211979, 12282, 36340]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 34232
+INFO:root:skip time 40.96071696281433
+INFO:root:evaluation time 333.9129765033722
+INFO:root:cost = 4213188.221, index_combination_size = 4237.25
+[2023-12-23 12:56:04,121][basic_search][INFO][generic_smbo.py:293] Iter 94, objectives: [4213188.221]. constraints: [-762.75].
+
+ 94%|█████████▍| 94/100 [24:48:10<1:34:55, 949.25s/it] INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 36470, 30769, 56961, 2863, 54000, 25303, 245951, 171326, 18913, 18504]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 62555, 20513, 38142, 3530, 40096, 17253, 164053, 202283, 28993, 28784]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.0071604251861572266
+INFO:root:evaluation time 421.46701884269714
+INFO:root:cost = 3758457.4689999996, index_combination_size = 4394.40625
+[2023-12-23 13:10:49,020][basic_search][INFO][generic_smbo.py:293] Iter 95, objectives: [3758457.4689999996]. constraints: [-605.59375].
+
+ 95%|█████████▌| 95/100 [25:02:55<1:17:29, 929.94s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 7), (7, 8), (8, 10)], 40886, 31646, 58046, 5896, 56773, 1980, 198803, 172558, 4055, 56637]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 7), (7, 10)], 60123, 21227, 48340, 6671, 38534, 1320, 134941, 211979, 2714, 38441]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 7), (7, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25480
+INFO:root:skip time 37.75018000602722
+INFO:root:evaluation time 373.4201843738556
+INFO:root:cost = 6076134.364999999, index_combination_size = 4608.78125
+[2023-12-23 13:25:47,382][basic_search][INFO][generic_smbo.py:293] Iter 96, objectives: [6076134.364999999]. constraints: [-391.21875].
+
+ 96%|█████████▌| 96/100 [25:17:53<1:01:21, 920.47s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 10)], 77961, 31222, 56611, 11414, 52333, 1980, 210676, 172558, 14923, 54370]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)], 122638, 20827, 38461, 14107, 34889, 1320, 140455, 211979, 11378, 38979]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 8), (8, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 49665 to 33811
+INFO:root:skip time 0.011367321014404297
+INFO:root:evaluation time 587.3404397964478
+INFO:root:cost = 8403090.881000001, index_combination_size = 3414.96875
+[2023-12-23 13:45:09,451][basic_search][INFO][generic_smbo.py:293] Iter 97, objectives: [8403090.881000001]. constraints: [-1585.03125].
+
+ 97%|█████████▋| 97/100 [25:37:16<49:38, 992.97s/it]  [2023-12-23 13:45:09,525][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)], 30120, 28173, 27789, 17946, 55131, 51273, 111768, 66106, 4814, 50762]
+INFO:root:Binary code: [[(0, 5), (5, 7), (7, 9), (9, 10)], 22832, 19446, 18678, 31724, 39533, 36750, 75536, 130092, 7307, 33907]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 5), (5, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20644
+INFO:root:skip time 38.91424369812012
+INFO:root:evaluation time 556.6421368122101
+INFO:root:cost = 5847030.157000001, index_combination_size = 4695.90625
+[2023-12-23 14:05:28,677][basic_search][INFO][generic_smbo.py:293] Iter 98, objectives: [5847030.157000001]. constraints: [-304.09375].
+
+ 98%|█████████▊| 98/100 [25:57:35<35:21, 1060.83s/it]INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 7), (7, 8), (8, 9), (9, 10)], 36989, 30278, 55842, 15059, 54362, 25310, 238905, 176261, 17572, 18462]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 7), (7, 9), (9, 10)], 57430, 23428, 37827, 11421, 39020, 17259, 181806, 205049, 30919, 28692]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 7), (7, 9), (9, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25480
+INFO:root:skip time 37.95516300201416
+INFO:root:evaluation time 378.88827538490295
+INFO:root:cost = 6216929.393, index_combination_size = 4353.15625
+[2023-12-23 14:21:40,700][basic_search][INFO][generic_smbo.py:293] Iter 99, objectives: [6216929.393]. constraints: [-646.84375].
+
+ 99%|█████████▉| 99/100 [26:13:47<17:14, 1034.19s/it][2023-12-23 14:21:40,708][basic_search][INFO][generic_advisor.py:365] Sample random config. rand_prob=0.100000.
+INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 32237, 26779, 19971, 19665, 37506, 37861, 202813, 162928, 7419, 56103]
+INFO:root:Binary code: [[(0, 1), (1, 4), (4, 6), (6, 10)], 22198, 20242, 29698, 30561, 58115, 58041, 135209, 239711, 5970, 37434]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 28380 to 20683
+INFO:root:skip time 37.62702560424805
+INFO:root:evaluation time 392.0571630001068
+INFO:root:cost = 3897295.4050000003, index_combination_size = 4673.6875
+[2023-12-23 14:35:28,021][basic_search][INFO][generic_smbo.py:293] Iter 100, objectives: [3897295.4050000003]. constraints: [-326.3125].
+[2023-12-23 14:35:28,028][basic_search][INFO][html_visualizer.py:96] Please open the html file to view visualization result: file:///data2/fray/small_experiments/logs_gray_clapboard_search/history/basic_search/basic_search_2023-12-22-12-07-53-379267.html
+
+100%|██████████| 100/100 [26:27:34<00:00, 972.13s/it]
+100%|██████████| 100/100 [26:27:34<00:00, 952.55s/it]
+INFO:root:Gray code X: [[(0, 1), (1, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 10)], 34596, 29789, 58053, 10332, 53915, 10553, 200599, 168918, 6930, 19252]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)], 64056, 22633, 48262, 12392, 40173, 12753, 133861, 204132, 4636, 29223]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 4), (4, 6), (6, 10)]
+INFO:root:By data skipping index, the number of queries from 35475 to 25059
+INFO:root:skip time 0.007195949554443359
+INFO:root:evaluation time 390.66908955574036
+INFO:root:index_combination_size : 4878.25 , cost : 3091639.001
+[2023-12-23 14:52:58,805][basic_search][INFO][color_logger.py:203] Logfile: /data2/fray/small_experiments/logs_gray_clapboard_search/basic_search_2023-12-23-14-52-58-803813.log
+[2023-12-23 14:52:58,898][basic_search][INFO][generic_advisor.py:157] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.
+[2023-12-23 14:52:58,905][basic_search][WARNING][base.py:91] [Build Surrogate] Use probabilistic random forest based on scikit-learn. For better performance, please install pyrfr: https://open-box.readthedocs.io/en/latest/installation/install_pyrfr.html
+[2023-12-23 14:52:58,907][basic_search][INFO][html_visualizer.py:462] Please open the html file to view visualization result: file:///data2/fray/small_experiments/logs_gray_clapboard_search/history/basic_search/basic_search_2023-12-23-14-52-58-906259.html
++-------------------------+----------------+
+| Parameters              | Optimal Value  |
++-------------------------+----------------+
+| p                       | 380            |
+| x0                      | 34596          |
+| x1                      | 29789          |
+| x2                      | 58053          |
+| x3                      | 10332          |
+| x4                      | 53915          |
+| x5                      | 10553          |
+| x6                      | 200599         |
+| x7                      | 168918         |
+| x8                      | 6930           |
+| x9                      | 19252          |
++-------------------------+----------------+
+| Optimal Objective Value | 3255562.041000 |
++-------------------------+----------------+
+| Constraint 1            | -121.750000    |
++-------------------------+----------------+
+| Num Trials              | 100            |
++-------------------------+----------------+

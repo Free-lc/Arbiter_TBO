@@ -1,0 +1,2185 @@
+nohup: ignoring input
+INFO:root:Init Black Box
+INFO:root:Using config file benchmark_results/fray_op/config_tpch100.json
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:Generating tpch_userdef data
+INFO:root:scale factor: 100
+INFO:root:No need to run make
+INFO:root:[SUBPROCESS OUTPUT] TPC-H Population Generator (Version 2.17.3)
+INFO:root:[SUBPROCESS OUTPUT] Copyright Transaction Processing Performance Council 1994 - 2010
+INFO:root:[Generate command] ./dbgen -s 100 -f
+INFO:root:Files generated: ['supplier.tbl', 'partsupp.tbl', 'part.tbl', 'customer.tbl', 'orders.tbl', 'nation.tbl', 'region.tbl', 'lineitem.tbl']
+INFO:root:Database indexselection_tpch_userdef___100 created
+INFO:root:Creating tables
+INFO:root:Loading data into the tables
+INFO:root:Creating partition tables
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:[18]
+INFO:root:[208]
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:Queries generated
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+-----
+getting selectivity
+the shape of data is: (1, 80000000, 3)
+calculating partition number
+going to split the partition into 250
+getting selectivity
+the shape of data is: (1, 320000, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+the shape of data is: (1, 320004, 3)
+calculating partition number
+going to split the partition into 1
+getting selectivity
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 40), (40, 41), (41, 42), (42, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 48), (48, 49), (49, 50), (50, 51), (51, 52), (52, 53), (53, 54), (54, 55), (55, 56), (56, 57), (57, 58), (58, 59), (59, 60), (60, 61), (61, 62), (62, 63), (63, 64), (64, 65), (65, 66), (66, 67), (67, 68), (68, 69), (69, 70), (70, 71), (71, 72), (72, 73), (73, 74), (74, 75), (75, 76), (76, 77), (77, 78), (78, 79), (79, 80), (80, 81), (81, 82), (82, 83), (83, 84), (84, 85), (85, 86), (86, 87), (87, 88), (88, 89), (89, 90), (90, 91), (91, 92), (92, 93), (93, 94), (94, 95), (95, 96), (96, 97), (97, 98), (98, 99), (99, 100), (100, 101), (101, 102), (102, 103), (103, 104), (104, 105), (105, 106), (106, 107), (107, 108), (108, 109), (109, 110), (110, 111), (111, 112), (112, 113), (113, 114), (114, 115), (115, 116), (116, 117), (117, 118), (118, 119), (119, 120), (120, 121), (121, 122), (122, 123), (123, 124), (124, 125), (125, 126), (126, 127), (127, 128), (128, 129), (129, 130), (130, 131), (131, 132), (132, 133), (133, 134), (134, 135), (135, 136), (136, 137), (137, 138), (138, 139), (139, 140), (140, 141), (141, 142), (142, 143), (143, 144), (144, 145), (145, 146), (146, 147), (147, 148), (148, 149), (149, 150), (150, 151), (151, 152), (152, 153), (153, 154), (154, 155), (155, 156), (156, 157), (157, 158), (158, 159), (159, 160), (160, 161), (161, 162), (162, 163), (163, 164), (164, 165), (165, 166), (166, 167), (167, 168), (168, 169), (169, 170), (170, 171), (171, 172), (172, 173), (173, 174), (174, 175), (175, 176), (176, 177), (177, 178), (178, 179), (179, 180), (180, 181), (181, 182), (182, 183), (183, 184), (184, 185), (185, 186), (186, 187), (187, 188), (188, 189), (189, 190), (190, 191), (191, 192), (192, 193), (193, 194), (194, 195), (195, 196), (196, 197), (197, 198), (198, 199), (199, 200), (200, 201), (201, 202), (202, 203), (203, 204), (204, 205), (205, 206), (206, 207), (207, 208), (208, 209), (209, 210), (210, 211), (211, 212), (212, 213), (213, 214), (214, 215), (215, 216), (216, 217), (217, 218), (218, 219), (219, 220), (220, 221), (221, 222), (222, 223), (223, 224), (224, 225), (225, 226), (226, 227), (227, 228), (228, 229), (229, 230), (230, 231), (231, 232), (232, 233), (233, 234), (234, 235), (235, 236), (236, 237), (237, 238), (238, 239), (239, 240), (240, 241), (241, 242), (242, 243), (243, 244), (244, 245), (245, 246), (246, 247), (247, 248), (248, 249), (249, 250)]
+DEBUG:root:Init selection algorithm
+INFO:root:Dropping indexes
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:Running algorithm {'budget_MB': 50000, 'partition_num': 250, 'max_index_width': 2, 'min_cost_improvement': 1.003}
+INFO:root:By data skipping index, the number of queries from 52000 to 24960
+INFO:root:Calculating best indexes Slalom
+INFO:root:Finish Slalom statistics
+INFO:root:4589.925762653351 s, cost :1714592.32, index_size: 7.0
+INFO:root:0.0004968643188476562 s, cost :1680134.416, index_size: 97.75
+INFO:root:0.0005826950073242188 s, cost :1674988.0799999997, index_size: 167.6875
+INFO:root:0.0005795955657958984 s, cost :1682818.656, index_size: 209.53125
+INFO:root:0.0004668235778808594 s, cost :1686458.8640000002, index_size: 279.25
+INFO:root:0.00048804283142089844 s, cost :1681112.2239999996, index_size: 349.0625
+INFO:root:0.0005838871002197266 s, cost :1687420.0320000001, index_size: 397.84375
+INFO:root:0.0004215240478515625 s, cost :1681244.0960000001, index_size: 467.8125
+INFO:root:0.0004646778106689453 s, cost :1694982.9120000002, index_size: 530.625
+INFO:root:0.0007798671722412109 s, cost :1689804.128, index_size: 565.46875
+INFO:root:0.0007653236389160156 s, cost :1681027.3599999999, index_size: 621.28125
+INFO:root:0.00058746337890625 s, cost :1668967.5199999998, index_size: 691.09375
+INFO:root:0.0008590221405029297 s, cost :1686696.8160000002, index_size: 760.9375
+INFO:root:0.0007834434509277344 s, cost :1683619.0399999999, index_size: 823.78125
+INFO:root:0.0006594657897949219 s, cost :1684970.2080000002, index_size: 851.65625
+INFO:root:0.0006945133209228516 s, cost :1689046.176, index_size: 914.5625
+INFO:root:0.0008823871612548828 s, cost :1702918.5279999996, index_size: 963.40625
+INFO:root:0.0009443759918212891 s, cost :1693204.7199999996, index_size: 991.28125
+INFO:root:0.0006158351898193359 s, cost :1700270.2719999998, index_size: 1061.0625
+INFO:root:0.0012354850769042969 s, cost :1710529.2479999996, index_size: 1095.9375
+INFO:root:0.0008223056793212891 s, cost :1712101.9360000002, index_size: 1137.9375
+INFO:root:0.0009641647338867188 s, cost :1708315.7119999999, index_size: 1179.84375
+INFO:root:0.0014159679412841797 s, cost :1716531.5040000003, index_size: 1207.75
+INFO:root:0.0017316341400146484 s, cost :1700538.3839999997, index_size: 1221.6875
+INFO:root:0.0011401176452636719 s, cost :1710220.5760000001, index_size: 1256.5625
+INFO:root:0.0011582374572753906 s, cost :1704915.1200000006, index_size: 1270.5
+INFO:root:0.0015223026275634766 s, cost :1722476.7679999998, index_size: 1298.375
+INFO:root:0.0011394023895263672 s, cost :1707749.3279999996, index_size: 1347.1875
+INFO:root:0.00136566162109375 s, cost :1713326.6400000004, index_size: 1402.96875
+INFO:root:0.0016222000122070312 s, cost :1711803.0399999998, index_size: 1416.9375
+INFO:root:0.0016248226165771484 s, cost :1716755.728, index_size: 1451.875
+INFO:root:0.0017278194427490234 s, cost :1719414.3839999997, index_size: 1486.84375
+INFO:root:0.0018568038940429688 s, cost :1717703.7919999999, index_size: 1507.78125
+INFO:root:0.00171661376953125 s, cost :1709042.4639999998, index_size: 1542.71875
+INFO:root:0.0010290145874023438 s, cost :1718792.4640000002, index_size: 1570.625
+INFO:root:0.0014309883117675781 s, cost :1723838.1280000001, index_size: 1612.53125
+INFO:root:0.001543283462524414 s, cost :1726038.352, index_size: 1640.46875
+INFO:root:0.0022275447845458984 s, cost :1715060.3199999997, index_size: 1661.375
+INFO:root:0.002012968063354492 s, cost :1725045.1520000002, index_size: 1661.375
+INFO:root:0.0018050670623779297 s, cost :1724352.0960000001, index_size: 1675.3125
+INFO:root:0.0021314620971679688 s, cost :1717259.2960000003, index_size: 1689.25
+INFO:root:0.0014879703521728516 s, cost :1723156.5120000001, index_size: 1696.25
+INFO:root:0.002504110336303711 s, cost :1728770.6399999995, index_size: 1696.25
+INFO:root:0.002588033676147461 s, cost :1725752.1440000003, index_size: 1703.25
+INFO:root:0.0017054080963134766 s, cost :1725801.6479999999, index_size: 1710.21875
+INFO:root:0.001798391342163086 s, cost :1725177.4400000003, index_size: 1724.1875
+INFO:root:0.0016553401947021484 s, cost :1715115.0240000002, index_size: 1766.125
+INFO:root:0.0015628337860107422 s, cost :1724323.392, index_size: 1787.125
+INFO:root:0.0015821456909179688 s, cost :1717268.2399999999, index_size: 1794.125
+INFO:root:0.0018918514251708984 s, cost :1714365.6000000003, index_size: 1822.0
+INFO:root:0.0009472370147705078 s, cost :1715944.3200000002, index_size: 1856.84375
+INFO:root:0.0012459754943847656 s, cost :1730498.4959999996, index_size: 1870.78125
+INFO:root:0.0016455650329589844 s, cost :1724769.5519999998, index_size: 1898.65625
+INFO:root:0.0016140937805175781 s, cost :1722435.9999999999, index_size: 1898.65625
+INFO:root:0.001316070556640625 s, cost :1733135.1040000003, index_size: 1933.5
+INFO:root:0.0023937225341796875 s, cost :1752904.6719999998, index_size: 1940.46875
+INFO:root:0.0019066333770751953 s, cost :1748149.7919999999, index_size: 1947.4375
+INFO:root:0.0012433528900146484 s, cost :1747794.9439999999, index_size: 1947.4375
+INFO:root:0.0015485286712646484 s, cost :1746668.0000000003, index_size: 1961.4375
+INFO:root:0.0022542476654052734 s, cost :1734335.0559999997, index_size: 1968.40625
+INFO:root:0.0018932819366455078 s, cost :1729999.712, index_size: 1996.40625
+INFO:root:0.0017828941345214844 s, cost :1746736.8480000002, index_size: 1996.40625
+INFO:root:0.0022821426391601562 s, cost :1737692.5919999997, index_size: 1996.40625
+INFO:root:0.002313375473022461 s, cost :1733085.5999999999, index_size: 2003.40625
+INFO:root:0.0019283294677734375 s, cost :1728616.5119999999, index_size: 2010.375
+INFO:root:0.0017592906951904297 s, cost :1729733.0559999999, index_size: 2010.375
+INFO:root:0.0029954910278320312 s, cost :1736945.2480000003, index_size: 2010.375
+INFO:root:0.0018172264099121094 s, cost :1725444.096, index_size: 2031.28125
+INFO:root:0.0024192333221435547 s, cost :1733425.8880000002, index_size: 2038.28125
+INFO:root:0.0014646053314208984 s, cost :1738213.4239999998, index_size: 2052.21875
+INFO:root:0.002241373062133789 s, cost :1732388.3839999998, index_size: 2059.1875
+INFO:root:0.002414226531982422 s, cost :1738268.544, index_size: 2066.15625
+INFO:root:0.00275421142578125 s, cost :1739604.9439999998, index_size: 2073.125
+INFO:root:0.0019850730895996094 s, cost :1740707.1360000002, index_size: 2073.125
+INFO:root:0.0010669231414794922 s, cost :1722058.8960000001, index_size: 2101.125
+INFO:root:0.001744985580444336 s, cost :1740583.1680000001, index_size: 2101.125
+INFO:root:0.002265453338623047 s, cost :1721294.9119999997, index_size: 2101.125
+INFO:root:0.002493619918823242 s, cost :1723510.3199999997, index_size: 2115.09375
+INFO:root:0.0031592845916748047 s, cost :1737807.824, index_size: 2115.09375
+INFO:root:0.0035982131958007812 s, cost :1745001.0879999999, index_size: 2115.09375
+INFO:root:0.0025277137756347656 s, cost :1736780.7200000001, index_size: 2115.09375
+INFO:root:0.002094745635986328 s, cost :1728932.4639999993, index_size: 2122.0625
+INFO:root:0.0014164447784423828 s, cost :1728370.2400000001, index_size: 2136.0
+INFO:root:0.0011916160583496094 s, cost :1738015.4079999998, index_size: 2136.0
+INFO:root:0.0016453266143798828 s, cost :1728976.976, index_size: 2136.0
+INFO:root:0.0009999275207519531 s, cost :1731799.1199999995, index_size: 2136.0
+INFO:root:0.0018680095672607422 s, cost :1743188.1600000001, index_size: 2142.96875
+INFO:root:0.0024394989013671875 s, cost :1739610.976, index_size: 2156.90625
+INFO:root:0.002254962921142578 s, cost :1740853.9839999998, index_size: 2163.90625
+INFO:root:0.002086162567138672 s, cost :1742056.6399999999, index_size: 2163.90625
+INFO:root:0.0021965503692626953 s, cost :1726886.7840000005, index_size: 2170.90625
+INFO:root:0.0014717578887939453 s, cost :1737496.4480000001, index_size: 2170.90625
+INFO:root:0.00315093994140625 s, cost :1739786.9440000001, index_size: 2184.875
+INFO:root:0.002992391586303711 s, cost :1730987.7119999995, index_size: 2184.875
+INFO:root:0.0016231536865234375 s, cost :1742454.9600000001, index_size: 2184.875
+INFO:root:0.0028221607208251953 s, cost :1750691.7599999999, index_size: 2184.875
+INFO:root:0.0013897418975830078 s, cost :1731627.9360000001, index_size: 2184.875
+INFO:root:0.002407073974609375 s, cost :1738305.5679999997, index_size: 2184.875
+INFO:root:0.0025506019592285156 s, cost :1733453.3439999997, index_size: 2191.875
+INFO:root:0.007906913757324219 s, cost :1748292.8959999996, index_size: 2191.875
+INFO:root:0.000985860824584961 s, cost :1738360.6880000001, index_size: 2191.875
+INFO:root:0.0016813278198242188 s, cost :1740198.7840000002, index_size: 2219.84375
+INFO:root:0.002711772918701172 s, cost :1736216.0000000001, index_size: 2219.84375
+INFO:root:0.0023517608642578125 s, cost :1735856.5759999999, index_size: 2226.8125
+INFO:root:0.0018405914306640625 s, cost :1747571.76, index_size: 2226.8125
+INFO:root:0.002003192901611328 s, cost :1742327.664, index_size: 2233.8125
+INFO:root:0.002704620361328125 s, cost :1741422.4480000001, index_size: 2233.8125
+INFO:root:0.0008087158203125 s, cost :1739916.32, index_size: 2233.8125
+INFO:root:0.0009610652923583984 s, cost :1726583.3120000005, index_size: 2233.8125
+INFO:root:0.0015594959259033203 s, cost :1725773.3599999999, index_size: 2240.78125
+INFO:root:0.002513885498046875 s, cost :1726414.8320000002, index_size: 2240.78125
+INFO:root:0.0023615360260009766 s, cost :1724045.5040000002, index_size: 2240.78125
+INFO:root:0.0011343955993652344 s, cost :1857121.6160000002, index_size: 2240.78125
+INFO:root:0.0011699199676513672 s, cost :1897756.0799999997, index_size: 2240.78125
+INFO:root:0.0010006427764892578 s, cost :1686679.1359999998, index_size: 2240.78125
+INFO:root:0.001027822494506836 s, cost :1724971.9360000005, index_size: 2240.78125
+INFO:root:0.0019123554229736328 s, cost :1728654.9919999996, index_size: 2240.78125
+INFO:root:0.002382993698120117 s, cost :1737746.8799999995, index_size: 2240.78125
+INFO:root:0.0018689632415771484 s, cost :1732396.2880000001, index_size: 2240.78125
+INFO:root:0.0021462440490722656 s, cost :1730301.5199999999, index_size: 2247.75
+INFO:root:0.0009186267852783203 s, cost :1721955.3119999999, index_size: 2247.75
+INFO:root:0.0011577606201171875 s, cost :1736317.2960000001, index_size: 2261.75
+INFO:root:0.0018596649169921875 s, cost :1749628.4639999998, index_size: 2261.75
+INFO:root:0.0015439987182617188 s, cost :1702953.888, index_size: 2261.75
+INFO:root:0.0007617473602294922 s, cost :1717892.864, index_size: 2261.75
+INFO:root:0.0005948543548583984 s, cost :1728588.64, index_size: 2268.71875
+INFO:root:0.0009150505065917969 s, cost :1744351.9199999997, index_size: 2268.71875
+INFO:root:0.0013136863708496094 s, cost :1713817.52, index_size: 2268.71875
+INFO:root:0.0022499561309814453 s, cost :1749566.2720000003, index_size: 2296.625
+INFO:root:0.0017583370208740234 s, cost :1726962.2880000001, index_size: 2303.59375
+INFO:root:0.0009815692901611328 s, cost :1733115.3439999996, index_size: 2303.59375
+INFO:root:0.0007567405700683594 s, cost :1751257.5200000003, index_size: 2303.59375
+INFO:root:0.0006744861602783203 s, cost :1694101.6160000006, index_size: 2303.59375
+INFO:root:0.001115560531616211 s, cost :1734226.6879999996, index_size: 2303.59375
+INFO:root:0.0009675025939941406 s, cost :1693805.2160000001, index_size: 2303.59375
+INFO:root:0.0008416175842285156 s, cost :1740406.1600000004, index_size: 2310.59375
+INFO:root:0.001819610595703125 s, cost :1747389.136, index_size: 2310.59375
+INFO:root:0.002170562744140625 s, cost :1715426.4, index_size: 2310.59375
+INFO:root:0.001119852066040039 s, cost :1747521.6319999999, index_size: 2310.59375
+INFO:root:0.00121307373046875 s, cost :1723919.0400000002, index_size: 2310.59375
+INFO:root:0.0020890235900878906 s, cost :1731501.2639999999, index_size: 2310.59375
+INFO:root:0.0021622180938720703 s, cost :1781229.28, index_size: 2310.59375
+INFO:root:0.0023641586303710938 s, cost :1702581.7760000001, index_size: 2310.59375
+INFO:root:0.0019979476928710938 s, cost :1745395.2480000001, index_size: 2310.59375
+INFO:root:0.0021812915802001953 s, cost :1686819.12, index_size: 2310.59375
+INFO:root:0.002266407012939453 s, cost :1745320.9919999999, index_size: 2310.59375
+INFO:root:0.001689910888671875 s, cost :1752410.048, index_size: 2310.59375
+INFO:root:0.0013535022735595703 s, cost :1718945.3440000006, index_size: 2317.59375
+INFO:root:0.0020508766174316406 s, cost :1701612.0800000001, index_size: 2317.59375
+INFO:root:0.00042057037353515625 s, cost :1720051.2800000004, index_size: 2317.59375
+INFO:root:0.0017952919006347656 s, cost :1753094.5760000006, index_size: 2317.59375
+INFO:root:0.00042724609375 s, cost :1703816.2560000002, index_size: 2317.59375
+INFO:root:0.001967906951904297 s, cost :1756363.9199999996, index_size: 2324.5625
+INFO:root:0.0014181137084960938 s, cost :1660884.016, index_size: 2324.5625
+INFO:root:0.0009050369262695312 s, cost :1711476.4800000004, index_size: 2324.5625
+INFO:root:0.0007104873657226562 s, cost :1753364.9759999999, index_size: 2324.5625
+INFO:root:0.002716541290283203 s, cost :1721945.328, index_size: 2324.5625
+INFO:root:0.0015022754669189453 s, cost :1731804.3199999995, index_size: 2324.5625
+INFO:root:0.0008356571197509766 s, cost :1629918.8480000001, index_size: 2324.5625
+INFO:root:0.0008792877197265625 s, cost :1714046.9440000005, index_size: 2324.5625
+INFO:root:0.001451253890991211 s, cost :1704512.6399999999, index_size: 2324.5625
+INFO:root:0.0019099712371826172 s, cost :1743548.624, index_size: 2324.5625
+INFO:root:0.0021021366119384766 s, cost :1686255.6479999999, index_size: 2331.5625
+INFO:root:0.0011174678802490234 s, cost :1727054.6399999998, index_size: 2331.5625
+INFO:root:0.0008552074432373047 s, cost :1741508.3520000003, index_size: 2331.5625
+INFO:root:0.0016705989837646484 s, cost :1744379.5840000001, index_size: 2331.5625
+INFO:root:0.0026416778564453125 s, cost :1731329.04, index_size: 2331.5625
+INFO:root:0.0013985633850097656 s, cost :1717783.0399999997, index_size: 2331.5625
+INFO:root:0.002323627471923828 s, cost :1764672.2720000001, index_size: 2331.5625
+INFO:root:0.0007219314575195312 s, cost :1716386.3199999997, index_size: 2331.5625
+INFO:root:0.0022716522216796875 s, cost :1733245.5519999997, index_size: 2331.5625
+INFO:root:0.0034246444702148438 s, cost :1732795.2320000003, index_size: 2331.5625
+INFO:root:0.0026192665100097656 s, cost :1739457.4720000001, index_size: 2331.5625
+INFO:root:0.002015829086303711 s, cost :1743127.216, index_size: 2331.5625
+INFO:root:0.001566171646118164 s, cost :1697361.6, index_size: 2331.5625
+INFO:root:0.0017554759979248047 s, cost :1776226.048, index_size: 2331.5625
+INFO:root:0.0006425380706787109 s, cost :1771107.5839999998, index_size: 2331.5625
+INFO:root:0.0007424354553222656 s, cost :1734207.76, index_size: 2331.5625
+INFO:root:0.0014584064483642578 s, cost :1758414.8, index_size: 2331.5625
+INFO:root:0.0017461776733398438 s, cost :1688587.5359999997, index_size: 2331.5625
+INFO:root:0.0018582344055175781 s, cost :1789137.6480000003, index_size: 2338.53125
+INFO:root:0.0010075569152832031 s, cost :1654982.8479999996, index_size: 2338.53125
+INFO:root:0.0008475780487060547 s, cost :1739322.6880000001, index_size: 2338.53125
+INFO:root:0.0008375644683837891 s, cost :1749550.8800000002, index_size: 2345.53125
+INFO:root:0.00099945068359375 s, cost :1693191.4079999998, index_size: 2345.53125
+INFO:root:0.0011341571807861328 s, cost :1737047.1680000002, index_size: 2345.53125
+INFO:root:0.0009064674377441406 s, cost :1767603.4079999997, index_size: 2345.53125
+INFO:root:0.002747058868408203 s, cost :1745616.768, index_size: 2345.53125
+INFO:root:0.0009808540344238281 s, cost :1756820.2720000002, index_size: 2345.53125
+INFO:root:0.00084686279296875 s, cost :1702678.0800000001, index_size: 2345.53125
+INFO:root:0.002122640609741211 s, cost :1726339.9519999996, index_size: 2345.53125
+INFO:root:0.0016994476318359375 s, cost :1747720.2720000001, index_size: 2345.53125
+INFO:root:0.0013964176177978516 s, cost :1738495.2640000003, index_size: 2345.53125
+INFO:root:0.00406193733215332 s, cost :1745788.5760000002, index_size: 2345.53125
+INFO:root:0.0029315948486328125 s, cost :1747941.7920000001, index_size: 2345.53125
+INFO:root:0.0018537044525146484 s, cost :1739085.1520000002, index_size: 2345.53125
+INFO:root:0.001850128173828125 s, cost :1740571.104, index_size: 2345.53125
+INFO:root:0.0022335052490234375 s, cost :1744079.44, index_size: 2345.53125
+INFO:root:0.0018198490142822266 s, cost :1741267.9040000006, index_size: 2345.53125
+INFO:root:0.0018889904022216797 s, cost :1742411.4879999999, index_size: 2345.53125
+INFO:root:0.0025115013122558594 s, cost :1742343.2640000001, index_size: 2345.53125
+INFO:root:0.0009584426879882812 s, cost :1741179.0879999999, index_size: 2345.53125
+INFO:root:0.0012166500091552734 s, cost :1731062.5919999998, index_size: 2345.53125
+INFO:root:0.001088857650756836 s, cost :1740128.8960000003, index_size: 2345.53125
+INFO:root:0.0010976791381835938 s, cost :1739131.9520000004, index_size: 2345.53125
+INFO:root:0.0007960796356201172 s, cost :1732183.2960000002, index_size: 2345.53125
+INFO:root:0.0006008148193359375 s, cost :1732364.8800000002, index_size: 2345.53125
+INFO:root:0.0011622905731201172 s, cost :1750519.5359999998, index_size: 2345.53125
+INFO:root:0.001062154769897461 s, cost :1730047.1360000002, index_size: 2345.53125
+INFO:root:0.0007174015045166016 s, cost :1728923.5200000004, index_size: 2345.53125
+INFO:root:0.0011761188507080078 s, cost :1745928.5599999999, index_size: 2345.53125
+INFO:root:0.0022668838500976562 s, cost :1732283.1359999998, index_size: 2345.53125
+INFO:root:0.002151966094970703 s, cost :1740520.56, index_size: 2345.53125
+INFO:root:0.0012211799621582031 s, cost :1736581.2479999999, index_size: 2345.53125
+INFO:root:0.0017466545104980469 s, cost :1748279.7920000001, index_size: 2345.53125
+INFO:root:0.0023262500762939453 s, cost :1748718.6720000001, index_size: 2345.53125
+INFO:root:0.0019428730010986328 s, cost :1743409.6800000003, index_size: 2345.53125
+INFO:root:0.0022640228271484375 s, cost :1743305.8880000002, index_size: 2345.53125
+INFO:root:0.002493143081665039 s, cost :1747822.1919999999, index_size: 2345.53125
+INFO:root:0.003604888916015625 s, cost :1749725.1840000001, index_size: 2345.53125
+INFO:root:0.0025489330291748047 s, cost :1751739.456, index_size: 2345.53125
+INFO:root:0.0032358169555664062 s, cost :1741364.0, index_size: 2345.53125
+INFO:root:0.0033257007598876953 s, cost :1749310.432, index_size: 2345.53125
+INFO:root:0.0022759437561035156 s, cost :1752905.0880000001, index_size: 2345.53125
+INFO:root:0.0020737648010253906 s, cost :1740801.152, index_size: 2345.53125
+INFO:root:0.002282381057739258 s, cost :1741591.3439999997, index_size: 2345.53125
+INFO:root:0.0010058879852294922 s, cost :1741173.0560000003, index_size: 2345.53125
+INFO:root:0.001615762710571289 s, cost :1739219.7279999999, index_size: 2345.53125
+INFO:root:0.001470804214477539 s, cost :1740766.0, index_size: 2345.53125
+INFO:root:0.0007584095001220703 s, cost :1739683.3600000002, index_size: 2345.53125
+INFO:root:0.0006930828094482422 s, cost :1734192.3679999999, index_size: 2345.53125
+INFO:root:0.0012826919555664062 s, cost :1745492.8, index_size: 2345.53125
+INFO:root:0.0034689903259277344 s, cost :1744805.5680000001, index_size: 2345.53125
+INFO:root:0.002073049545288086 s, cost :1742599.936, index_size: 2345.53125
+INFO:root:0.0017435550689697266 s, cost :1769677.168, index_size: 2345.53125
+INFO:root:0.0012731552124023438 s, cost :1749607.0400000004, index_size: 2345.53125
+INFO:root:0.0017387866973876953 s, cost :1746836.272, index_size: 2345.53125
+INFO:root:0.0007219314575195312 s, cost :1746400.0960000001, index_size: 2345.53125
+INFO:root:0.002130270004272461 s, cost :1749083.7119999999, index_size: 2345.53125
+INFO:root:0.0030367374420166016 s, cost :1745095.7280000001, index_size: 2345.53125
+INFO:root:0.003091096878051758 s, cost :1736809.2159999997, index_size: 2345.53125
+INFO:root:0.001100301742553711 s, cost :1747411.1840000001, index_size: 2345.53125
+INFO:root:0.002246856689453125 s, cost :1733987.0719999995, index_size: 2345.53125
+INFO:root:0.0007662773132324219 s, cost :1739411.504, index_size: 2345.53125
+INFO:root:0.0010840892791748047 s, cost :1747798.8960000002, index_size: 2345.53125
+INFO:root:0.0017039775848388672 s, cost :1739056.24, index_size: 2345.53125
+INFO:root:0.002310514450073242 s, cost :1745257.9679999999, index_size: 2345.53125
+INFO:root:0.0021445751190185547 s, cost :1743799.2640000001, index_size: 2345.53125
+INFO:root:0.0026404857635498047 s, cost :1732222.608, index_size: 2345.53125
+INFO:root:0.0020263195037841797 s, cost :1725941.8400000004, index_size: 2345.53125
+INFO:root:0.0010371208190917969 s, cost :1733313.9840000002, index_size: 2345.53125
+INFO:root:0.22850465774536133 s, cost :1724998.1439999995, index_size: 2345.53125
+INFO:root:0.217515230178833 s, cost :1741247.5200000004, index_size: 2345.53125
+INFO:root:0.22637057304382324 s, cost :1736832.7200000002, index_size: 2345.53125
+INFO:root:0.22174358367919922 s, cost :1741744.4320000001, index_size: 2345.53125
+INFO:root:0.21899795532226562 s, cost :1749047.9359999999, index_size: 2345.53125
+INFO:root:0.2294464111328125 s, cost :1740590.864, index_size: 2345.53125
+INFO:root:0.2341001033782959 s, cost :1737698.4159999999, index_size: 2345.53125
+INFO:root:0.21522235870361328 s, cost :1737413.456, index_size: 2345.53125
+INFO:root:0.2224440574645996 s, cost :1732395.0400000003, index_size: 2345.53125
+INFO:root:0.21996212005615234 s, cost :1735616.7519999997, index_size: 2345.53125
+INFO:root:0.1778557300567627 s, cost :1742543.5680000003, index_size: 2345.53125
+INFO:root:0.22382402420043945 s, cost :1735616.128, index_size: 2345.53125
+INFO:root:0.22819948196411133 s, cost :1719675.632, index_size: 2345.53125
+INFO:root:0.22932815551757812 s, cost :1745457.2320000001, index_size: 2345.53125
+INFO:root:0.22642850875854492 s, cost :1748963.28, index_size: 2345.53125
+INFO:root:0.23151540756225586 s, cost :1740698.8159999999, index_size: 2345.53125
+INFO:root:0.23360538482666016 s, cost :1733309.6160000002, index_size: 2345.53125
+INFO:root:0.22780537605285645 s, cost :1745042.2719999996, index_size: 2345.53125
+INFO:root:Dropping indexes
+DEBUG:root:Dropping index partsupp_1_prt_p166_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p109_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p197_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p18_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p197_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p18_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p112_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p112_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p109_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p109_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p18_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p197_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p43_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p197_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p62_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p88_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p190_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p6_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p190_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p62_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p88_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p162_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p6_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p88_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p134_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p141_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p121_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p134_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p90_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p134_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p146_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p50_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p212_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p44_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p50_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p228_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p146_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p146_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p228_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p212_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p119_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p96_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p96_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p119_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p194_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p194_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p119_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p194_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p96_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p3_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p46_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p106_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p196_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p106_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p196_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p196_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p46_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p37_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p13_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p53_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p238_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p13_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p238_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p37_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p166_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p13_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p238_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p65_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p91_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p118_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p65_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p153_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p91_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p91_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p153_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p65_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p225_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p159_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p28_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p225_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p225_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p131_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p47_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p122_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p19_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p131_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p47_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p19_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p122_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p0_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p93_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p231_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p93_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p68_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p0_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p128_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p128_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p68_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p0_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p203_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p184_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p237_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p203_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p203_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p40_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p184_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p237_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p40_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p40_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p216_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p147_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p244_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p147_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p147_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p84_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p244_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p216_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p84_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p63_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p231_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p116_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p63_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p175_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p191_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p175_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p191_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p119_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p213_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p200_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p191_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p191_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p187_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p178_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p12_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p187_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p178_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p12_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p118_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p15_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p15_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p63_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p241_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p168_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p165_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p234_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p168_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p138_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p165_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p234_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p165_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p168_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p234_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p172_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p193_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p241_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p172_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p172_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p78_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p137_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p78_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p246_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p137_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p78_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p72_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p41_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p72_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p41_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p121_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p72_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p94_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p94_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p216_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p94_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p31_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p31_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p43_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p43_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p19_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p178_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p12_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p38_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p38_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p87_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p87_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p47_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p87_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p215_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p163_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p215_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p163_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p13_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p53_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p163_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p103_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p3_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p219_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p103_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p219_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p103_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p103_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p219_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p59_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p146_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p25_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p66_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p66_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p66_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p25_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p150_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p193_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p247_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p247_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p247_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p175_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p246_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p122_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p75_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p181_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p181_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p75_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p75_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p0_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p212_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p100_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p137_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p243_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p241_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p125_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p243_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p243_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p125_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p113_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p37_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p59_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p113_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p138_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p215_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p138_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p81_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p81_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p144_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p144_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p213_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p44_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p56_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p75_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p209_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p22_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p206_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p22_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p206_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p22_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p22_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p218_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p218_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p18_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p112_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p71_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p106_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p71_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p71_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p188_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p188_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p188_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p153_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p188_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p122_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p21_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p169_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p169_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p169_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p138_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p69_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p69_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p69_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p115_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p115_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p21_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p113_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p222_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p222_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p56_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p162_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p240_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p240_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p240_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p141_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p28_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p156_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p156_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p156_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p203_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p47_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p187_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p25_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p206_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p171_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p140_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p140_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p140_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p140_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p128_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p31_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p96_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p97_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p97_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p194_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p144_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p171_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p59_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p88_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p56_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p59_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p137_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p116_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p16_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p16_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p16_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p115_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p222_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p81_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p225_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p34_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p34_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p9_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p143_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p143_ps_partkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p65_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p143_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p69_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p221_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p221_ps_supplycost_idx
+DEBUG:root:Dropping index partsupp_1_prt_p200_ps_suppkey_idx
+DEBUG:root:Dropping index partsupp_1_prt_p34_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p159_ps_availqty_idx
+DEBUG:root:Dropping index partsupp_1_prt_p246_ps_suppkey_idx
+INFO:root:Partition algorithm : Slalom, partitioning time :7625.915666818619s, partitioned cost : 1753839.0, index algorithm : Slalom, index_size :2345.53125, cost : 1753839.6319999998, time : 15017.544338941574
+/data2/fray/index_selection_evaluation
+/data2/fray/index_selection_evaluation
+/data2/fray/index_selection_evaluation
+['/data2/fray/index_selection_evaluation/selection', '/data2/fray/Python-3.8.9/lib/python38.zip', '/data2/fray/Python-3.8.9/lib/python3.8', '/data2/fray/Python-3.8.9/lib/python3.8/lib-dynload', '/data2/fray/py38venv/lib/python3.8/site-packages', '/data2/fray/index_selection_evaluation', '/data2/fray/index_selection_evaluation', '/data2/fray/index_selection_evaluation', '/data2/fray/index_selection_evaluation', '/mydata/fray/index_selection_evaluation']
+-----
