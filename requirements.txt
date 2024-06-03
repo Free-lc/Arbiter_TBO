@@ -6,3 +6,13 @@ isort
 numpy
 pathlib
 psycopg2
+colorama
+ConfigSpace
+tqdm
+matplotlib
+scikit-learn
+torch
+scikit-optimize
+platypus-opt
+statsmodels
+
