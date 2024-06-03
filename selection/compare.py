@@ -64,31 +64,18 @@ class CompareAlgorithm:
 
 
 # black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpcds.json')
-black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpch100.json')
-# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpch.json')
+# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpch100.json')
+black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpch.json')
 # black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_wikimedia.json', test = 1)
 # black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_test_join.json')
-selection_algorithm = ALGORITHMS["Fray"](black_box, random = True, max_runs = 2560, train=True, whitebox= True)
 # -------baseline----------------
 # whole_compare = WholeCompare(black_box)
 # whole_compare.get_convergence_curve()
 
-# selection_algorithm = ALGORITHMS["Fray"](black_box, train=False, whitebox= False)
+selection_algorithm = ALGORITHMS["Fray"](black_box, train=False, whitebox= False)
 index_combination_size,cost = selection_algorithm.get_optimal_value()
 logging.info(f"index_combination_size : {index_combination_size} , cost : {cost}")
 
-# selection_algorithm = ALGORITHMS["Fray"](black_box, train=False, whitebox= False, random = True)
-# index_combination_size,cost = selection_algorithm.get_optimal_value()
-# logging.info(f"index_combination_size : {index_combination_size} , cost : {cost}")
-
-# whole_compare = WholeCompare(black_box)
-# whole_compare.get_convergence_curve()
-
-
-# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpcds.json')
-# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpch.json', test =1 )
-# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_wikimedia.json', test = 1)
-# black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_test_join.json')
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
