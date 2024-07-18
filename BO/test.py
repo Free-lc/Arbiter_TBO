@@ -1,6 +1,6 @@
 import pickle
 import sys
-sys.path.append("/data2/fray/index_selection_evaluation")
+sys.path.append("/gyc_data/fray_data/Arbiter")
 print(sys.path)
 from openbox.utils.config_space import get_one_exchange_neighbourhood, \
     Configuration, ConfigurationSpace
@@ -13,13 +13,13 @@ import ast
 
 def load_cache():
         try:
-            with open('BO/cache_tpch_100.pkl', 'rb') as f:
+            with open('BO/train/tpch100.pkl', 'rb') as f:
                 return pickle.load(f)
         except (FileNotFoundError, EOFError):
             return {}  # 如果文件不存在或为空，返回一个空字典
         
 cache = load_cache()
-print(cache)
+print(len(cache))
 # def read_config_dicts(log_file_path = '/data2/fray/index_selection_evaluation/train_log/train_tpch_100.log'):
 
 #     # Regular expression to match the arrays

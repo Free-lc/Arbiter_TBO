@@ -54,12 +54,15 @@ class QueryGenerator:
 
     def _store_indexable_columns(self, query):
         for column in self.columns:
-            start = query.text.find("FROM") + len("FROM") + 1
-            end = query.text.find("WHERE") - 1
-            result = query.text[start:end]
-            result = result.replace(" ","")
-            query_table = result.split(",")
-            if column.name in query.text and column.table.name in query_table:
+            # **change workload
+            # start = query.text.find("FROM") + len("FROM") + 1
+            # end = query.text.find("WHERE") - 1
+            # result = query.text[start:end]
+            # result = result.replace(" ","")
+            # query_table = result.split(",")
+            # if column.name in query.text and column.table.name in query_table:
+            #     query.columns.append(column)
+            if column.name in query.text:
                 query.columns.append(column)
 
     def _generate_tpch(self):
