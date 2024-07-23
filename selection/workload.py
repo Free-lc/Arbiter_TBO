@@ -5,7 +5,7 @@ from selection.index import Index
 
 class Query:
     def __init__(self, query_id, query_text, columns=None, frequency=1, query_class = None,
-                                query_columns_range = None):
+                                query_columns_range = 'range'):
         self.nr = query_id
         self.text = query_text
         self.frequency = frequency

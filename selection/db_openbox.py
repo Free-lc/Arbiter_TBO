@@ -91,21 +91,28 @@ class BlackBox:
         else:
             assert 0, "undefined benchmarks!!!"
         file_names = os.listdir(folder_path)
-        value_ls = [int(filename.replace(".sql","").split("_")[0]) for filename in file_names]
+        value_ls = [int(filename.replace(".sql","").split("_")[0]) for filename in file_names if filename.endswith(".sql")]
         # self.number_of_queries = max(value_ls)
         if config["scale_factor"] == 10:
             min_sql_number = 15
         elif config["scale_factor"] == 100:
             min_sql_number = 1
-        
-        self.number_of_queries = max(min(max(value_ls)//3, min_sql_number),1)
-        self.queries_id = random.choices(value_ls, k = self.number_of_queries)
-        # if config["scale_factor"] == 100:
-        #     self.queries_id = [89, 46]
-        logging.info(self.queries_id)
-        # self.queries_id = [0, 1, 2, 3, 4]
-        query_frequence = [random.randint(0,config["query_frequence"]) for query_id in range(len(self.queries_id))]
-        logging.info(query_frequence)
+        #-----tpch-heavyfilter
+        # self.number_of_queries = max(min(max(value_ls)//3, min_sql_number),1)
+        # self.queries_id = random.choices(value_ls, k = self.number_of_queries)
+        # # if config["scale_factor"] == 100:
+        # #     self.queries_id = [89, 46]
+        # logging.info(self.queries_id)
+        # # self.queries_id = [0, 1, 2, 3, 4]
+        # query_frequence = [random.randint(0,config["query_frequence"]) for query_id in range(len(self.queries_id))]
+        # logging.info(query_frequence)
+
+        #-----tpch-standard
+        # workload_queries = [1,3,4,5,6,7,8,9,10,11,12,13,14,16,18,19,21,22]
+        workload_queries = [1]
+        self.queries_id = [i-1 for i in workload_queries]
+        query_frequence = [1 for query_id in range(len(self.queries_id))]
+
         for partition_id in range(config['partition_max']):
             query_generator = QueryGenerator(
                 config["benchmark_name"],
@@ -423,6 +430,7 @@ class BlackBox:
         return valid_workloads        
     
     def _filtering_(self, query_temp, partition_code = None):
+        return False
         if partition_code is None:
             partition_code = 2 ** (self.partition_max - 1) -1
         query = copy.deepcopy(query_temp)

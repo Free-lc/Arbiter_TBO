@@ -1,1 +1,28 @@
-SELECT s_suppkey,s_acctbal FROM supplier WHERE s_acctbal Between 211.83 and 367.64;
+-- Functional Query Definition
+-- Approved February 1998
+
+
+select
+o_orderpriority,
+count(*) as order_count
+from
+orders
+where
+o_orderdate >= date '1993-07-01'
+and o_orderdate < date '1993-07-01' + interval '3' month
+and exists (
+select
+*
+from
+lineitem
+where
+l_orderkey = o_orderkey
+and l_commitdate < l_receiptdate
+)
+group by
+o_orderpriority
+order by
+o_orderpriority;
+limit -1;
+-- $ID$
+-- TPC-H/TPC-R Local Supplier Volume 

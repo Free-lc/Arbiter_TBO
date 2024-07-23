@@ -62,8 +62,18 @@ class QueryGenerator:
             # query_table = result.split(",")
             # if column.name in query.text and column.table.name in query_table:
             #     query.columns.append(column)
-            if column.name in query.text:
+            if column.name in query.text and self._check_substring(column.table.name, query.text):
+                if '_1_prt_p' not in column.table.name and '_1_prt_p' in query.text:
+                    continue
                 query.columns.append(column)
+
+    def _check_substring(self, a, b):
+        pattern = re.compile(fr'{a}(?!\d)')
+        matches = pattern.finditer(b)
+        if any(matches):
+            return True
+        else:
+            return False
 
     def _generate_tpch(self):
         logging.info("Generating TPC-H Queries")
@@ -102,11 +112,19 @@ class QueryGenerator:
             with open(sql_path) as f:
                 sql_query = f.read()
             pkl_path = f"{self.benchmark_path}/queries/{self.scale_factor}/{query_id+1}_class.pkl"
-            with open(f"{os.path.join(cwd,pkl_path)}", "rb") as f:
-                query_class = pickle.load(f)
+            if os.path.exists(f"{os.path.join(cwd,pkl_path)}"):
+                with open(f"{os.path.join(cwd,pkl_path)}", "rb") as f:
+                    query_class = pickle.load(f)
+            else:
+                query_class = "range"
+                logging.info("no query class")
             pkl_path = f"{self.benchmark_path}/queries/{self.scale_factor}/{query_id+1}_queries_columns_range.pkl"
-            with open(f"{os.path.join(cwd,pkl_path)}", "rb") as f:
-                query_columns_range = pickle.load(f)   
+            if os.path.exists(f"{os.path.join(cwd,pkl_path)}"):
+                with open(f"{os.path.join(cwd,pkl_path)}", "rb") as f:
+                    query_columns_range = pickle.load(f)
+            else:
+                logging.info("no columns range")
+                query_columns_range = None  
             self.add_new_query(query_idx+1, sql_query, frequency = freq, query_class = query_class,
                                 query_columns_range = query_columns_range)
         logging.info("Queries generated")
