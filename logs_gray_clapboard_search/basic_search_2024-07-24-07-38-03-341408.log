@@ -1,0 +1,2 @@
+[2024-07-24 07:38:03,342][basic_search][INFO][color_logger.py:203] Logfile: /gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/basic_search_2024-07-24-07-38-03-341408.log
+[2024-07-24 07:38:13,406][basic_search][INFO][generic_advisor.py:159] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.

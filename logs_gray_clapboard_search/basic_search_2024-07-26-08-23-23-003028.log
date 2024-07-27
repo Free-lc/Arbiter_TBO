@@ -1,0 +1,15 @@
+[2024-07-26 08:23:23,003][basic_search][INFO][color_logger.py:203] Logfile: /gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/basic_search_2024-07-26-08-23-23-003028.log
+[2024-07-26 08:23:23,178][basic_search][INFO][generic_advisor.py:159] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.
+[2024-07-26 08:23:23,196][basic_search][INFO][html_visualizer.py:462] Please open the html file to view visualization result: file:///gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/history/basic_search/basic_search_2024-07-26-08-23-23-194373.html
+[2024-07-26 08:26:07,483][basic_search][INFO][generic_smbo.py:305] Iter 1, objectives: [16304.931999999997]. constraints: [-5000.0].
+[2024-07-26 08:32:56,310][basic_search][INFO][generic_smbo.py:305] Iter 2, objectives: [177163.555]. constraints: [-3024.09375].
+[2024-07-26 08:39:38,398][basic_search][INFO][generic_smbo.py:305] Iter 3, objectives: [129147.058]. constraints: [-2111.46875].
+[2024-07-26 08:46:10,254][basic_search][INFO][generic_smbo.py:305] Iter 4, objectives: [113850.6]. constraints: [-2056.5625].
+[2024-07-26 08:52:55,115][basic_search][INFO][generic_smbo.py:305] Iter 5, objectives: [154581.04300000003]. constraints: [-2654.4375].
+[2024-07-26 08:59:47,695][basic_search][INFO][generic_smbo.py:305] Iter 6, objectives: [126362.328]. constraints: [-1871.1875].
+[2024-07-26 09:06:04,218][basic_search][INFO][generic_smbo.py:305] Iter 7, objectives: [141717.133]. constraints: [-2940.125].
+[2024-07-26 09:12:37,836][basic_search][INFO][generic_smbo.py:305] Iter 8, objectives: [147574.99700000003]. constraints: [-2550.0625].
+[2024-07-26 09:19:43,860][basic_search][INFO][generic_smbo.py:305] Iter 9, objectives: [193951.575]. constraints: [-2899.34375].
+[2024-07-26 09:26:30,854][basic_search][INFO][generic_smbo.py:305] Iter 10, objectives: [178680.77599999998]. constraints: [-2959.40625].
+[2024-07-26 09:33:22,848][basic_search][INFO][generic_smbo.py:305] Iter 11, objectives: [167333.244]. constraints: [-2646.84375].
+[2024-07-26 09:40:15,355][basic_search][INFO][generic_smbo.py:305] Iter 12, objectives: [161955.80999999997]. constraints: [-2560.53125].

@@ -109,7 +109,7 @@ class BlackBox:
 
         #-----tpch-standard
         # workload_queries = [1,3,4,5,6,7,8,9,10,11,12,13,14,16,18,19,21,22]
-        workload_queries = [1]
+        workload_queries = [3]
         self.queries_id = [i-1 for i in workload_queries]
         query_frequence = [1 for query_id in range(len(self.queries_id))]
 
@@ -136,6 +136,8 @@ class BlackBox:
                 queries_id = self.queries_id
             )
         self.single_workload = Workload(single_query_generator.queries)
+        # splite data block
+        # self.table_generator_max.partition_table(single_query_generator.queries)
         # initialize prefilter parameter
         self.prefiltered_workloads = self.workloads
         for partition_id in range(config['partition_max']):
@@ -201,7 +203,8 @@ class BlackBox:
         self.db_connector.commit()
         queried_table = []
         for query in self.prefiltered_workloads[0].queries:
-            queried_table.append(query.columns[0].table.name.split("_1_prt_p")[0])
+            queried_table += [column.table.name.split("_1_prt_p")[0] for column in query.columns]
+        queried_table = list(set(queried_table))
         self.table_generator_max.tuples_partitioning(partition_tuples, queried_table)
         logging.info(f"partitioning the datasets by {partition_tuples}")
         index_combinations = []

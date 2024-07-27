@@ -1,0 +1,115 @@
+[2024-07-25 08:22:40,029][basic_search][INFO][color_logger.py:203] Logfile: /gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/basic_search_2024-07-25-08-22-40-029412.log
+[2024-07-25 08:22:40,278][basic_search][INFO][generic_advisor.py:159] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.
+[2024-07-25 08:22:40,290][basic_search][INFO][html_visualizer.py:462] Please open the html file to view visualization result: file:///gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/history/basic_search/basic_search_2024-07-25-08-22-40-288371.html
+[2024-07-25 08:25:04,699][basic_search][INFO][generic_smbo.py:305] Iter 1, objectives: [175.116]. constraints: [-5000.0].
+[2024-07-25 08:27:46,598][basic_search][INFO][generic_smbo.py:305] Iter 2, objectives: [96.72300000000001]. constraints: [-4696.625].
+[2024-07-25 08:30:36,954][basic_search][INFO][generic_smbo.py:305] Iter 3, objectives: [128.566]. constraints: [-4655.875].
+[2024-07-25 08:33:29,667][basic_search][INFO][generic_smbo.py:305] Iter 4, objectives: [96.42200000000001]. constraints: [-4604.21875].
+[2024-07-25 08:36:13,856][basic_search][INFO][generic_smbo.py:305] Iter 5, objectives: [112.11699999999999]. constraints: [-4670.625].
+[2024-07-25 08:39:06,237][basic_search][INFO][generic_smbo.py:305] Iter 6, objectives: [98.55700000000002]. constraints: [-4618.1875].
+[2024-07-25 08:41:45,638][basic_search][INFO][generic_smbo.py:305] Iter 7, objectives: [80.098]. constraints: [-4722.84375].
+[2024-07-25 08:44:29,964][basic_search][INFO][generic_smbo.py:305] Iter 8, objectives: [96.835]. constraints: [-4687.78125].
+[2024-07-25 08:47:09,067][basic_search][INFO][generic_smbo.py:305] Iter 9, objectives: [68.545]. constraints: [-4740.3125].
+[2024-07-25 08:49:45,379][basic_search][INFO][generic_smbo.py:305] Iter 10, objectives: [50.216000000000015]. constraints: [-4736.9375].
+[2024-07-25 08:52:29,346][basic_search][INFO][generic_smbo.py:305] Iter 11, objectives: [73.50800000000001]. constraints: [-4689.125].
+[2024-07-25 08:55:12,225][basic_search][INFO][generic_smbo.py:305] Iter 12, objectives: [110.543]. constraints: [-4697.71875].
+[2024-07-25 08:57:53,639][basic_search][INFO][generic_smbo.py:305] Iter 13, objectives: [59.87700000000002]. constraints: [-4695.84375].
+[2024-07-25 09:00:33,826][basic_search][INFO][generic_smbo.py:305] Iter 14, objectives: [90.187]. constraints: [-4713.78125].
+[2024-07-25 09:03:19,340][basic_search][INFO][generic_smbo.py:305] Iter 15, objectives: [72.60800000000002]. constraints: [-4655.84375].
+[2024-07-25 09:06:07,560][basic_search][INFO][generic_smbo.py:305] Iter 16, objectives: [116.47599999999998]. constraints: [-4640.09375].
+[2024-07-25 09:08:50,347][basic_search][INFO][generic_smbo.py:305] Iter 17, objectives: [67.41600000000001]. constraints: [-4703.9375].
+[2024-07-25 09:11:37,358][basic_search][INFO][generic_smbo.py:305] Iter 18, objectives: [72.12500000000001]. constraints: [-4664.375].
+[2024-07-25 09:14:24,409][basic_search][INFO][generic_smbo.py:305] Iter 19, objectives: [83.123]. constraints: [-4680.84375].
+[2024-07-25 09:17:04,745][basic_search][INFO][generic_smbo.py:305] Iter 20, objectives: [82.17800000000001]. constraints: [-4701.34375].
+[2024-07-25 09:19:50,463][basic_search][INFO][generic_smbo.py:305] Iter 21, objectives: [113.42699999999998]. constraints: [-4657.71875].
+[2024-07-25 09:22:30,253][basic_search][INFO][generic_smbo.py:305] Iter 22, objectives: [89.79]. constraints: [-4705.90625].
+[2024-07-25 09:25:15,216][basic_search][INFO][generic_smbo.py:305] Iter 23, objectives: [92.12]. constraints: [-4682.5].
+[2024-07-25 09:28:05,482][basic_search][INFO][generic_smbo.py:305] Iter 24, objectives: [104.726]. constraints: [-4599.1875].
+[2024-07-25 09:30:49,419][basic_search][INFO][generic_smbo.py:305] Iter 25, objectives: [61.62399999999999]. constraints: [-4694.90625].
+[2024-07-25 09:33:29,189][basic_search][INFO][generic_smbo.py:305] Iter 26, objectives: [105.715]. constraints: [-4729.5].
+[2024-07-25 09:36:07,003][basic_search][INFO][generic_smbo.py:305] Iter 27, objectives: [56.907]. constraints: [-4747.09375].
+[2024-07-25 09:38:55,081][basic_search][INFO][generic_smbo.py:305] Iter 28, objectives: [93.35000000000002]. constraints: [-4662.0625].
+[2024-07-25 09:41:39,508][basic_search][INFO][generic_smbo.py:305] Iter 29, objectives: [74.36999999999999]. constraints: [-4683.0].
+[2024-07-25 09:44:31,189][basic_search][INFO][generic_smbo.py:305] Iter 30, objectives: [114.864]. constraints: [-4625.0].
+[2024-07-25 09:47:10,512][basic_search][INFO][generic_smbo.py:305] Iter 31, objectives: [54.80800000000001]. constraints: [-4737.28125].
+[2024-07-25 09:49:56,580][basic_search][INFO][generic_smbo.py:305] Iter 32, objectives: [102.308]. constraints: [-4691.75].
+[2024-07-25 09:52:41,947][basic_search][INFO][generic_smbo.py:305] Iter 33, objectives: [100.28900000000002]. constraints: [-4691.65625].
+[2024-07-25 09:52:41,961][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 09:55:28,146][basic_search][INFO][generic_smbo.py:305] Iter 34, objectives: [125.48799999999997]. constraints: [-4676.90625].
+[2024-07-25 09:58:17,224][basic_search][INFO][generic_smbo.py:305] Iter 35, objectives: [63.831]. constraints: [-4670.6875].
+[2024-07-25 10:00:59,544][basic_search][INFO][generic_smbo.py:305] Iter 36, objectives: [59.18400000000001]. constraints: [-4746.1875].
+[2024-07-25 10:03:54,488][basic_search][INFO][generic_smbo.py:305] Iter 37, objectives: [52.53899999999999]. constraints: [-4747.40625].
+[2024-07-25 10:07:17,272][basic_search][INFO][generic_smbo.py:305] Iter 38, objectives: [151.61100000000002]. constraints: [-4547.96875].
+[2024-07-25 10:07:17,288][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 10:10:16,331][basic_search][INFO][generic_smbo.py:305] Iter 39, objectives: [78.57199999999997]. constraints: [-4688.5].
+[2024-07-25 10:13:12,722][basic_search][INFO][generic_smbo.py:305] Iter 40, objectives: [73.18900000000001]. constraints: [-4696.78125].
+[2024-07-25 10:16:04,849][basic_search][INFO][generic_smbo.py:305] Iter 41, objectives: [50.544000000000004]. constraints: [-4736.1875].
+[2024-07-25 10:18:58,040][basic_search][INFO][generic_smbo.py:305] Iter 42, objectives: [52.392]. constraints: [-4737.0625].
+[2024-07-25 10:22:05,978][basic_search][INFO][generic_smbo.py:305] Iter 43, objectives: [70.18]. constraints: [-4649.5].
+[2024-07-25 10:24:54,365][basic_search][INFO][generic_smbo.py:305] Iter 44, objectives: [41.792]. constraints: [-4832.3125].
+[2024-07-25 10:27:37,020][basic_search][INFO][generic_smbo.py:305] Iter 45, objectives: [42.959]. constraints: [-4828.5625].
+[2024-07-25 10:30:31,702][basic_search][INFO][generic_smbo.py:305] Iter 46, objectives: [60.172999999999995]. constraints: [-4703.5].
+[2024-07-25 10:33:32,905][basic_search][INFO][generic_smbo.py:305] Iter 47, objectives: [59.28400000000001]. constraints: [-4682.21875].
+[2024-07-25 10:36:26,955][basic_search][INFO][generic_smbo.py:305] Iter 48, objectives: [54.925]. constraints: [-4742.71875].
+[2024-07-25 10:39:08,478][basic_search][INFO][generic_smbo.py:305] Iter 49, objectives: [44.730999999999995]. constraints: [-4825.125].
+[2024-07-25 10:39:08,494][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 10:42:02,026][basic_search][INFO][generic_smbo.py:305] Iter 50, objectives: [107.52499999999999]. constraints: [-4658.90625].
+[2024-07-25 10:44:53,138][basic_search][INFO][generic_smbo.py:305] Iter 51, objectives: [55.92900000000001]. constraints: [-4747.46875].
+[2024-07-25 10:48:01,394][basic_search][INFO][generic_smbo.py:305] Iter 52, objectives: [100.49399999999999]. constraints: [-4689.84375].
+[2024-07-25 10:51:03,606][basic_search][INFO][generic_smbo.py:305] Iter 53, objectives: [113.28200000000001]. constraints: [-4707.78125].
+[2024-07-25 10:53:54,739][basic_search][INFO][generic_smbo.py:305] Iter 54, objectives: [45.62800000000001]. constraints: [-4834.09375].
+[2024-07-25 10:56:45,499][basic_search][INFO][generic_smbo.py:305] Iter 55, objectives: [43.286]. constraints: [-4827.4375].
+[2024-07-25 10:56:45,507][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 10:59:45,740][basic_search][INFO][generic_smbo.py:305] Iter 56, objectives: [77.27799999999999]. constraints: [-4682.4375].
+[2024-07-25 11:02:35,135][basic_search][INFO][generic_smbo.py:305] Iter 57, objectives: [43.185]. constraints: [-4825.25].
+[2024-07-25 11:05:35,479][basic_search][INFO][generic_smbo.py:305] Iter 58, objectives: [56.84]. constraints: [-4743.03125].
+[2024-07-25 11:08:57,706][basic_search][INFO][generic_smbo.py:305] Iter 59, objectives: [142.56600000000003]. constraints: [-4589.96875].
+[2024-07-25 11:12:23,628][basic_search][INFO][generic_smbo.py:305] Iter 60, objectives: [117.74200000000002]. constraints: [-4604.28125].
+[2024-07-25 11:15:14,442][basic_search][INFO][generic_smbo.py:305] Iter 61, objectives: [47.714000000000006]. constraints: [-4828.90625].
+[2024-07-25 11:18:04,245][basic_search][INFO][generic_smbo.py:305] Iter 62, objectives: [46.556999999999995]. constraints: [-4816.71875].
+[2024-07-25 11:20:55,106][basic_search][INFO][generic_smbo.py:305] Iter 63, objectives: [46.845000000000006]. constraints: [-4839.28125].
+[2024-07-25 11:23:46,845][basic_search][INFO][generic_smbo.py:305] Iter 64, objectives: [42.936]. constraints: [-4818.6875].
+[2024-07-25 11:23:46,854][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 11:26:45,090][basic_search][INFO][generic_smbo.py:305] Iter 65, objectives: [89.595]. constraints: [-4706.09375].
+[2024-07-25 11:30:12,004][basic_search][INFO][generic_smbo.py:305] Iter 66, objectives: [153.94500000000002]. constraints: [-4553.03125].
+[2024-07-25 11:33:45,557][basic_search][INFO][generic_smbo.py:305] Iter 67, objectives: [153.813]. constraints: [-4595.1875].
+[2024-07-25 11:37:08,413][basic_search][INFO][generic_smbo.py:305] Iter 68, objectives: [133.46500000000003]. constraints: [-4594.5625].
+[2024-07-25 11:37:08,433][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 11:40:07,513][basic_search][INFO][generic_smbo.py:305] Iter 69, objectives: [80.346]. constraints: [-4681.5625].
+[2024-07-25 11:43:28,495][basic_search][INFO][generic_smbo.py:305] Iter 70, objectives: [152.74200000000002]. constraints: [-4577.375].
+[2024-07-25 11:46:54,432][basic_search][INFO][generic_smbo.py:305] Iter 71, objectives: [143.78700000000006]. constraints: [-4575.59375].
+[2024-07-25 11:49:40,646][basic_search][INFO][generic_smbo.py:305] Iter 72, objectives: [39.73800000000001]. constraints: [-4852.375].
+[2024-07-25 11:53:03,542][basic_search][INFO][generic_smbo.py:305] Iter 73, objectives: [152.126]. constraints: [-4566.25].
+[2024-07-25 11:56:30,638][basic_search][INFO][generic_smbo.py:305] Iter 74, objectives: [139.57]. constraints: [-4552.625].
+[2024-07-25 11:59:21,296][basic_search][INFO][generic_smbo.py:305] Iter 75, objectives: [46.59199999999999]. constraints: [-4821.15625].
+[2024-07-25 12:02:08,445][basic_search][INFO][generic_smbo.py:305] Iter 76, objectives: [38.012]. constraints: [-4852.375].
+[2024-07-25 12:04:59,558][basic_search][INFO][generic_smbo.py:305] Iter 77, objectives: [46.63100000000001]. constraints: [-4828.1875].
+[2024-07-25 12:07:48,938][basic_search][INFO][generic_smbo.py:305] Iter 78, objectives: [45.264]. constraints: [-4838.9375].
+[2024-07-25 12:10:35,076][basic_search][INFO][generic_smbo.py:305] Iter 79, objectives: [37.975]. constraints: [-4852.375].
+[2024-07-25 12:10:35,098][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 12:13:45,209][basic_search][INFO][generic_smbo.py:305] Iter 80, objectives: [94.21]. constraints: [-4608.625].
+[2024-07-25 12:16:32,305][basic_search][INFO][generic_smbo.py:305] Iter 81, objectives: [37.989]. constraints: [-4852.375].
+[2024-07-25 12:19:59,322][basic_search][INFO][generic_smbo.py:305] Iter 82, objectives: [154.82400000000004]. constraints: [-4569.34375].
+[2024-07-25 12:23:27,327][basic_search][INFO][generic_smbo.py:305] Iter 83, objectives: [146.46299999999997]. constraints: [-4580.5].
+[2024-07-25 12:26:20,254][basic_search][INFO][generic_smbo.py:305] Iter 84, objectives: [50.592999999999996]. constraints: [-4801.6875].
+[2024-07-25 12:29:07,756][basic_search][INFO][generic_smbo.py:305] Iter 85, objectives: [37.964]. constraints: [-4852.5].
+[2024-07-25 12:29:07,779][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 12:31:59,962][basic_search][INFO][generic_smbo.py:305] Iter 86, objectives: [70.085]. constraints: [-4726.3125].
+[2024-07-25 12:35:29,308][basic_search][INFO][generic_smbo.py:305] Iter 87, objectives: [129.86499999999998]. constraints: [-4561.34375].
+[2024-07-25 12:38:21,924][basic_search][INFO][generic_smbo.py:305] Iter 88, objectives: [45.598]. constraints: [-4833.03125].
+[2024-07-25 12:38:21,946][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 12:41:22,361][basic_search][INFO][generic_smbo.py:305] Iter 89, objectives: [112.77500000000002]. constraints: [-4680.15625].
+[2024-07-25 12:44:10,525][basic_search][INFO][generic_smbo.py:305] Iter 90, objectives: [30.263]. constraints: [-4845.4375].
+[2024-07-25 12:47:38,576][basic_search][INFO][generic_smbo.py:305] Iter 91, objectives: [145.86800000000002]. constraints: [-4568.0].
+[2024-07-25 12:50:29,715][basic_search][INFO][generic_smbo.py:305] Iter 92, objectives: [41.708]. constraints: [-4827.9375].
+[2024-07-25 12:53:22,555][basic_search][INFO][generic_smbo.py:305] Iter 93, objectives: [43.349999999999994]. constraints: [-4833.53125].
+[2024-07-25 12:56:12,407][basic_search][INFO][generic_smbo.py:305] Iter 94, objectives: [30.271000000000004]. constraints: [-4848.40625].
+[2024-07-25 12:56:12,429][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 12:59:11,730][basic_search][INFO][generic_smbo.py:305] Iter 95, objectives: [101.56]. constraints: [-4689.8125].
+[2024-07-25 13:02:04,553][basic_search][INFO][generic_smbo.py:305] Iter 96, objectives: [46.065]. constraints: [-4821.15625].
+[2024-07-25 13:05:35,167][basic_search][INFO][generic_smbo.py:305] Iter 97, objectives: [150.20700000000005]. constraints: [-4576.09375].
+[2024-07-25 13:08:26,088][basic_search][INFO][generic_smbo.py:305] Iter 98, objectives: [46.588]. constraints: [-4843.1875].
+[2024-07-25 13:08:26,110][basic_search][INFO][generic_advisor.py:368] Sample random config. rand_prob=0.100000.
+[2024-07-25 13:11:30,114][basic_search][INFO][generic_smbo.py:305] Iter 99, objectives: [97.787]. constraints: [-4644.71875].
+[2024-07-25 13:14:21,323][basic_search][INFO][generic_smbo.py:305] Iter 100, objectives: [38.98]. constraints: [-4852.375].
+[2024-07-25 13:14:21,347][basic_search][INFO][html_visualizer.py:96] Please open the html file to view visualization result: file:///gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/history/basic_search/basic_search_2024-07-25-08-22-40-288371.html

@@ -1,0 +1,388 @@
+nohup: ignoring input
+INFO:root:Init Black Box
+INFO:root:Using config file benchmark_results/fray_op/config_tpch.json
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:Generating tpch_userdef data
+INFO:root:scale factor: 10
+INFO:root:No need to run make
+INFO:root:[SUBPROCESS OUTPUT] TPC-H Population Generator (Version 2.17.3)
+INFO:root:[SUBPROCESS OUTPUT] Copyright Transaction Processing Performance Council 1994 - 2010
+INFO:root:[Generate command] ./dbgen -s 10 -f
+INFO:root:Files generated: ['part.tbl', 'partsupp.tbl', 'region.tbl', 'lineitem.tbl', 'customer.tbl', 'supplier.tbl', 'nation.tbl', 'orders.tbl']
+INFO:root:Database indexselection_tpch_userdef___10 created
+INFO:root:Creating tables
+INFO:root:Loading data into the tables
+INFO:root:Creating partition tables
+INFO:root:Postgres: Set random seed `SELECT setseed(0.17)`
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+INFO:root:Generating TPC-H-User-Define Queries
+DEBUG:root:No need to run make
+INFO:root:no query class
+INFO:root:no columns range
+INFO:root:no columns range
+INFO:root:Queries generated
+DEBUG:root:Init cost evaluation
+INFO:root:Cost estimation with actual_runtimes
+DEBUG:root:Init WhatIfIndexCreation
+INFO:root:By Space Compactor the number of candidate indexes from 500 to 500
+[2024-07-27 06:35:20,462][basic_search][INFO][color_logger.py:203] Logfile: /gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/basic_search_2024-07-27-06-35-20-462173.log
+[2024-07-27 06:35:20,627][basic_search][INFO][generic_advisor.py:159] [BO auto selection]  acq_type: eic. acq_optimizer_type: random_scipy.
+[2024-07-27 06:35:20,641][basic_search][INFO][html_visualizer.py:462] Please open the html file to view visualization result: file:///gyc_data/fray_data/Arbiter/logs_gray_clapboard_search/history/basic_search/basic_search_2024-07-27-06-35-20-639415.html
+/gyc_data/fray_data/Arbiter
+/gyc_data/fray_data/Arbiter
+/gyc_data/fray_data/Arbiter
+['/gyc_data/fray_data/Arbiter/selection', '/usr/lib/python38.zip', '/usr/lib/python3.8', '/usr/lib/python3.8/lib-dynload', '/gyc_data/fray_data/py38venv/lib/python3.8/site-packages', '/gyc_data/fray_data/Arbiter', '/data2/fray/index_selection_evaluation', '/gyc_data/fray_data/Arbiter', '/gyc_data/fray_data/Arbiter', '/mydata/fray/index_selection_evaluation']
+-----
+Advisor
+  0%|          | 0/100 [00:00<?, ?it/s]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 40), (40, 41), (41, 42), (42, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 48), (48, 49), (49, 50)], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 5), (5, 7), (7, 9), (9, 11), (11, 13), (13, 15), (15, 17), (17, 19), (19, 21), (21, 23), (23, 25), (25, 27), (27, 29), (29, 31), (31, 33), (33, 35), (35, 37), (37, 39), (39, 41), (41, 43), (43, 45), (45, 47), (47, 49), (49, 50)], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:Partitioning customer table by c_custkey key.
+INFO:root:Partitioning orders table by o_orderkey key.
+INFO:root:Partitioning lineitem table by l_orderkey key.
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 5), (5, 7), (7, 9), (9, 11), (11, 13), (13, 15), (15, 17), (17, 19), (19, 21), (21, 23), (23, 25), (25, 27), (27, 29), (29, 31), (31, 33), (33, 35), (35, 37), (37, 39), (39, 41), (41, 43), (43, 45), (45, 47), (47, 49), (49, 50)]
+INFO:root:By data skipping index, the number of queries from 26 to 26
+INFO:root:skip time 0.00023031234741210938
+INFO:root:evaluation time 25.30839204788208
+INFO:root:cost = 23926.521, index_combination_size = 0
+[2024-07-27 06:41:24,213][basic_search][INFO][generic_smbo.py:305] Iter 1, objectives: [23926.521]. constraints: [-5000.0].
+  1%|          | 1/100 [06:03<9:59:53, 363.57s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 4), (4, 5), (5, 7), (7, 9), (9, 12), (12, 14), (14, 17), (17, 21), (21, 25), (25, 27), (27, 28), (28, 29), (29, 32), (32, 33), (33, 34), (34, 36), (36, 37), (37, 38), (38, 41), (41, 43), (43, 45), (45, 47), (47, 50)], 509, 648, 969, 985, 834, 638, 1020, 875, 368, 240, 873, 540, 92, 789, 22, 568, 745, 972, 770, 931, 491, 586, 455, 962, 593, 274, 408, 98, 38, 719, 943, 616, 350, 936, 4, 354, 72, 547, 855, 343, 633, 933, 578, 376, 297, 836, 253, 799, 713, 884]
+INFO:root:Binary code: [[(0, 1), (1, 4), (4, 7), (7, 8), (8, 12), (12, 13), (13, 17), (17, 18), (18, 19), (19, 20), (20, 25), (25, 26), (26, 28), (28, 32), (32, 34), (34, 35), (35, 37), (37, 41), (41, 42), (42, 45), (45, 46), (46, 50)], 342, 783, 654, 657, 636, 939, 680, 589, 416, 160, 590, 1000, 104, 537, 27, 976, 846, 648, 515, 706, 333, 908, 378, 643, 926, 483, 272, 67, 59, 885, 714, 944, 404, 719, 7, 444, 112, 962, 613, 410, 942, 710, 899, 431, 462, 632, 169, 533, 881, 600]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:Partitioning customer table by c_custkey key.
+INFO:root:Partitioning orders table by o_orderkey key.
+INFO:root:Partitioning lineitem table by l_orderkey key.
+INFO:root:partitioning the datasets by [(0, 1), (1, 4), (4, 7), (7, 8), (8, 12), (12, 13), (13, 17), (17, 18), (18, 19), (19, 20), (20, 25), (25, 26), (26, 28), (28, 32), (32, 34), (34, 35), (35, 37), (37, 41), (41, 42), (42, 45), (45, 46), (46, 50)]
+INFO:root:By data skipping index, the number of queries from 22 to 22
+INFO:root:skip time 0.00012040138244628906
+INFO:root:evaluation time 14979.700857162476
+INFO:root:cost = 14661555.356000004, index_combination_size = 5380.84375
+[2024-07-27 10:56:04,402][basic_search][INFO][generic_smbo.py:305] Iter 2, objectives: [14661555.356000004]. constraints: [380.84375].
+  2%|▏         | 2/100 [4:20:43<248:45:29, 9138.05s/it]INFO:root:Gray code X: [[(0, 1), (1, 5), (5, 6), (6, 7), (7, 9), (9, 12), (12, 13), (13, 15), (15, 18), (18, 19), (19, 20), (20, 22), (22, 23), (23, 29), (29, 32), (32, 40), (40, 41), (41, 43), (43, 44), (44, 45), (45, 46), (46, 47), (47, 49), (49, 50)], 430, 166, 440, 511, 116, 32, 237, 451, 979, 301, 94, 395, 809, 240, 824, 480, 508, 582, 393, 190, 882, 864, 718, 165, 523, 947, 110, 441, 1020, 175, 914, 988, 16, 63, 1011, 793, 397, 355, 176, 246, 924, 67, 468, 452, 554, 566, 285, 396, 471, 507]
+INFO:root:Binary code: [[(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 9), (9, 10), (10, 11), (11, 13), (13, 14), (14, 18), (18, 20), (20, 21), (21, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 41), (41, 42), (42, 44), (44, 46), (46, 49), (49, 50)], 308, 196, 303, 341, 88, 63, 182, 381, 669, 457, 107, 269, 561, 160, 559, 320, 343, 900, 270, 212, 604, 576, 884, 198, 1010, 733, 75, 302, 680, 202, 739, 663, 31, 42, 674, 529, 265, 445, 223, 164, 744, 125, 359, 376, 972, 987, 489, 264, 357, 338]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:Partitioning customer table by c_custkey key.
+INFO:root:Partitioning orders table by o_orderkey key.
+INFO:root:Partitioning lineitem table by l_orderkey key.
+INFO:root:partitioning the datasets by [(0, 1), (1, 2), (2, 3), (3, 4), (4, 6), (6, 9), (9, 10), (10, 11), (11, 13), (13, 14), (14, 18), (18, 20), (20, 21), (21, 23), (23, 24), (24, 25), (25, 26), (26, 27), (27, 28), (28, 32), (32, 33), (33, 34), (34, 35), (35, 36), (36, 37), (37, 38), (38, 39), (39, 41), (41, 42), (42, 44), (44, 46), (46, 49), (49, 50)]
+INFO:root:By data skipping index, the number of queries from 33 to 33
+INFO:root:skip time 0.00020837783813476562
+INFO:root:evaluation time 7061.9595737457275
+INFO:root:cost = 6777658.0770000005, index_combination_size = 4933.03125
+[2024-07-27 12:58:38,096][basic_search][INFO][generic_smbo.py:305] Iter 3, objectives: [6777658.0770000005]. constraints: [-66.96875].
+  3%|▎         | 3/100 [6:23:17<224:15:57, 8323.28s/it]INFO:root:Gray code X: [[(0, 1), (1, 2), (2, 3), (3, 5), (5, 6), (6, 13), (13, 14), (14, 17), (17, 18), (18, 19), (19, 20), (20, 23), (23, 26), (26, 31), (31, 33), (33, 36), (36, 37), (37, 39), (39, 40), (40, 43), (43, 45), (45, 47), (47, 49), (49, 50)], 574, 169, 642, 415, 66, 825, 491, 522, 40, 653, 666, 533, 382, 974, 651, 129, 265, 82, 21, 906, 283, 359, 817, 426, 7, 995, 644, 980, 64, 146, 134, 285, 68, 480, 129, 428, 838, 248, 438, 315, 93, 71, 12, 765, 886, 465, 998, 623, 697, 979]
+INFO:root:Binary code: [[(0, 1), (1, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 14), (14, 15), (15, 16), (16, 18), (18, 20), (20, 21), (21, 22), (22, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 33), (33, 34), (34, 35), (35, 37), (37, 38), (38, 40), (40, 41), (41, 42), (42, 45), (45, 46), (46, 49), (49, 50)], 980, 206, 771, 277, 124, 558, 333, 1011, 48, 777, 787, 998, 427, 651, 781, 254, 497, 99, 25, 755, 493, 442, 545, 307, 5, 701, 775, 664, 127, 227, 251, 489, 120, 320, 254, 311, 635, 175, 292, 466, 105, 122, 8, 854, 603, 353, 699, 949, 814, 669]
+INFO:root:Dropping indexes
+INFO:root:Postgres: Run `analyze`
+INFO:root:Creating partition tables
+INFO:root:Partitioning customer table by c_custkey key.
+INFO:root:Partitioning orders table by o_orderkey key.
+INFO:root:Partitioning lineitem table by l_orderkey key.
+INFO:root:partitioning the datasets by [(0, 1), (1, 3), (3, 4), (4, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 14), (14, 15), (15, 16), (16, 18), (18, 20), (20, 21), (21, 22), (22, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 33), (33, 34), (34, 35), (35, 37), (37, 38), (38, 40), (40, 41), (41, 42), (42, 45), (45, 46), (46, 49), (49, 50)]
+INFO:root:By data skipping index, the number of queries from 34 to 34
+INFO:root:skip time 0.00012946128845214844

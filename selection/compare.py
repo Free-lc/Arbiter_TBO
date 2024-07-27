@@ -81,8 +81,8 @@ logging.info(f"index_combination_size : {index_combination_size} , cost : {cost}
 # index_combination_size,cost = selection_algorithm.get_optimal_value()
 # logging.info(f"index_combination_size : {index_combination_size} , cost : {cost}")
 
-# whole_compare = WholeCompare(black_box)
-# whole_compare.get_convergence_curve()
+whole_compare = WholeCompare(black_box)
+whole_compare.get_convergence_curve()
 
 
 # black_box = BlackBox(config_file = 'benchmark_results/fray_op/config_tpcds.json')

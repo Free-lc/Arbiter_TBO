@@ -33,14 +33,14 @@ class QueryGenerator:
     def filter_queries(self, query_ids):
         self.queries = [query for query in self.queries if query.nr in query_ids]
 
-    def add_new_query(self, query_id, query_text, frequency = 1, query_class = None, query_columns_range = None):
+    def add_new_query(self, query_id, query_text, frequency = 1, query_class = None, query_columns_range = None, query_join_key = None):
         if not self.db_connector:
             logging.info("{}:".format(self))
             logging.error("No database connector to validate queries")
             raise Exception("database connector missing")
         query_text = self.db_connector.update_query_text(query_text)
         query = Query(query_id, query_text,frequency = frequency, query_class = query_class,
-                                query_columns_range = query_columns_range)
+                                query_columns_range = query_columns_range, query_join_key = query_join_key)
         self._validate_query(query)
         self._store_indexable_columns(query)
         self.queries.append(query)
@@ -124,9 +124,16 @@ class QueryGenerator:
                     query_columns_range = pickle.load(f)
             else:
                 logging.info("no columns range")
-                query_columns_range = None  
+                query_columns_range = None
+            pkl_path = f"{self.benchmark_path}/queries/{self.scale_factor}/{query_id+1}_join_key.pkl "
+            if os.path.exists(f"{os.path.join(cwd,pkl_path)}"):
+                with open(f"{os.path.join(cwd,pkl_path)}", "rb") as f:
+                    query_join_key = pickle.load(f)
+            else:
+                logging.info("no columns range")
+                query_join_key = None
             self.add_new_query(query_idx+1, sql_query, frequency = freq, query_class = query_class,
-                                query_columns_range = query_columns_range)
+                                query_columns_range = query_columns_range, query_join_key = query_join_key)
         logging.info("Queries generated")
 
     def _generate_tpcds(self):

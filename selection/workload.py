@@ -5,7 +5,7 @@ from selection.index import Index
 
 class Query:
     def __init__(self, query_id, query_text, columns=None, frequency=1, query_class = None,
-                                query_columns_range = 'range'):
+                                query_columns_range = 'range', query_join_key = None):
         self.nr = query_id
         self.text = query_text
         self.frequency = frequency
@@ -16,6 +16,7 @@ class Query:
             self.columns = []
         else:
             self.columns = columns
+        self.join_keys = query_join_key
 
     def __repr__(self):
         return f"Q{self.nr}"

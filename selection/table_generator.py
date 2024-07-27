@@ -67,6 +67,11 @@ class TableGenerator:
             logging.debug("Database with given scale factor already " "existing")
         self._read_column_names()
         print("-----")
+    
+    def partition_table(self, queries):
+        # 分割数据库不在这里处理，改动
+        if self.block_num is not None:
+            self.create_subtables(self.block_num, queries) # number of partition
 
     def database_name(self):
         if self.test is not None:
@@ -212,9 +217,14 @@ class TableGenerator:
             self.db_connector.exec_only(create_statement)
         self.db_connector.commit()
     
-    def create_subtables(self,partition_num=16):
+    def create_subtables(self, partition_num=16, queries = None):
         logging.info("Creating partition tables")
         tables = {}
+        if queries is not None:
+            for query in queries:
+                if query.join_keys is None: continue
+                for key,value in query.query_join_key.items():
+                    tables[key] = value
         # get primary key in every single table
         get_table_statement = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';"
         tables_name = self.db_connector.exec_fetch(get_table_statement, False)
@@ -222,6 +232,9 @@ class TableGenerator:
             table_name = table[0]
             if table_name == 'dbgen_version':
                 continue
+            if table_name in tables:
+                continue
+            # default partition key is primary key
             get_primary_key_statement = f'''SELECT 
                 column_name
             FROM 
@@ -237,6 +250,7 @@ class TableGenerator:
                 if self.tpch_data_types[table_name][primary_key] != 'string':
                     tables[table_name] = primary_key
                     break
+        self.table_partition_key = tables
         # create partition tables
         for key, value in tables.items():
             # partitioning tables
@@ -304,113 +318,12 @@ class TableGenerator:
             db_connector.commit()
         self.current_views.clear()
 
-    def partitioning(self,partition_num=16):
-        logging.info("Creating partition tables")
-        if self.benchmark_name == 'tpch_userdef':
-            tables = {
-                'customer': 'c_custkey',
-                'lineitem': 'l_orderkey',
-                'nation': 'n_nationkey',
-                'orders': 'o_orderkey',
-                'part': 'p_partkey',
-                'partsupp': 'ps_partkey',
-                'region': 'r_regionkey',
-                'supplier': 's_suppkey'
-            }
-        else:
-            tables = {}
-            # get primary key in every single table
-            get_table_statement = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';"
-            tables_name = self.db_connector.exec_fetch(get_table_statement, False)
-            for table in tables_name:
-                table_name = table[0].split("_1_prt_p")[0].replace("_bak", "")
-                if table_name == 'dbgen_version':
-                    continue
-                get_primary_key_statement = f'''SELECT 
-                    column_name
-                FROM 
-                    information_schema.columns
-                WHERE 
-                    table_name = '{table_name}' AND
-                    table_schema = 'public' 
-                ORDER BY 
-                    ordinal_position
-                LIMIT 1;'''
-                primary_keys = self.db_connector.exec_fetch(get_primary_key_statement,False)
-                for primary_key in primary_keys:
-                    primary_key = primary_key[0]
-                    if self.tpch_data_types[table_name][primary_key] != 'string':
-                        tables[table_name] = primary_key
-                        break
-        # create partition tables
-        for key, value in tables.items():
-            # partitioning tables
-            statements = []
-            statements.append(f"DROP TABLE IF EXISTS {key};")
-            statement = f"create table {key} (LIKE {key}_bak) WITH (appendonly=true, orientation=column) DISTRIBUTED BY ({value}) PARTITION BY RANGE({value})("
-            s_max_value = f"select max({value}) from {key}"
-            s_min_value = f"select min({value}) from {key}"
-            max_value = self.db_connector.exec_fetch(s_max_value)[0]
-            min_value = self.db_connector.exec_fetch(s_min_value)[0]
-            value_range = list(np.linspace(min_value, max_value, partition_num+1))
-            value_range = [math.floor(v) for v in value_range]
-            # deal with the range cannot be divided into partition_num fields
-            value_range = list(set(value_range))
-            while len(value_range) < partition_num+1:
-                value_range.append(value_range[-1]+1)
-            value_range.sort()
-            for i in range(len(value_range) - 1):
-                if i+1 == len(value_range)-1:
-                    op = 'inclusive'
-                else:
-                    op = 'exclusive,'
-                statement += f"PARTITION p{i} start ({value_range[i]})inclusive end ({value_range[i+1]}) {op}"
-            statement += ')'
-            statements.append(statement)
-            statements.append(f"INSERT INTO {key} SELECT * FROM {key}_bak;")
-            for s in statements:
-                self.db_connector.exec_only(s)
-        self.db_connector.commit()
 
     def tuples_partitioning(self, partition_tuples = None, query_table = None):
         assert partition_tuples is not None, "You need to specify the partition_tuples"
         partition_num = len(partition_tuples)
         logging.info("Creating partition tables")
-        if self.benchmark_name == 'tpch_userdef':
-            tables = {
-                'customer': 'c_custkey',
-                'lineitem': 'l_orderkey',
-                'nation': 'n_nationkey',
-                'orders': 'o_orderkey',
-                'part': 'p_partkey',
-                'partsupp': 'ps_partkey',
-                'region': 'r_regionkey',
-                'supplier': 's_suppkey'
-            }
-        else:
-            tables = {}
-            # get primary key in every single table
-            get_table_statement = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';"
-            tables_name = self.db_connector.exec_fetch(get_table_statement, False)
-            for table in tables_name:
-                table_name = table[0].split("_1_prt_p")[0].replace("_bak", "")
-                if table_name == 'dbgen_version':
-                    continue
-                get_primary_key_statement = f'''SELECT 
-                    column_name
-                FROM 
-                    information_schema.columns
-                WHERE 
-                    table_name = '{table_name}' AND
-                    table_schema = 'public' 
-                ORDER BY 
-                    ordinal_position'''
-                primary_keys = self.db_connector.exec_fetch(get_primary_key_statement,False)
-                for primary_key in primary_keys:
-                    primary_key = primary_key[0]
-                    if self.tpch_data_types[table_name][primary_key] != 'string':
-                        tables[table_name] = primary_key
-                        break
+        tables = self.table_partition_key
         # create partition tables
         for key, value in tables.items():
             # only partitioning queried table
@@ -418,6 +331,7 @@ class TableGenerator:
                 continue
             # partitioning tables
             statements = []
+            logging.info(f"Partitioning {key} table by {value} key.")
             statements.append(f"DROP TABLE IF EXISTS {key};")
             statement = f"create table {key} (LIKE {key}_bak) WITH (appendonly=true, orientation=column) DISTRIBUTED BY ({value}) PARTITION BY RANGE({value})("
             s_max_value = f"select max({value}) from {key}"
@@ -765,6 +679,7 @@ class TableGenerator:
         return index - 1, index
 
     def get_selectivity(self, partition_tuple, selected_queries, page_number = 20):
+        assert 0, "disabled"
         statement = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' and table_name LIKE '%\_bak';"
         table_names = [tuple[0] for tuple in self.db_connector.exec_fetch(statement, False)]
         tables = {}
@@ -773,39 +688,9 @@ class TableGenerator:
         start_block = partition_tuple[0]
         end_block = partition_tuple[1]
         table_value = {}
-        if self.benchmark_name == 'tpch_userdef':
-            tables = {
-                'customer_bak': 'c_custkey',
-                'lineitem_bak': 'l_orderkey',
-                'nation_bak': 'n_nationkey',
-                'orders_bak': 'o_orderkey',
-                'part_bak': 'p_partkey',
-                'partsupp_bak': 'ps_partkey',
-                'region_bak': 'r_regionkey',
-                'supplier_bak': 's_suppkey'
-            }
-        else:
-            tables = {}
-            # get primary key in every single table
-            for table in table_names:
-                table_name = table.split("_1_prt_p")[0]
-                if table_name == 'dbgen_version':
-                    continue
-                get_primary_key_statement = f'''SELECT 
-                    column_name
-                FROM 
-                    information_schema.columns
-                WHERE 
-                    table_name = '{table_name}' AND
-                    table_schema = 'public' 
-                ORDER BY 
-                    ordinal_position'''
-                primary_keys = self.db_connector.exec_fetch(get_primary_key_statement,False)
-                for primary_key in primary_keys:
-                    primary_key = primary_key[0]
-                    if self.tpch_data_types[table_name.split("_bak")[0]][primary_key] != 'string':
-                        tables[table_name] = primary_key
-                        break
+        tables = {}
+        for table,key in self.table_partition_key.items():
+            tables[table+"_bak"] = key
         # get indexable attributes in queries
         indexable_atrribues = {}
         for query in selected_queries:

@@ -5,12 +5,12 @@ from BO.slalom_tree import PartitionTree
 import time
 PARTITIONALGORITHMS = {
     # "Slalom":PartitionTree,
-    # "Casper":Casper,
-    "ALL":AllPartition,
+    "Casper":Casper,
+    # "ALL":AllPartition,
 }
 # INDEXALGORITHMS = [ "Noindex", "Relaxation","Slalom", "Extend"]
 # INDEXALGORITHMS = [ "Noindex", "Slalom", "Relaxation"]
-INDEXALGORITHMS = [ "Noindex", "Slalom"]
+INDEXALGORITHMS = [ "Noindex", "Extend"]
 class WholeCompare():
     def __init__(self, black_box) -> None:
         logging.getLogger().setLevel(logging.DEBUG)
